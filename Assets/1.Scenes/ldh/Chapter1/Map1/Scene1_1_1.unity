@@ -832,7 +832,7 @@ GameObject:
   - component: {fileID: 1474253673}
   - component: {fileID: 1474253672}
   m_Layer: 0
-  m_Name: ldhjtset
+  m_Name: ldh test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
