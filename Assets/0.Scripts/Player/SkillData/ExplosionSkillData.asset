@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1630db19d9eeec48bfa6cdbc2141933, type: 3}
+  m_Name: ExplosionSkillData
+  m_EditorClassIdentifier: 
+  skillName: Explosion
+  icon: {fileID: 3686663018669187017, guid: 5ed63196e0e034149be8a458d2055090, type: 3}
+  stackGaugeCost: 20
+  cooldown: 5
+  castRadius: 15
+  damage: 1
+  knockbackForce: 3
+  rangePrefab: {fileID: 2109304125453788693, guid: 91e67009ef0120549a9241b7a1591f61, type: 3}
+  explosionEffectPrefab: {fileID: 8449579834856199887, guid: 0955c3d7bbfc2d54e87112efe150dbe9, type: 3}
+  animationTriggerName: 

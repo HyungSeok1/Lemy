@@ -1,0 +1,715 @@
+fileFormatVersion: 2
+guid: c2ff7a1be65ee7c498dd7f7d5e32bd33
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9066389923563358135
+    second: turneffect_0005_0
+  - first:
+      213: -1126990908981087057
+    second: turneffect_0005_1
+  - first:
+      213: -2655285744900865619
+    second: turneffect_0005_2
+  - first:
+      213: -8248551713628214289
+    second: turneffect_0005_3
+  - first:
+      213: 6568055203986483822
+    second: turneffect_0005_4
+  - first:
+      213: -6968293936267925485
+    second: turneffect_0005_5
+  - first:
+      213: 690311274574836634
+    second: turneffect_0005_6
+  - first:
+      213: 6937167115462957680
+    second: turneffect_0005_7
+  - first:
+      213: 4950275659614402156
+    second: turneffect_0005_8
+  - first:
+      213: -6658460836141153147
+    second: turneffect_0005_9
+  - first:
+      213: 8657287454352866793
+    second: turneffect_0005_10
+  - first:
+      213: -2104217027875154057
+    second: turneffect_0005_11
+  - first:
+      213: -1037428543640595334
+    second: turneffect_0005_12
+  - first:
+      213: -3108299422896040456
+    second: turneffect_0005_13
+  - first:
+      213: -6048459733420439627
+    second: turneffect_0005_14
+  - first:
+      213: 4787751767903365334
+    second: turneffect_0005_15
+  - first:
+      213: 1618215820621046228
+    second: turneffect_0005_16
+  - first:
+      213: 2144708548422628962
+    second: turneffect_0005_17
+  - first:
+      213: -5442603943058747256
+    second: turneffect_0005_18
+  - first:
+      213: 3975464868161500132
+    second: turneffect_0005_19
+  - first:
+      213: 4174216786478047752
+    second: turneffect_0005_20
+  - first:
+      213: -728748139166389052
+    second: turneffect_0005_21
+  - first:
+      213: -178370878205129019
+    second: turneffect_0005_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: turneffect_0005_0
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 584
+        width: 342
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b7cc25899942dd70800000000000000
+      internalID: 9066389923563358135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_1
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 515
+        width: 89
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa476154dbf1c50f0800000000000000
+      internalID: -1126990908981087057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_2
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 667
+        width: 39
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1860eeea7862bd0800000000000000
+      internalID: -2655285744900865619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_3
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 506
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feb20cd4be1478d80800000000000000
+      internalID: -8248551713628214289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_4
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 433
+        width: 61
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a25c2b86b662b50800000000000000
+      internalID: 6568055203986483822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_5
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 265
+        width: 114
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318ed36a595ab4f90800000000000000
+      internalID: -6968293936267925485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_6
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 432
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a93fa71627a749900800000000000000
+      internalID: 690311274574836634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_7
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 337
+        width: 83
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ad0b0acb4c54060800000000000000
+      internalID: 6937167115462957680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_8
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 389
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6634971c79e2b440800000000000000
+      internalID: 4950275659614402156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_9
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 291
+        width: 46
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 584c4f6c5256893a0800000000000000
+      internalID: -6658460836141153147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_10
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 305
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9edf52b421dd42870800000000000000
+      internalID: 8657287454352866793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_11
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 326
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7775c2303c15cc2e0800000000000000
+      internalID: -2104217027875154057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_12
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 56
+        width: 143
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7493707c305a91f0800000000000000
+      internalID: -1037428543640595334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_13
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 176
+        width: 102
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f5dab2b42a1dd4d0800000000000000
+      internalID: -3108299422896040456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_14
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 191
+        width: 52
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b788372bed8f0ca0800000000000000
+      internalID: -6048459733420439627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_15
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 227
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d8e0a6cdd2817240800000000000000
+      internalID: 4787751767903365334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_16
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 45
+        width: 227
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1e80617be057610800000000000000
+      internalID: 1618215820621046228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_17
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 116
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2667977cf0983cd10800000000000000
+      internalID: 2144708548422628962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_18
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 133
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 880d7d8cc8cf774b0800000000000000
+      internalID: -5442603943058747256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_19
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 0
+        width: 147
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e3bfc31c30bb2730800000000000000
+      internalID: 3975464868161500132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_20
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 40
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8022f752d0ccde930800000000000000
+      internalID: 4174216786478047752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 19
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cca242bd67f2e5f0800000000000000
+      internalID: -728748139166389052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turneffect_0005_22
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 43
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ce0f4e91ac468df0800000000000000
+      internalID: -178370878205129019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      turneffect_0005_0: 9066389923563358135
+      turneffect_0005_1: -1126990908981087057
+      turneffect_0005_10: 8657287454352866793
+      turneffect_0005_11: -2104217027875154057
+      turneffect_0005_12: -1037428543640595334
+      turneffect_0005_13: -3108299422896040456
+      turneffect_0005_14: -6048459733420439627
+      turneffect_0005_15: 4787751767903365334
+      turneffect_0005_16: 1618215820621046228
+      turneffect_0005_17: 2144708548422628962
+      turneffect_0005_18: -5442603943058747256
+      turneffect_0005_19: 3975464868161500132
+      turneffect_0005_2: -2655285744900865619
+      turneffect_0005_20: 4174216786478047752
+      turneffect_0005_21: -728748139166389052
+      turneffect_0005_22: -178370878205129019
+      turneffect_0005_3: -8248551713628214289
+      turneffect_0005_4: 6568055203986483822
+      turneffect_0005_5: -6968293936267925485
+      turneffect_0005_6: 690311274574836634
+      turneffect_0005_7: 6937167115462957680
+      turneffect_0005_8: 4950275659614402156
+      turneffect_0005_9: -6658460836141153147
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

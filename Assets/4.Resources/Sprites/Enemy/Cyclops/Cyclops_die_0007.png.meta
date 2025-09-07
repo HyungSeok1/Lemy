@@ -1,0 +1,1235 @@
+fileFormatVersion: 2
+guid: 425eaa35157eeaf4d95325cb2914a93d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6317518466545864713
+    second: Cyclops_die_0007_0
+  - first:
+      213: -1627694651950370606
+    second: Cyclops_die_0007_1
+  - first:
+      213: 521629056759206089
+    second: Cyclops_die_0007_2
+  - first:
+      213: 3581341093429081931
+    second: Cyclops_die_0007_3
+  - first:
+      213: -4284669621483599822
+    second: Cyclops_die_0007_4
+  - first:
+      213: -6008990997011983718
+    second: Cyclops_die_0007_5
+  - first:
+      213: 6668270361543842702
+    second: Cyclops_die_0007_6
+  - first:
+      213: 1610871652160968980
+    second: Cyclops_die_0007_7
+  - first:
+      213: -8002369279616460489
+    second: Cyclops_die_0007_8
+  - first:
+      213: 3613351793537788777
+    second: Cyclops_die_0007_9
+  - first:
+      213: 3672330496570495059
+    second: Cyclops_die_0007_10
+  - first:
+      213: 7755139296504623725
+    second: Cyclops_die_0007_11
+  - first:
+      213: -8743232568539424952
+    second: Cyclops_die_0007_12
+  - first:
+      213: 7380359266903051344
+    second: Cyclops_die_0007_13
+  - first:
+      213: -3852285628474479315
+    second: Cyclops_die_0007_14
+  - first:
+      213: 2719115053826866485
+    second: Cyclops_die_0007_15
+  - first:
+      213: -3028592961372318654
+    second: Cyclops_die_0007_16
+  - first:
+      213: 2858783337775783058
+    second: Cyclops_die_0007_17
+  - first:
+      213: 6378590014886637638
+    second: Cyclops_die_0007_18
+  - first:
+      213: -7668572125371075876
+    second: Cyclops_die_0007_19
+  - first:
+      213: -4148777461664509445
+    second: Cyclops_die_0007_20
+  - first:
+      213: -470607256625120126
+    second: Cyclops_die_0007_21
+  - first:
+      213: 6463162598622596409
+    second: Cyclops_die_0007_22
+  - first:
+      213: -498369147372998188
+    second: Cyclops_die_0007_23
+  - first:
+      213: 2157909987542833724
+    second: Cyclops_die_0007_24
+  - first:
+      213: -141294374651031660
+    second: Cyclops_die_0007_25
+  - first:
+      213: -6860449768389293019
+    second: Cyclops_die_0007_26
+  - first:
+      213: 8212304986161902321
+    second: Cyclops_die_0007_27
+  - first:
+      213: -6427566163106761302
+    second: Cyclops_die_0007_28
+  - first:
+      213: 1872992999587565609
+    second: Cyclops_die_0007_29
+  - first:
+      213: 3052483488245372091
+    second: Cyclops_die_0007_30
+  - first:
+      213: -5192521640754369405
+    second: Cyclops_die_0007_31
+  - first:
+      213: 6944519918464408833
+    second: Cyclops_die_0007_32
+  - first:
+      213: 4401831101222152749
+    second: Cyclops_die_0007_33
+  - first:
+      213: 6922765363609200699
+    second: Cyclops_die_0007_34
+  - first:
+      213: -8495393333957185601
+    second: Cyclops_die_0007_35
+  - first:
+      213: 391560869918733581
+    second: Cyclops_die_0007_36
+  - first:
+      213: 8502706275720600300
+    second: Cyclops_die_0007_37
+  - first:
+      213: -1946732898375979493
+    second: Cyclops_die_0007_38
+  - first:
+      213: 3173501223721950676
+    second: Cyclops_die_0007_39
+  - first:
+      213: 1079972800175206494
+    second: Cyclops_die_0007_40
+  - first:
+      213: 5411237926469941499
+    second: Cyclops_die_0007_41
+  - first:
+      213: -3550498727893378071
+    second: Cyclops_die_0007_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cyclops_die_0007_0
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 436
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900df6cd2955ca750800000000000000
+      internalID: 6317518466545864713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_1
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 451
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0f1b386544969e0800000000000000
+      internalID: -1627694651950370606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_2
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 427
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c097a80dd23d3700800000000000000
+      internalID: 521629056759206089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 377
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b47795defba73b130800000000000000
+      internalID: 3581341093429081931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_4
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 362
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238009f2eabc984c0800000000000000
+      internalID: -4284669621483599822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 387
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9294947686cb9ca0800000000000000
+      internalID: -6008990997011983718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_6
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 374
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8b161650947a8c50800000000000000
+      internalID: 6668270361543842702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_7
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 378
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4191dcd9b37fa5610800000000000000
+      internalID: 1610871652160968980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_8
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 342
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73956fed98fd1f090800000000000000
+      internalID: -8002369279616460489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_9
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 367
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b2756df44352230800000000000000
+      internalID: 3613351793537788777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_10
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 351
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3501be9312db6f230800000000000000
+      internalID: 3672330496570495059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_11
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 304
+        width: 35
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d62b4d70a1acf9b60800000000000000
+      internalID: 7755139296504623725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_12
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 339
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 847d4937d4cc9a680800000000000000
+      internalID: -8743232568539424952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_13
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 335
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05cc48286ad4c6660800000000000000
+      internalID: 7380359266903051344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_14
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 317
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2daf6591aee98ac0800000000000000
+      internalID: -3852285628474479315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_15
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 335
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d74c62cbc3cb520800000000000000
+      internalID: 2719115053826866485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_16
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 336
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24497207fb648f5d0800000000000000
+      internalID: -3028592961372318654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_17
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 300
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c5ee99c407ca720800000000000000
+      internalID: 2858783337775783058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_18
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 305
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 640fb25c2dd458850800000000000000
+      internalID: 6378590014886637638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_19
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 302
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd27bc42842c39590800000000000000
+      internalID: -7668572125371075876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_20
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 282
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1175931e49c66c0800000000000000
+      internalID: -4148777461664509445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_21
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 272
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c732881311879f0800000000000000
+      internalID: -470607256625120126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_22
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 288
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d8d70e324c1b950800000000000000
+      internalID: 6463162598622596409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_23
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 255
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d171d3a6ef6519f0800000000000000
+      internalID: -498369147372998188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_24
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 261
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a12c853bf62fd10800000000000000
+      internalID: 2157909987542833724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_25
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 254
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f0a2ec3850a0ef0800000000000000
+      internalID: -141294374651031660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_26
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 227
+        width: 74
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ccebba849cac0a0800000000000000
+      internalID: -6860449768389293019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_27
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 196
+        width: 49
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f2795fcfd7f7f170800000000000000
+      internalID: 8212304986161902321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_28
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 263
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa573bd11a2bcc6a0800000000000000
+      internalID: -6427566163106761302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_29
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 181
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 920d537a5353ef910800000000000000
+      internalID: 1872992999587565609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_30
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 215
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb45c9f4f899c5a20800000000000000
+      internalID: 3052483488245372091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_31
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 160
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38cae42341570f7b0800000000000000
+      internalID: -5192521640754369405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_32
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 140
+        width: 40
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d12bb7214ef5060800000000000000
+      internalID: 6944519918464408833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_33
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 122
+        width: 44
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2aec9d8012761d30800000000000000
+      internalID: 4401831101222152749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_34
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 184
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38ed497b6a921060800000000000000
+      internalID: 6922765363609200699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_35
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 169
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbfa246f5cc4a1a80800000000000000
+      internalID: -8495393333957185601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_36
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 164
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d05f27f598a1f6500800000000000000
+      internalID: 391560869918733581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_37
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 175
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea9fc9fe4eaff570800000000000000
+      internalID: 8502706275720600300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_38
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 108
+        width: 53
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1eabbf3eb0dbf4e0800000000000000
+      internalID: -1946732898375979493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_39
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 98
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ddd63e8c8a8a0c20800000000000000
+      internalID: 3173501223721950676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_40
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 131
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50f6813a85dcfe00800000000000000
+      internalID: 1079972800175206494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_41
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 128
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf8bc526934981b40800000000000000
+      internalID: 5411237926469941499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_die_0007_42
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 108
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb5074e7381abec0800000000000000
+      internalID: -3550498727893378071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cyclops_die_0007_0: 6317518466545864713
+      Cyclops_die_0007_1: -1627694651950370606
+      Cyclops_die_0007_10: 3672330496570495059
+      Cyclops_die_0007_11: 7755139296504623725
+      Cyclops_die_0007_12: -8743232568539424952
+      Cyclops_die_0007_13: 7380359266903051344
+      Cyclops_die_0007_14: -3852285628474479315
+      Cyclops_die_0007_15: 2719115053826866485
+      Cyclops_die_0007_16: -3028592961372318654
+      Cyclops_die_0007_17: 2858783337775783058
+      Cyclops_die_0007_18: 6378590014886637638
+      Cyclops_die_0007_19: -7668572125371075876
+      Cyclops_die_0007_2: 521629056759206089
+      Cyclops_die_0007_20: -4148777461664509445
+      Cyclops_die_0007_21: -470607256625120126
+      Cyclops_die_0007_22: 6463162598622596409
+      Cyclops_die_0007_23: -498369147372998188
+      Cyclops_die_0007_24: 2157909987542833724
+      Cyclops_die_0007_25: -141294374651031660
+      Cyclops_die_0007_26: -6860449768389293019
+      Cyclops_die_0007_27: 8212304986161902321
+      Cyclops_die_0007_28: -6427566163106761302
+      Cyclops_die_0007_29: 1872992999587565609
+      Cyclops_die_0007_3: 3581341093429081931
+      Cyclops_die_0007_30: 3052483488245372091
+      Cyclops_die_0007_31: -5192521640754369405
+      Cyclops_die_0007_32: 6944519918464408833
+      Cyclops_die_0007_33: 4401831101222152749
+      Cyclops_die_0007_34: 6922765363609200699
+      Cyclops_die_0007_35: -8495393333957185601
+      Cyclops_die_0007_36: 391560869918733581
+      Cyclops_die_0007_37: 8502706275720600300
+      Cyclops_die_0007_38: -1946732898375979493
+      Cyclops_die_0007_39: 3173501223721950676
+      Cyclops_die_0007_4: -4284669621483599822
+      Cyclops_die_0007_40: 1079972800175206494
+      Cyclops_die_0007_41: 5411237926469941499
+      Cyclops_die_0007_42: -3550498727893378071
+      Cyclops_die_0007_5: -6008990997011983718
+      Cyclops_die_0007_6: 6668270361543842702
+      Cyclops_die_0007_7: 1610871652160968980
+      Cyclops_die_0007_8: -8002369279616460489
+      Cyclops_die_0007_9: 3613351793537788777
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

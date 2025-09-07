@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31aa5224778dec4482b8ed7f6c08b01, type: 3}
+  m_Name: SlashSkillData
+  m_EditorClassIdentifier: 
+  skillName: Slash
+  icon: {fileID: 21300000, guid: b0eafb51fd48c0445a54e03881ff4099, type: 3}
+  damage: 1
+  cooldown: 0.5
+  slashPrefabUpToDown: {fileID: 4906515150785530231, guid: 9e09733d1f85e634bbd65a8e22566d9f, type: 3}
+  slashPrefabDownToUp: {fileID: 4906515150785530231, guid: c3332362932ef3247a98427ce1f656ed, type: 3}
+  effectDuration: 0.4
+  animationTime: 0.1

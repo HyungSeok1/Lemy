@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/1.Scenes/Main/MainMenu.unity
+    guid: 38688c211f1e8d9409f38d86e8d81993
+  - enabled: 0
+    path: Assets/1.Scenes/Chapter1_1.unity
+    guid: ac72b3ada70749d47a0535963dda45f5
+  - enabled: 0
+    path: Assets/1.Scenes/Chapter2_1.unity
+    guid: c169c3d9dcc1de94696270ce53c1a687
+  - enabled: 1
+    path: Assets/1.Scenes/jaeyongpark0121/SkillUITest.unity
+    guid: bbea74d88d68a7a4da651e6bb2f9f8c1
+  - enabled: 1
+    path: Assets/1.Scenes/jaeyongpark0121/Map1/Chapter101_102.unity
+    guid: 9d82b3bd9c987f446babbb0b8a9fa879
+  - enabled: 1
+    path: Assets/1.Scenes/jaeyongpark0121/Map1/Chapter101_103.unity
+    guid: 9d056f5f10d6fe048a45a6ea43866c55
+  - enabled: 1
+    path: Assets/1.Scenes/jaeyongpark0121/Map1/Chapter101_104.unity
+    guid: 68eff2a89071a7c44903be1e127ef5f0
+  - enabled: 0
+    path: Assets/1.Scenes/jaeyongpark0121/Map3/Chapter301_3.unity
+    guid: 12c50a134ddc972468d3dc283ff449f1
+  - enabled: 1
+    path: Assets/1.Scenes/jaeyongpark0121/Temp_Ending/Chapter1001_101.unity
+    guid: d33af2a0e4e91ad4794d6936dcfae5e9
+  - enabled: 0
+    path: Assets/1.Scenes/cchoe/Chapter101_301.unity
+    guid: 612828687c1a6e141bde04d7d6da8938
+  - enabled: 1
+    path: Assets/1.Scenes/Main/Chapter1/Map3/Scene1_3_1.unity
+    guid: 5654b6b272417004997841e208d71dee
+  - enabled: 0
+    path: Assets/1.Scenes/cchoe/Cchoe_Map1.unity
+    guid: 68f7135c4d7086240bb67a7e88f39f19
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 4fd6bbd4c19e90e48b99f9d6484575ec, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_UseUCBPForAssetBundles: 0

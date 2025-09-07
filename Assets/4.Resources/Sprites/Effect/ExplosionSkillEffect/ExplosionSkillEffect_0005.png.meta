@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 386567e35e638904896ac7b8bf5c547a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8713447261407777003
+    second: ExplosionSkillEffect_0005_0
+  - first:
+      213: 6376719967071758265
+    second: ExplosionSkillEffect_0005_1
+  - first:
+      213: 396392854252438814
+    second: ExplosionSkillEffect_0005_2
+  - first:
+      213: 1868919814585281696
+    second: ExplosionSkillEffect_0005_3
+  - first:
+      213: 8468655822026234585
+    second: ExplosionSkillEffect_0005_4
+  - first:
+      213: 4828428867043446880
+    second: ExplosionSkillEffect_0005_5
+  - first:
+      213: 4608123968573290758
+    second: ExplosionSkillEffect_0005_6
+  - first:
+      213: 8438927995631771003
+    second: ExplosionSkillEffect_0005_7
+  - first:
+      213: 5343733325926688098
+    second: ExplosionSkillEffect_0005_8
+  - first:
+      213: 2510787639310665922
+    second: ExplosionSkillEffect_0005_9
+  - first:
+      213: 7521191021049666108
+    second: ExplosionSkillEffect_0005_10
+  - first:
+      213: -5829727943158447811
+    second: ExplosionSkillEffect_0005_11
+  - first:
+      213: -1787960464782799402
+    second: ExplosionSkillEffect_0005_12
+  - first:
+      213: 8038975706426408157
+    second: ExplosionSkillEffect_0005_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ExplosionSkillEffect_0005_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 159
+        width: 462
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be09f415e126ce870800000000000000
+      internalID: 8713447261407777003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionSkillEffect_0005_1
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 559
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7e3755609ae7850800000000000000
+      internalID: 6376719967071758265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionSkillEffect_0005_2
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 556
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1548356335408500800000000000000
+      internalID: 396392854252438814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionSkillEffect_0005_3
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 430
+        width: 49
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac6b0e5bacbfe910800000000000000
+      internalID: 1868919814585281696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionSkillEffect_0005_4
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 321
+        width: 118
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dadaece995b68570800000000000000
+      internalID: 8468655822026234585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionSkillEffect_0005_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 122
+        width: 45
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060dd53f876020340800000000000000
+      internalID: 4828428867043446880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionSkillEffect_0005_6
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 7
+        width: 194
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60936c3a55853ff30800000000000000
+      internalID: 4608123968573290758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionSkillEffect_0005_7
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 119
+        width: 84
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d1bb8fc481d1570800000000000000
+      internalID: 8438927995631771003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionSkillEffect_0005_8
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 124
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265e64ac521c82a40800000000000000
+      internalID: 5343733325926688098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionSkillEffect_0005_9
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 151
+        width: 129
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c8cd832e0c18d220800000000000000
+      internalID: 2510787639310665922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionSkillEffect_0005_10
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 142
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ad5897263a06860800000000000000
+      internalID: 7521191021049666108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionSkillEffect_0005_11
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 82
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d314fdaa255a81fa0800000000000000
+      internalID: -5829727943158447811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionSkillEffect_0005_12
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 10
+        width: 184
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ddcd282e63ef27e0800000000000000
+      internalID: -1787960464782799402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionSkillEffect_0005_13
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 98
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc7a8b00dd209f60800000000000000
+      internalID: 8038975706426408157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ExplosionSkillEffect_0005_0: 8713447261407777003
+      ExplosionSkillEffect_0005_1: 6376719967071758265
+      ExplosionSkillEffect_0005_10: 7521191021049666108
+      ExplosionSkillEffect_0005_11: -5829727943158447811
+      ExplosionSkillEffect_0005_12: -1787960464782799402
+      ExplosionSkillEffect_0005_13: 8038975706426408157
+      ExplosionSkillEffect_0005_2: 396392854252438814
+      ExplosionSkillEffect_0005_3: 1868919814585281696
+      ExplosionSkillEffect_0005_4: 8468655822026234585
+      ExplosionSkillEffect_0005_5: 4828428867043446880
+      ExplosionSkillEffect_0005_6: 4608123968573290758
+      ExplosionSkillEffect_0005_7: 8438927995631771003
+      ExplosionSkillEffect_0005_8: 5343733325926688098
+      ExplosionSkillEffect_0005_9: 2510787639310665922
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

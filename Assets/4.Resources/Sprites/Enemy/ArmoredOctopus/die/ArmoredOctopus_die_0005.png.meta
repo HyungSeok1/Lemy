@@ -1,0 +1,1235 @@
+fileFormatVersion: 2
+guid: bb256278187f73c469fd0a3d09f92082
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5816347607199215120
+    second: ArmoredOctopus_die_0005_0
+  - first:
+      213: 6258406386971703123
+    second: ArmoredOctopus_die_0005_1
+  - first:
+      213: -171858013747636502
+    second: ArmoredOctopus_die_0005_2
+  - first:
+      213: -1502754447197428207
+    second: ArmoredOctopus_die_0005_3
+  - first:
+      213: -2362208255766315542
+    second: ArmoredOctopus_die_0005_4
+  - first:
+      213: 5381855641723645233
+    second: ArmoredOctopus_die_0005_5
+  - first:
+      213: -1853561781006701272
+    second: ArmoredOctopus_die_0005_6
+  - first:
+      213: 472962831331365501
+    second: ArmoredOctopus_die_0005_7
+  - first:
+      213: 5914286895473164384
+    second: ArmoredOctopus_die_0005_8
+  - first:
+      213: 4003155077345587125
+    second: ArmoredOctopus_die_0005_9
+  - first:
+      213: -7219913499043554777
+    second: ArmoredOctopus_die_0005_10
+  - first:
+      213: 2917455438373185542
+    second: ArmoredOctopus_die_0005_11
+  - first:
+      213: 5352502766325636459
+    second: ArmoredOctopus_die_0005_12
+  - first:
+      213: 6186411795786283038
+    second: ArmoredOctopus_die_0005_13
+  - first:
+      213: 45577862635098227
+    second: ArmoredOctopus_die_0005_14
+  - first:
+      213: 2062198837614610303
+    second: ArmoredOctopus_die_0005_15
+  - first:
+      213: -4961177189056176179
+    second: ArmoredOctopus_die_0005_16
+  - first:
+      213: -569100921166261922
+    second: ArmoredOctopus_die_0005_17
+  - first:
+      213: -4071229430824891171
+    second: ArmoredOctopus_die_0005_18
+  - first:
+      213: 5877022288684310323
+    second: ArmoredOctopus_die_0005_19
+  - first:
+      213: 4421989907584918706
+    second: ArmoredOctopus_die_0005_20
+  - first:
+      213: -3817805185047753494
+    second: ArmoredOctopus_die_0005_21
+  - first:
+      213: -8329892462975418918
+    second: ArmoredOctopus_die_0005_22
+  - first:
+      213: 7651426814075822933
+    second: ArmoredOctopus_die_0005_23
+  - first:
+      213: -2624472173680962075
+    second: ArmoredOctopus_die_0005_24
+  - first:
+      213: 930721233502313424
+    second: ArmoredOctopus_die_0005_25
+  - first:
+      213: 1302455233066846431
+    second: ArmoredOctopus_die_0005_26
+  - first:
+      213: 1059992781505951828
+    second: ArmoredOctopus_die_0005_27
+  - first:
+      213: -2151584211711044455
+    second: ArmoredOctopus_die_0005_28
+  - first:
+      213: -6962598831255507366
+    second: ArmoredOctopus_die_0005_29
+  - first:
+      213: 2427413932764458106
+    second: ArmoredOctopus_die_0005_30
+  - first:
+      213: 6024498647133048903
+    second: ArmoredOctopus_die_0005_31
+  - first:
+      213: 5559397663658393619
+    second: ArmoredOctopus_die_0005_32
+  - first:
+      213: 7188926688961739811
+    second: ArmoredOctopus_die_0005_33
+  - first:
+      213: 2641623869270633196
+    second: ArmoredOctopus_die_0005_34
+  - first:
+      213: -8726720086691563089
+    second: ArmoredOctopus_die_0005_35
+  - first:
+      213: -2182973171145216597
+    second: ArmoredOctopus_die_0005_36
+  - first:
+      213: -7012082994646666394
+    second: ArmoredOctopus_die_0005_37
+  - first:
+      213: -384111110131141610
+    second: ArmoredOctopus_die_0005_38
+  - first:
+      213: -3052597563064651259
+    second: ArmoredOctopus_die_0005_39
+  - first:
+      213: 5988219286054960207
+    second: ArmoredOctopus_die_0005_40
+  - first:
+      213: 7330052765186777593
+    second: ArmoredOctopus_die_0005_41
+  - first:
+      213: 9161814864952201724
+    second: ArmoredOctopus_die_0005_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_0
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 465
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f192b6eaae284fa0800000000000000
+      internalID: -5816347607199215120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 428
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 357fb7353735ad650800000000000000
+      internalID: 6258406386971703123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_2
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 472
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae694ca0c007d9df0800000000000000
+      internalID: -171858013747636502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 417
+        width: 66
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 116a82ecac4252be0800000000000000
+      internalID: -1502754447197428207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_4
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 425
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aedbd8d5b10c73fd0800000000000000
+      internalID: -2362208255766315542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_5
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 434
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13dae5d113130ba40800000000000000
+      internalID: 5381855641723645233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_6
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 441
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82dead97163d646e0800000000000000
+      internalID: -1853561781006701272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_7
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 444
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d721871703d409600800000000000000
+      internalID: 472962831331365501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_8
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 398
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0600d60a894c31250800000000000000
+      internalID: 5914286895473164384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_9
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 358
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bf2cfd45501e8730800000000000000
+      internalID: 4003155077345587125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_10
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 389
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a1674ece6bdcb90800000000000000
+      internalID: -7219913499043554777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_11
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 402
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 608e34c8342ec7820800000000000000
+      internalID: 2917455438373185542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_12
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 376
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d922e38e8e74a40800000000000000
+      internalID: 5352502766325636459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_13
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 375
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e18b02250cc8ad550800000000000000
+      internalID: 6186411795786283038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_14
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 362
+        width: 44
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3709cf713dce1a000800000000000000
+      internalID: 45577862635098227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_15
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 399
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f770e34bae66e9c10800000000000000
+      internalID: 2062198837614610303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_16
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 370
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcf198ac1ab562bb0800000000000000
+      internalID: -4961177189056176179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_17
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 309
+        width: 40
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5199883ab52a18f0800000000000000
+      internalID: -569100921166261922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_18
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 298
+        width: 25
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc019827661087c0800000000000000
+      internalID: -4071229430824891171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_19
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 177
+        width: 241
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33fd41e32a06f8150800000000000000
+      internalID: 5877022288684310323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_20
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 288
+        width: 50
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b426f964601e5d30800000000000000
+      internalID: 4421989907584918706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_21
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 342
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec859b696e640bc0800000000000000
+      internalID: -3817805185047753494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_22
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 295
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add752740f6466c80800000000000000
+      internalID: -8329892462975418918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_23
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 268
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55363edf5245f2a60800000000000000
+      internalID: 7651426814075822933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_24
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 298
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e559dc8670049bd0800000000000000
+      internalID: -2624472173680962075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_25
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 227
+        width: 55
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db91dbd7069aec00800000000000000
+      internalID: 930721233502313424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_26
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 265
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd84cce3220431210800000000000000
+      internalID: 1302455233066846431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_27
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 184
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 458f32691d9d5be00800000000000000
+      internalID: 1059992781505951828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_28
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 176
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994df9c1f890422e0800000000000000
+      internalID: -2151584211711044455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_29
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 209
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e277d9041ef5f90800000000000000
+      internalID: -6962598831255507366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_30
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 148
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7c62416c18efa120800000000000000
+      internalID: 2427413932764458106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_31
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 178
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 740df24b9915b9350800000000000000
+      internalID: 6024498647133048903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_32
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 172
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310ce7b58b2f62d40800000000000000
+      internalID: 5559397663658393619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_33
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 166
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32cb3eb2cb234c360800000000000000
+      internalID: 7188926688961739811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_34
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 142
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceaa116c9eee8a420800000000000000
+      internalID: 2641623869270633196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_35
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 178
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9bb7a315674e680800000000000000
+      internalID: -8726720086691563089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_36
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 134
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bad6eab777584b1e0800000000000000
+      internalID: -2182973171145216597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_37
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 146
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66337800ba310be90800000000000000
+      internalID: -7012082994646666394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_38
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 138
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6143a5efafc5baaf0800000000000000
+      internalID: -384111110131141610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_39
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 122
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 502fe4390bef2a5d0800000000000000
+      internalID: -3052597563064651259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_40
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 130
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4cf276b6bd6a1350800000000000000
+      internalID: 5988219286054960207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_41
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 101
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1e3d5572499b560800000000000000
+      internalID: 7330052765186777593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredOctopus_die_0005_42
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 86
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf19e5b041e452f70800000000000000
+      internalID: 9161814864952201724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ArmoredOctopus_die_0005_0: -5816347607199215120
+      ArmoredOctopus_die_0005_1: 6258406386971703123
+      ArmoredOctopus_die_0005_10: -7219913499043554777
+      ArmoredOctopus_die_0005_11: 2917455438373185542
+      ArmoredOctopus_die_0005_12: 5352502766325636459
+      ArmoredOctopus_die_0005_13: 6186411795786283038
+      ArmoredOctopus_die_0005_14: 45577862635098227
+      ArmoredOctopus_die_0005_15: 2062198837614610303
+      ArmoredOctopus_die_0005_16: -4961177189056176179
+      ArmoredOctopus_die_0005_17: -569100921166261922
+      ArmoredOctopus_die_0005_18: -4071229430824891171
+      ArmoredOctopus_die_0005_19: 5877022288684310323
+      ArmoredOctopus_die_0005_2: -171858013747636502
+      ArmoredOctopus_die_0005_20: 4421989907584918706
+      ArmoredOctopus_die_0005_21: -3817805185047753494
+      ArmoredOctopus_die_0005_22: -8329892462975418918
+      ArmoredOctopus_die_0005_23: 7651426814075822933
+      ArmoredOctopus_die_0005_24: -2624472173680962075
+      ArmoredOctopus_die_0005_25: 930721233502313424
+      ArmoredOctopus_die_0005_26: 1302455233066846431
+      ArmoredOctopus_die_0005_27: 1059992781505951828
+      ArmoredOctopus_die_0005_28: -2151584211711044455
+      ArmoredOctopus_die_0005_29: -6962598831255507366
+      ArmoredOctopus_die_0005_3: -1502754447197428207
+      ArmoredOctopus_die_0005_30: 2427413932764458106
+      ArmoredOctopus_die_0005_31: 6024498647133048903
+      ArmoredOctopus_die_0005_32: 5559397663658393619
+      ArmoredOctopus_die_0005_33: 7188926688961739811
+      ArmoredOctopus_die_0005_34: 2641623869270633196
+      ArmoredOctopus_die_0005_35: -8726720086691563089
+      ArmoredOctopus_die_0005_36: -2182973171145216597
+      ArmoredOctopus_die_0005_37: -7012082994646666394
+      ArmoredOctopus_die_0005_38: -384111110131141610
+      ArmoredOctopus_die_0005_39: -3052597563064651259
+      ArmoredOctopus_die_0005_4: -2362208255766315542
+      ArmoredOctopus_die_0005_40: 5988219286054960207
+      ArmoredOctopus_die_0005_41: 7330052765186777593
+      ArmoredOctopus_die_0005_42: 9161814864952201724
+      ArmoredOctopus_die_0005_5: 5381855641723645233
+      ArmoredOctopus_die_0005_6: -1853561781006701272
+      ArmoredOctopus_die_0005_7: 472962831331365501
+      ArmoredOctopus_die_0005_8: 5914286895473164384
+      ArmoredOctopus_die_0005_9: 4003155077345587125
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

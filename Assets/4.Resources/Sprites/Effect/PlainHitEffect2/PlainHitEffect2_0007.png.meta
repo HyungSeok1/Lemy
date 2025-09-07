@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 462c43366fec1e141a3588e49269fff3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -369944473297624142
+    second: PlainHitEffect2_0007_0
+  - first:
+      213: -7678198924278380711
+    second: PlainHitEffect2_0007_1
+  - first:
+      213: -6077163134706957440
+    second: PlainHitEffect2_0007_2
+  - first:
+      213: -4901544798394321992
+    second: PlainHitEffect2_0007_3
+  - first:
+      213: -9101446021968285071
+    second: PlainHitEffect2_0007_4
+  - first:
+      213: 5617200699596466479
+    second: PlainHitEffect2_0007_5
+  - first:
+      213: -4342961723430884563
+    second: PlainHitEffect2_0007_6
+  - first:
+      213: -5143366129213473881
+    second: PlainHitEffect2_0007_7
+  - first:
+      213: -396261352302052512
+    second: PlainHitEffect2_0007_8
+  - first:
+      213: -1637840604109236819
+    second: PlainHitEffect2_0007_9
+  - first:
+      213: -5158251356397474434
+    second: PlainHitEffect2_0007_10
+  - first:
+      213: -3417137905432883421
+    second: PlainHitEffect2_0007_11
+  - first:
+      213: -4894010961770180769
+    second: PlainHitEffect2_0007_12
+  - first:
+      213: -1286005523608263917
+    second: PlainHitEffect2_0007_13
+  - first:
+      213: -7938883133298867800
+    second: PlainHitEffect2_0007_14
+  - first:
+      213: -8218558070569196334
+    second: PlainHitEffect2_0007_15
+  - first:
+      213: 9000567100756270180
+    second: PlainHitEffect2_0007_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlainHitEffect2_0007_0
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 726
+        width: 332
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b3e97a2671bddaf0800000000000000
+      internalID: -369944473297624142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlainHitEffect2_0007_1
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 706
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957c99b52ce817590800000000000000
+      internalID: -7678198924278380711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlainHitEffect2_0007_2
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 659
+        width: 66
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08341b1c35499aba0800000000000000
+      internalID: -6077163134706957440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlainHitEffect2_0007_3
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 731
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3fa01b9f63afbb0800000000000000
+      internalID: -4901544798394321992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlainHitEffect2_0007_4
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 657
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1723036801b21b180800000000000000
+      internalID: -9101446021968285071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlainHitEffect2_0007_5
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 690
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29e58b664e44fd40800000000000000
+      internalID: 5617200699596466479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlainHitEffect2_0007_6
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 601
+        width: 132
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ba8c19253bab3c0800000000000000
+      internalID: -4342961723430884563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlainHitEffect2_0007_7
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 641
+        width: 57
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab747691c71f98b0800000000000000
+      internalID: -5143366129213473881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlainHitEffect2_0007_8
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 595
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06bf1d94662308af0800000000000000
+      internalID: -396261352302052512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlainHitEffect2_0007_9
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 555
+        width: 117
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da59b51f5a83549e0800000000000000
+      internalID: -1637840604109236819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlainHitEffect2_0007_10
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 603
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d60cf88b53a68b0800000000000000
+      internalID: -5158251356397474434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlainHitEffect2_0007_11
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 467
+        width: 87
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32f86260e23e390d0800000000000000
+      internalID: -3417137905432883421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlainHitEffect2_0007_12
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 545
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5f02d8b5faf41cb0800000000000000
+      internalID: -4894010961770180769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlainHitEffect2_0007_13
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 339
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313a3223ac0372ee0800000000000000
+      internalID: -1286005523608263917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlainHitEffect2_0007_14
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 341
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a1816e2adb63d190800000000000000
+      internalID: -7938883133298867800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlainHitEffect2_0007_15
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 274
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4adc58af0d1fd80800000000000000
+      internalID: -8218558070569196334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlainHitEffect2_0007_16
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 161
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c15a1571078ec70800000000000000
+      internalID: 9000567100756270180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlainHitEffect2_0007_0: -369944473297624142
+      PlainHitEffect2_0007_1: -7678198924278380711
+      PlainHitEffect2_0007_10: -5158251356397474434
+      PlainHitEffect2_0007_11: -3417137905432883421
+      PlainHitEffect2_0007_12: -4894010961770180769
+      PlainHitEffect2_0007_13: -1286005523608263917
+      PlainHitEffect2_0007_14: -7938883133298867800
+      PlainHitEffect2_0007_15: -8218558070569196334
+      PlainHitEffect2_0007_16: 9000567100756270180
+      PlainHitEffect2_0007_2: -6077163134706957440
+      PlainHitEffect2_0007_3: -4901544798394321992
+      PlainHitEffect2_0007_4: -9101446021968285071
+      PlainHitEffect2_0007_5: 5617200699596466479
+      PlainHitEffect2_0007_6: -4342961723430884563
+      PlainHitEffect2_0007_7: -5143366129213473881
+      PlainHitEffect2_0007_8: -396261352302052512
+      PlainHitEffect2_0007_9: -1637840604109236819
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

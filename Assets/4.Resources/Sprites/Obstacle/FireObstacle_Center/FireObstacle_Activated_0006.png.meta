@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: 3f5e901643082654fb85e1a60e991a79
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4669646526763713453
+    second: FireObstacle_Activated_0006_0
+  - first:
+      213: 1935776782223153401
+    second: FireObstacle_Activated_0006_1
+  - first:
+      213: 3746971753258081640
+    second: FireObstacle_Activated_0006_2
+  - first:
+      213: -9156665037826843362
+    second: FireObstacle_Activated_0006_3
+  - first:
+      213: 4782723216386528485
+    second: FireObstacle_Activated_0006_4
+  - first:
+      213: 6729777835538721167
+    second: FireObstacle_Activated_0006_5
+  - first:
+      213: 7436251755285658554
+    second: FireObstacle_Activated_0006_6
+  - first:
+      213: -8634834949231704297
+    second: FireObstacle_Activated_0006_7
+  - first:
+      213: -2304814158555081508
+    second: FireObstacle_Activated_0006_8
+  - first:
+      213: -3167893144862361447
+    second: FireObstacle_Activated_0006_9
+  - first:
+      213: -8232064936914378829
+    second: FireObstacle_Activated_0006_10
+  - first:
+      213: 6261964426001144776
+    second: FireObstacle_Activated_0006_11
+  - first:
+      213: 1157554092991401295
+    second: FireObstacle_Activated_0006_12
+  - first:
+      213: -458750153758400612
+    second: FireObstacle_Activated_0006_13
+  - first:
+      213: 5266951391376975001
+    second: FireObstacle_Activated_0006_14
+  - first:
+      213: 8415197754784380494
+    second: FireObstacle_Activated_0006_15
+  - first:
+      213: 4194358703836909569
+    second: FireObstacle_Activated_0006_16
+  - first:
+      213: 3282387141402580472
+    second: FireObstacle_Activated_0006_17
+  - first:
+      213: -3424208192172365691
+    second: FireObstacle_Activated_0006_18
+  - first:
+      213: 4470392311424223478
+    second: FireObstacle_Activated_0006_19
+  - first:
+      213: -6092201878839837277
+    second: FireObstacle_Activated_0006_20
+  - first:
+      213: -6838395603533607099
+    second: FireObstacle_Activated_0006_21
+  - first:
+      213: -5203730962640787885
+    second: FireObstacle_Activated_0006_22
+  - first:
+      213: 2806097678625676087
+    second: FireObstacle_Activated_0006_23
+  - first:
+      213: 2126729231211885395
+    second: FireObstacle_Activated_0006_24
+  - first:
+      213: -6976590141458417676
+    second: FireObstacle_Activated_0006_25
+  - first:
+      213: 3537563764615511558
+    second: FireObstacle_Activated_0006_26
+  - first:
+      213: 5740069798056315442
+    second: FireObstacle_Activated_0006_27
+  - first:
+      213: 7229727062663708171
+    second: FireObstacle_Activated_0006_28
+  - first:
+      213: -734281629665766757
+    second: FireObstacle_Activated_0006_29
+  - first:
+      213: 217252090591073240
+    second: FireObstacle_Activated_0006_30
+  - first:
+      213: 555571318991009923
+    second: FireObstacle_Activated_0006_31
+  - first:
+      213: -5638699241973499465
+    second: FireObstacle_Activated_0006_32
+  - first:
+      213: -1212948204314055361
+    second: FireObstacle_Activated_0006_33
+  - first:
+      213: 4282952101569508343
+    second: FireObstacle_Activated_0006_34
+  - first:
+      213: -2079923617116301143
+    second: FireObstacle_Activated_0006_35
+  - first:
+      213: -6508217805178683676
+    second: FireObstacle_Activated_0006_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_0
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 749
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3436676caedc040800000000000000
+      internalID: 4669646526763713453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_1
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 763
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f81cdc2ab24dda10800000000000000
+      internalID: 1935776782223153401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_2
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 763
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86dde5015faeff330800000000000000
+      internalID: 3746971753258081640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_3
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 749
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d971589adfce080800000000000000
+      internalID: -9156665037826843362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 49
+        width: 697
+        height: 697
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e49bb3ec65af5240800000000000000
+      internalID: 4782723216386528485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_5
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 731
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8925981949f46d50800000000000000
+      internalID: 6729777835538721167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_6
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 736
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb3d2e829fd23760800000000000000
+      internalID: 7436251755285658554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_7
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 736
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7178aecec57ea2880800000000000000
+      internalID: -8634834949231704297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_8
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 737
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd49806fbb7a300e0800000000000000
+      internalID: -2304814158555081508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_9
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 731
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 998751e08f16904d0800000000000000
+      internalID: -3167893144862361447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_10
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 522
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf15432e84d1cd80800000000000000
+      internalID: -8232064936914378829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_11
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 523
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb5ee7d777f6e650800000000000000
+      internalID: 6261964426001144776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 457
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d4d098055701010800000000000000
+      internalID: 1157554092991401295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_13
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 457
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9f139c6a2132a9f0800000000000000
+      internalID: -458750153758400612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 413
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994264c8268f71940800000000000000
+      internalID: 5266951391376975001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_15
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 424
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e467698b5c9c8c470800000000000000
+      internalID: 8415197754784380494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_16
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 425
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10054cab40b553a30800000000000000
+      internalID: 4194358703836909569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_17
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 414
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f55c9ad6b16d8d20800000000000000
+      internalID: 3282387141402580472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_18
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 388
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 588659c9ac4ca70d0800000000000000
+      internalID: -3424208192172365691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_19
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 389
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f804114f160a0e30800000000000000
+      internalID: 4470392311424223478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 365
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3adb8c74ba6247ba0800000000000000
+      internalID: -6092201878839837277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_21
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 359
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f49c11e632911a0800000000000000
+      internalID: -6838395603533607099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_22
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 359
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35628119242a8c7b0800000000000000
+      internalID: -5203730962640787885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_23
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 366
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b188ba8f241f620800000000000000
+      internalID: 2806097678625676087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_24
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 318
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 353f2d7c7f8a38d10800000000000000
+      internalID: 2126729231211885395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_25
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 319
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7f0eada3c2e2f90800000000000000
+      internalID: -6976590141458417676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_26
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 236
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e73384083f71130800000000000000
+      internalID: 3537563764615511558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_27
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 237
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a4813b113d8af40800000000000000
+      internalID: 5740069798056315442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_28
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 34
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e39117576255460800000000000000
+      internalID: 7229727062663708171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_29
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 48
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b925daa8fbe4fc5f0800000000000000
+      internalID: -734281629665766757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_30
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 38
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3546610a5d30300800000000000000
+      internalID: 217252090591073240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_31
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 47
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 388badbcb29c5b700800000000000000
+      internalID: 555571318991009923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_32
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 34
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9b7ee1ae05fb1b0800000000000000
+      internalID: -5638699241973499465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_33
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 28
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3da9eed80eba2fe0800000000000000
+      internalID: -1212948204314055361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_34
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 17
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f3301c8e3a107b30800000000000000
+      internalID: 4282952101569508343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_35
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 17
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a856d97d70a223e0800000000000000
+      internalID: -2079923617116301143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Activated_0006_36
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 28
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eeb371636a2ea5a0800000000000000
+      internalID: -6508217805178683676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FireObstacle_Activated_0006_0: 4669646526763713453
+      FireObstacle_Activated_0006_1: 1935776782223153401
+      FireObstacle_Activated_0006_10: -8232064936914378829
+      FireObstacle_Activated_0006_11: 6261964426001144776
+      FireObstacle_Activated_0006_12: 1157554092991401295
+      FireObstacle_Activated_0006_13: -458750153758400612
+      FireObstacle_Activated_0006_14: 5266951391376975001
+      FireObstacle_Activated_0006_15: 8415197754784380494
+      FireObstacle_Activated_0006_16: 4194358703836909569
+      FireObstacle_Activated_0006_17: 3282387141402580472
+      FireObstacle_Activated_0006_18: -3424208192172365691
+      FireObstacle_Activated_0006_19: 4470392311424223478
+      FireObstacle_Activated_0006_2: 3746971753258081640
+      FireObstacle_Activated_0006_20: -6092201878839837277
+      FireObstacle_Activated_0006_21: -6838395603533607099
+      FireObstacle_Activated_0006_22: -5203730962640787885
+      FireObstacle_Activated_0006_23: 2806097678625676087
+      FireObstacle_Activated_0006_24: 2126729231211885395
+      FireObstacle_Activated_0006_25: -6976590141458417676
+      FireObstacle_Activated_0006_26: 3537563764615511558
+      FireObstacle_Activated_0006_27: 5740069798056315442
+      FireObstacle_Activated_0006_28: 7229727062663708171
+      FireObstacle_Activated_0006_29: -734281629665766757
+      FireObstacle_Activated_0006_3: -9156665037826843362
+      FireObstacle_Activated_0006_30: 217252090591073240
+      FireObstacle_Activated_0006_31: 555571318991009923
+      FireObstacle_Activated_0006_32: -5638699241973499465
+      FireObstacle_Activated_0006_33: -1212948204314055361
+      FireObstacle_Activated_0006_34: 4282952101569508343
+      FireObstacle_Activated_0006_35: -2079923617116301143
+      FireObstacle_Activated_0006_36: -6508217805178683676
+      FireObstacle_Activated_0006_4: 4782723216386528485
+      FireObstacle_Activated_0006_5: 6729777835538721167
+      FireObstacle_Activated_0006_6: 7436251755285658554
+      FireObstacle_Activated_0006_7: -8634834949231704297
+      FireObstacle_Activated_0006_8: -2304814158555081508
+      FireObstacle_Activated_0006_9: -3167893144862361447
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

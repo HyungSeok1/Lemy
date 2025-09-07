@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 90b003c85de75ac4e92f79569f999251
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1511475437449327186
+    second: Junkmass_die_0010_0
+  - first:
+      213: 3051851811143934789
+    second: Junkmass_die_0010_1
+  - first:
+      213: -7032920769352124560
+    second: Junkmass_die_0010_2
+  - first:
+      213: 3738656813515996233
+    second: Junkmass_die_0010_3
+  - first:
+      213: -4471505097195852097
+    second: Junkmass_die_0010_4
+  - first:
+      213: 2991406395029008055
+    second: Junkmass_die_0010_5
+  - first:
+      213: -3006292180110198551
+    second: Junkmass_die_0010_6
+  - first:
+      213: -6990998509377712877
+    second: Junkmass_die_0010_7
+  - first:
+      213: 3556709756570942115
+    second: Junkmass_die_0010_8
+  - first:
+      213: 7647101760162560209
+    second: Junkmass_die_0010_9
+  - first:
+      213: -8417461168406618288
+    second: Junkmass_die_0010_10
+  - first:
+      213: 8063769483854971257
+    second: Junkmass_die_0010_11
+  - first:
+      213: 6874286230710981775
+    second: Junkmass_die_0010_12
+  - first:
+      213: -4763663828556926432
+    second: Junkmass_die_0010_13
+  - first:
+      213: -8595826616274053557
+    second: Junkmass_die_0010_14
+  - first:
+      213: 5234845984551844763
+    second: Junkmass_die_0010_15
+  - first:
+      213: -4004001046773032482
+    second: Junkmass_die_0010_16
+  - first:
+      213: -3165151208760991095
+    second: Junkmass_die_0010_17
+  - first:
+      213: -815781948266619676
+    second: Junkmass_die_0010_18
+  - first:
+      213: -1493889350889637864
+    second: Junkmass_die_0010_19
+  - first:
+      213: -4477087082475663721
+    second: Junkmass_die_0010_20
+  - first:
+      213: -2935999670788043583
+    second: Junkmass_die_0010_21
+  - first:
+      213: 4581973811780282690
+    second: Junkmass_die_0010_22
+  - first:
+      213: 7039735794150112799
+    second: Junkmass_die_0010_23
+  - first:
+      213: -130115855252393286
+    second: Junkmass_die_0010_24
+  - first:
+      213: -4389190429607346756
+    second: Junkmass_die_0010_25
+  - first:
+      213: -5884513167220151718
+    second: Junkmass_die_0010_26
+  - first:
+      213: -5724976546951842947
+    second: Junkmass_die_0010_27
+  - first:
+      213: -5691043223879497187
+    second: Junkmass_die_0010_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Junkmass_die_0010_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 413
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25235e7f6e6d9f410800000000000000
+      internalID: 1511475437449327186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_1
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 384
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 543ed568d0b5a5a20800000000000000
+      internalID: 3051851811143934789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_2
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 373
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 077bc4182db066e90800000000000000
+      internalID: -7032920769352124560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_3
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 326
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94cf6ba409062e330800000000000000
+      internalID: 3738656813515996233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_4
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 310
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbeea4e1ec502f1c0800000000000000
+      internalID: -4471505097195852097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_5
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 331
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7be2982644c938920800000000000000
+      internalID: 2991406395029008055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_6
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 323
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e83f71b0318746d0800000000000000
+      internalID: -3006292180110198551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_7
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 272
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31d814745ebfafe90800000000000000
+      internalID: -6990998509377712877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_8
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 303
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aab399eda8fb5130800000000000000
+      internalID: 3556709756570942115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_9
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 302
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d8f0c7e886ff1a60800000000000000
+      internalID: 7647101760162560209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_10
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 285
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f9a7a3aab2f2b80800000000000000
+      internalID: -8417461168406618288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_11
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 263
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9718fc33f9348ef60800000000000000
+      internalID: 8063769483854971257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_12
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 276
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8413e1c7ee566f50800000000000000
+      internalID: 6874286230710981775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_13
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 271
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022bc75acf014edb0800000000000000
+      internalID: -4763663828556926432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 243
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4613223c3d75b880800000000000000
+      internalID: -8595826616274053557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_15
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 233
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9bb71300b8e5a840800000000000000
+      internalID: 5234845984551844763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_16
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 245
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed91dc6134eee68c0800000000000000
+      internalID: -4004001046773032482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_17
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 231
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 982276dcebf1314d0800000000000000
+      internalID: -3165151208760991095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_18
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 224
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec5467e3a2cda4f0800000000000000
+      internalID: -815781948266619676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 207
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 818fb72ec83a44be0800000000000000
+      internalID: -1493889350889637864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_20
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 201
+        width: 56
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79e4c84e4013ed1c0800000000000000
+      internalID: -4477087082475663721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_21
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 191
+        width: 51
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ccc302eadb3147d0800000000000000
+      internalID: -2935999670788043583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_22
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 167
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2496e4dc7e0769f30800000000000000
+      internalID: 4581973811780282690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_23
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 182
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e7bea186a22b160800000000000000
+      internalID: 7039735794150112799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_24
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 151
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2f80ca15cb13ef0800000000000000
+      internalID: -130115855252393286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_25
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 167
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbdb5b72f867613c0800000000000000
+      internalID: -4389190429607346756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_26
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 133
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5aebbfa372065ea0800000000000000
+      internalID: -5884513167220151718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_27
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 111
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d733e7ba92ccc80b0800000000000000
+      internalID: -5724976546951842947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junkmass_die_0010_28
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 123
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ac44f175a5501b0800000000000000
+      internalID: -5691043223879497187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Junkmass_die_0010_0: 1511475437449327186
+      Junkmass_die_0010_1: 3051851811143934789
+      Junkmass_die_0010_10: -8417461168406618288
+      Junkmass_die_0010_11: 8063769483854971257
+      Junkmass_die_0010_12: 6874286230710981775
+      Junkmass_die_0010_13: -4763663828556926432
+      Junkmass_die_0010_14: -8595826616274053557
+      Junkmass_die_0010_15: 5234845984551844763
+      Junkmass_die_0010_16: -4004001046773032482
+      Junkmass_die_0010_17: -3165151208760991095
+      Junkmass_die_0010_18: -815781948266619676
+      Junkmass_die_0010_19: -1493889350889637864
+      Junkmass_die_0010_2: -7032920769352124560
+      Junkmass_die_0010_20: -4477087082475663721
+      Junkmass_die_0010_21: -2935999670788043583
+      Junkmass_die_0010_22: 4581973811780282690
+      Junkmass_die_0010_23: 7039735794150112799
+      Junkmass_die_0010_24: -130115855252393286
+      Junkmass_die_0010_25: -4389190429607346756
+      Junkmass_die_0010_26: -5884513167220151718
+      Junkmass_die_0010_27: -5724976546951842947
+      Junkmass_die_0010_28: -5691043223879497187
+      Junkmass_die_0010_3: 3738656813515996233
+      Junkmass_die_0010_4: -4471505097195852097
+      Junkmass_die_0010_5: 2991406395029008055
+      Junkmass_die_0010_6: -3006292180110198551
+      Junkmass_die_0010_7: -6990998509377712877
+      Junkmass_die_0010_8: 3556709756570942115
+      Junkmass_die_0010_9: 7647101760162560209
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

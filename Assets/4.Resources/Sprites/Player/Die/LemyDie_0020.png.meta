@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: a0d40f2758961c34d95ffa5baa654e7a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5784633172189193040
+    second: LemyDie_0020_0
+  - first:
+      213: -275073621775976496
+    second: LemyDie_0020_1
+  - first:
+      213: 7135459428557729472
+    second: LemyDie_0020_2
+  - first:
+      213: -1869122252307772423
+    second: LemyDie_0020_3
+  - first:
+      213: -1107456220774290262
+    second: LemyDie_0020_4
+  - first:
+      213: 3017237081127804439
+    second: LemyDie_0020_5
+  - first:
+      213: -318033012052176160
+    second: LemyDie_0020_6
+  - first:
+      213: -1133382220474039464
+    second: LemyDie_0020_7
+  - first:
+      213: 9140695844615839598
+    second: LemyDie_0020_8
+  - first:
+      213: 6228120018773947457
+    second: LemyDie_0020_9
+  - first:
+      213: -568464736337082205
+    second: LemyDie_0020_10
+  - first:
+      213: -1555941799249970812
+    second: LemyDie_0020_11
+  - first:
+      213: -7489058699766404247
+    second: LemyDie_0020_12
+  - first:
+      213: 2729089229434613895
+    second: LemyDie_0020_13
+  - first:
+      213: -5781821546839351849
+    second: LemyDie_0020_14
+  - first:
+      213: 4079840592108807176
+    second: LemyDie_0020_15
+  - first:
+      213: -17578995835749
+    second: LemyDie_0020_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LemyDie_0020_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 271
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bcd8b737cad8bfa0800000000000000
+      internalID: -5784633172189193040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LemyDie_0020_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d776f69ffdbe2cf0800000000000000
+      internalID: -275073621775976496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LemyDie_0020_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 233
+        width: 50
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ce25648b8e360360800000000000000
+      internalID: 7135459428557729472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LemyDie_0020_3
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 187
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fbca6de63b8f06e0800000000000000
+      internalID: -1869122252307772423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LemyDie_0020_4
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 163
+        width: 65
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaca37c4f6681a0f0800000000000000
+      internalID: -1107456220774290262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LemyDie_0020_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 214
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e52c7a3216fd920800000000000000
+      internalID: 3017237081127804439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LemyDie_0020_6
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 147
+        width: 37
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e258c919ae169bf0800000000000000
+      internalID: -318033012052176160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LemyDie_0020_7
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 148
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853c6e910ea6540f0800000000000000
+      internalID: -1133382220474039464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LemyDie_0020_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 118
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f5732f0764ade70800000000000000
+      internalID: 9140695844615839598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LemyDie_0020_9
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1443589b82abe6650800000000000000
+      internalID: 6228120018773947457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LemyDie_0020_10
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 90
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8ca4b85586c18f0800000000000000
+      internalID: -568464736337082205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LemyDie_0020_11
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 106
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 489f5846d2f286ae0800000000000000
+      internalID: -1555941799249970812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LemyDie_0020_12
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 78
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96bef529ac4811890800000000000000
+      internalID: -7489058699766404247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LemyDie_0020_13
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 106
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7807bc0e13cafd520800000000000000
+      internalID: 2729089229434613895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LemyDie_0020_14
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 48
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ddd0f1cfe7d2cfa0800000000000000
+      internalID: -5781821546839351849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LemyDie_0020_15
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 68
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8046dd017618e9830800000000000000
+      internalID: 4079840592108807176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LemyDie_0020_16
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 53
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c92321300fffff0800000000000000
+      internalID: -17578995835749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LemyDie_0020_0: -5784633172189193040
+      LemyDie_0020_1: -275073621775976496
+      LemyDie_0020_10: -568464736337082205
+      LemyDie_0020_11: -1555941799249970812
+      LemyDie_0020_12: -7489058699766404247
+      LemyDie_0020_13: 2729089229434613895
+      LemyDie_0020_14: -5781821546839351849
+      LemyDie_0020_15: 4079840592108807176
+      LemyDie_0020_16: -17578995835749
+      LemyDie_0020_2: 7135459428557729472
+      LemyDie_0020_3: -1869122252307772423
+      LemyDie_0020_4: -1107456220774290262
+      LemyDie_0020_5: 3017237081127804439
+      LemyDie_0020_6: -318033012052176160
+      LemyDie_0020_7: -1133382220474039464
+      LemyDie_0020_8: 9140695844615839598
+      LemyDie_0020_9: 6228120018773947457
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

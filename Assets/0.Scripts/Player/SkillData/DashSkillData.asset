@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41076bd027ae694f8dbabe0a393f258, type: 3}
+  m_Name: DashSkillData
+  m_EditorClassIdentifier: 
+  skillName: Dash
+  icon: {fileID: -3402551408532870362, guid: e449344540955e4459f8040624f7cc7d, type: 3}
+  stackGaugeCost: 0
+  dashPower: 53.64
+  cooldown: 1
+  turnDuration: 0.3

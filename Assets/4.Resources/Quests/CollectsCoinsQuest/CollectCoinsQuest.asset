@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11f1c8644472e1c45bc912603c8f6eb4, type: 3}
+  m_Name: CollectCoinsQuest
+  m_EditorClassIdentifier: 
+  <id>k__BackingField: CollectCoinsQuest
+  displayName: Coin Moara!
+  questPrerequisites: []
+  questStepPrefabs:
+  - {fileID: 587298757790463329, guid: 5cf6d29dfb3981c418876080d4f5cd6b, type: 3}

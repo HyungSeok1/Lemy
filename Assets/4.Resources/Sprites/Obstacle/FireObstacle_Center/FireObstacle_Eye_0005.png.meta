@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 61dab0697e2ca4f4c8ec7823cbbd3be5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3257579173606515541
+    second: FireObstacle_Eye_0005_0
+  - first:
+      213: 7636514966059967285
+    second: FireObstacle_Eye_0005_1
+  - first:
+      213: 1623017348823231166
+    second: FireObstacle_Eye_0005_2
+  - first:
+      213: 8697262392222140082
+    second: FireObstacle_Eye_0005_3
+  - first:
+      213: -2993483520458271414
+    second: FireObstacle_Eye_0005_4
+  - first:
+      213: 3314700235892446797
+    second: FireObstacle_Eye_0005_5
+  - first:
+      213: -1079148153445887645
+    second: FireObstacle_Eye_0005_6
+  - first:
+      213: -3814535605015785250
+    second: FireObstacle_Eye_0005_7
+  - first:
+      213: -4128711326113828939
+    second: FireObstacle_Eye_0005_8
+  - first:
+      213: 6936183456656957029
+    second: FireObstacle_Eye_0005_9
+  - first:
+      213: 6241507605379502802
+    second: FireObstacle_Eye_0005_10
+  - first:
+      213: 3586304073540930528
+    second: FireObstacle_Eye_0005_11
+  - first:
+      213: 4182021341405611049
+    second: FireObstacle_Eye_0005_12
+  - first:
+      213: -3716821312727363311
+    second: FireObstacle_Eye_0005_13
+  - first:
+      213: -5831192278393687699
+    second: FireObstacle_Eye_0005_14
+  - first:
+      213: 8288660426999023008
+    second: FireObstacle_Eye_0005_15
+  - first:
+      213: 4062478070385935561
+    second: FireObstacle_Eye_0005_16
+  - first:
+      213: 7026688727963677746
+    second: FireObstacle_Eye_0005_17
+  - first:
+      213: 4084812551071789579
+    second: FireObstacle_Eye_0005_18
+  - first:
+      213: -3299056192561853888
+    second: FireObstacle_Eye_0005_19
+  - first:
+      213: -3924875782907592916
+    second: FireObstacle_Eye_0005_20
+  - first:
+      213: -1806367786554929649
+    second: FireObstacle_Eye_0005_21
+  - first:
+      213: 4135010140475321290
+    second: FireObstacle_Eye_0005_22
+  - first:
+      213: 8305799814655472621
+    second: FireObstacle_Eye_0005_23
+  - first:
+      213: -8926110117200733026
+    second: FireObstacle_Eye_0005_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_0
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 575
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac19714001cac2d0800000000000000
+      internalID: -3257579173606515541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 582
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53365f1d6e95af960800000000000000
+      internalID: 7636514966059967285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_2
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 582
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebaa7ecfdad168610800000000000000
+      internalID: 1623017348823231166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_3
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 574
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b6c3cec012e2b870800000000000000
+      internalID: 8697262392222140082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_4
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 209
+        width: 371
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a45591a29920576d0800000000000000
+      internalID: -2993483520458271414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_5
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 565
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d46d5417d4e200e20800000000000000
+      internalID: 3314700235892446797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_6
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 564
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 361d6d5d8781601f0800000000000000
+      internalID: -1079148153445887645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_7
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 458
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed054f7d31c001bc0800000000000000
+      internalID: -3814535605015785250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_8
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 458
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bf6ada7ceed3b6c0800000000000000
+      internalID: -4128711326113828939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_9
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 415
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e9af6ba16424060800000000000000
+      internalID: 6936183456656957029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_10
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 415
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d25b81291a4e9650800000000000000
+      internalID: 6241507605379502802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_11
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 400
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb81f7cd8c15c130800000000000000
+      internalID: 3586304073540930528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_12
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 401
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9248591b046890a30800000000000000
+      internalID: 4182021341405611049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_13
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 376
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111d84965b23b6cc0800000000000000
+      internalID: -3716821312727363311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_14
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 376
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61f75d8481731fa0800000000000000
+      internalID: -5831192278393687699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_15
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 355
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a54d1f3ebc370370800000000000000
+      internalID: 8288660426999023008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_16
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 355
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c40b25f742d06830800000000000000
+      internalID: 4062478070385935561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_17
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 312
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23434894b20d38160800000000000000
+      internalID: 7026688727963677746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_18
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 312
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b02f0b87f5b20b830800000000000000
+      internalID: 4084812551071789579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_19
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 207
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a4c4c3fd56732d0800000000000000
+      internalID: -3299056192561853888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_20
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 200
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f7244354a0889c0800000000000000
+      internalID: -3924875782907592916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_21
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 200
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e4fa4911e7ee6e0800000000000000
+      internalID: -1806367786554929649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_22
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 207
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acb6ba580d1826930800000000000000
+      internalID: 4135010140475321290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_23
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 197
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de37b08ece0244370800000000000000
+      internalID: 8305799814655472621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireObstacle_Eye_0005_24
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 188
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9cda361426102480800000000000000
+      internalID: -8926110117200733026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FireObstacle_Eye_0005_0: -3257579173606515541
+      FireObstacle_Eye_0005_1: 7636514966059967285
+      FireObstacle_Eye_0005_10: 6241507605379502802
+      FireObstacle_Eye_0005_11: 3586304073540930528
+      FireObstacle_Eye_0005_12: 4182021341405611049
+      FireObstacle_Eye_0005_13: -3716821312727363311
+      FireObstacle_Eye_0005_14: -5831192278393687699
+      FireObstacle_Eye_0005_15: 8288660426999023008
+      FireObstacle_Eye_0005_16: 4062478070385935561
+      FireObstacle_Eye_0005_17: 7026688727963677746
+      FireObstacle_Eye_0005_18: 4084812551071789579
+      FireObstacle_Eye_0005_19: -3299056192561853888
+      FireObstacle_Eye_0005_2: 1623017348823231166
+      FireObstacle_Eye_0005_20: -3924875782907592916
+      FireObstacle_Eye_0005_21: -1806367786554929649
+      FireObstacle_Eye_0005_22: 4135010140475321290
+      FireObstacle_Eye_0005_23: 8305799814655472621
+      FireObstacle_Eye_0005_24: -8926110117200733026
+      FireObstacle_Eye_0005_3: 8697262392222140082
+      FireObstacle_Eye_0005_4: -2993483520458271414
+      FireObstacle_Eye_0005_5: 3314700235892446797
+      FireObstacle_Eye_0005_6: -1079148153445887645
+      FireObstacle_Eye_0005_7: -3814535605015785250
+      FireObstacle_Eye_0005_8: -4128711326113828939
+      FireObstacle_Eye_0005_9: 6936183456656957029
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

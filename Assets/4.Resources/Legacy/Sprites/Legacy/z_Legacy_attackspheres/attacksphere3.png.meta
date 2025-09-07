@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: b9feb8052bc5e9141919c4250f840a67
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -442737268513905716
+    second: attacksphere3_0
+  - first:
+      213: -6538586354034657049
+    second: attacksphere3_1
+  - first:
+      213: 6192644165746019699
+    second: attacksphere3_2
+  - first:
+      213: -8658347993219550912
+    second: attacksphere3_3
+  - first:
+      213: -6209993725610170030
+    second: attacksphere3_4
+  - first:
+      213: -3523439747508827413
+    second: attacksphere3_5
+  - first:
+      213: 3980342156990628258
+    second: attacksphere3_6
+  - first:
+      213: -6843802751001052283
+    second: attacksphere3_7
+  - first:
+      213: -6326387180040143073
+    second: attacksphere3_8
+  - first:
+      213: 2603563790678768191
+    second: attacksphere3_9
+  - first:
+      213: 2566678304649653466
+    second: attacksphere3_10
+  - first:
+      213: -7509637091310774626
+    second: attacksphere3_11
+  - first:
+      213: -7556684812645802928
+    second: attacksphere3_12
+  - first:
+      213: 2630672788470929705
+    second: attacksphere3_13
+  - first:
+      213: -3922251381870890962
+    second: attacksphere3_14
+  - first:
+      213: 6402932469624102358
+    second: attacksphere3_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.49014723, y: 0.507318}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: attacksphere3_0
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 1631
+        width: 99
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc3e66dccc41bd9f0800000000000000
+      internalID: -442737268513905716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacksphere3_1
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1676
+        width: 159
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e83c8a9a564245a0800000000000000
+      internalID: -6538586354034657049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacksphere3_2
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 1632
+        width: 97
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37dcfa70f01b0f550800000000000000
+      internalID: 6192644165746019699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacksphere3_3
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1463
+        width: 189
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 041be62cf5e57d780800000000000000
+      internalID: -8658347993219550912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacksphere3_4
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 1471
+        width: 181
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 259e997cb9ba1d9a0800000000000000
+      internalID: -6209993725610170030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacksphere3_5
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 1233
+        width: 135
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea8e36b73a3a1fc0800000000000000
+      internalID: -3523439747508827413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacksphere3_6
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 1241
+        width: 122
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a140ff5a140d3730800000000000000
+      internalID: 3980342156990628258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacksphere3_7
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 916
+        width: 240
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58bbdb178ade501a0800000000000000
+      internalID: -6843802751001052283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacksphere3_8
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 916
+        width: 234
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1f3f1ed0682438a0800000000000000
+      internalID: -6326387180040143073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacksphere3_9
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 656
+        width: 133
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a3a7d2977b12420800000000000000
+      internalID: 2603563790678768191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacksphere3_10
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 658
+        width: 129
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc2859b15cae9320800000000000000
+      internalID: 2566678304649653466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacksphere3_11
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 329
+        width: 185
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e96d25c6ad868c790800000000000000
+      internalID: -7509637091310774626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacksphere3_12
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 220
+        width: 91
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c58ae2333412790800000000000000
+      internalID: -7556684812645802928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacksphere3_13
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 223
+        width: 85
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 929981596f6028420800000000000000
+      internalID: 2630672788470929705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacksphere3_14
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 333
+        width: 179
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e20fccf262d5199c0800000000000000
+      internalID: -3922251381870890962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacksphere3_15
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 69
+        width: 144
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd52cc2829cbd850800000000000000
+      internalID: 6402932469624102358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      attacksphere3_0: -442737268513905716
+      attacksphere3_1: -6538586354034657049
+      attacksphere3_10: 2566678304649653466
+      attacksphere3_11: -7509637091310774626
+      attacksphere3_12: -7556684812645802928
+      attacksphere3_13: 2630672788470929705
+      attacksphere3_14: -3922251381870890962
+      attacksphere3_15: 6402932469624102358
+      attacksphere3_2: 6192644165746019699
+      attacksphere3_3: -8658347993219550912
+      attacksphere3_4: -6209993725610170030
+      attacksphere3_5: -3523439747508827413
+      attacksphere3_6: 3980342156990628258
+      attacksphere3_7: -6843802751001052283
+      attacksphere3_8: -6326387180040143073
+      attacksphere3_9: 2603563790678768191
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4304d6215c308047a38474316cf1315, type: 3}
+  m_Name: LarvaMeat
+  m_EditorClassIdentifier: 
+  id: LarvaMeat
+  icon: {fileID: -1072141740072152176, guid: 43bee27e25350b841886eaf63d3086ec, type: 3}
+  itemName: LarvaMeat
+  stackable: 1

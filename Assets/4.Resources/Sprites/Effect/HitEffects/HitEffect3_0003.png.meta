@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: d54612fa945224a45a641d117a4b0a66
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7761346197278846728
+    second: HitEffect3_0003_0
+  - first:
+      213: 4306561933252565760
+    second: HitEffect3_0003_1
+  - first:
+      213: 3082881990734731914
+    second: HitEffect3_0003_2
+  - first:
+      213: 9035636095170613337
+    second: HitEffect3_0003_3
+  - first:
+      213: -6802739572495258097
+    second: HitEffect3_0003_4
+  - first:
+      213: 8755502572072292397
+    second: HitEffect3_0003_5
+  - first:
+      213: -9083533329823363023
+    second: HitEffect3_0003_6
+  - first:
+      213: 8249733169658177711
+    second: HitEffect3_0003_7
+  - first:
+      213: -8104333206305433407
+    second: HitEffect3_0003_8
+  - first:
+      213: 835471861485268347
+    second: HitEffect3_0003_9
+  - first:
+      213: 4077539865212375100
+    second: HitEffect3_0003_10
+  - first:
+      213: 6269545286407823935
+    second: HitEffect3_0003_11
+  - first:
+      213: 1430413767718214253
+    second: HitEffect3_0003_12
+  - first:
+      213: -5237921694515659806
+    second: HitEffect3_0003_13
+  - first:
+      213: -8118768604542618083
+    second: HitEffect3_0003_14
+  - first:
+      213: 7695698519141011441
+    second: HitEffect3_0003_15
+  - first:
+      213: -3105877070490141527
+    second: HitEffect3_0003_16
+  - first:
+      213: 6207996295681865819
+    second: HitEffect3_0003_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HitEffect3_0003_0
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 656
+        width: 29
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80f62abbe37d5bb60800000000000000
+      internalID: 7761346197278846728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitEffect3_0003_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 507
+        width: 44
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b1dbad24bf3cb30800000000000000
+      internalID: 4306561933252565760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitEffect3_0003_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 478
+        width: 111
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8a513636d898ca20800000000000000
+      internalID: 3082881990734731914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitEffect3_0003_3
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 711
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 950975cd727056d70800000000000000
+      internalID: 9035636095170613337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitEffect3_0003_4
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 386
+        width: 98
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e6de9b660d791a0800000000000000
+      internalID: -6802739572495258097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitEffect3_0003_5
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 502
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20536e533bc18970800000000000000
+      internalID: 8755502572072292397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitEffect3_0003_6
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 522
+        width: 46
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130157a209ec0f180800000000000000
+      internalID: -9083533329823363023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitEffect3_0003_7
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 547
+        width: 40
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa8ab3ddb90fc7270800000000000000
+      internalID: 8249733169658177711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitEffect3_0003_8
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 496
+        width: 96
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c813c033ef978f80800000000000000
+      internalID: -8104333206305433407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitEffect3_0003_9
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 457
+        width: 123
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7de9a34b31389b00800000000000000
+      internalID: 835471861485268347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitEffect3_0003_10
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 435
+        width: 226
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c305a7757e4569830800000000000000
+      internalID: 4077539865212375100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitEffect3_0003_11
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 469
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3220937836e10750800000000000000
+      internalID: 6269545286407823935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitEffect3_0003_12
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 394
+        width: 169
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6a1caa3eb9d9d310800000000000000
+      internalID: 1430413767718214253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitEffect3_0003_13
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 355
+        width: 113
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ebf41578f92f47b0800000000000000
+      internalID: -5237921694515659806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitEffect3_0003_14
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 347
+        width: 36
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d16b4a028f6545f80800000000000000
+      internalID: -8118768604542618083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitEffect3_0003_15
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 297
+        width: 85
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ff46e3970d9cca60800000000000000
+      internalID: 7695698519141011441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitEffect3_0003_16
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 240
+        width: 119
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac77619245b5e4d0800000000000000
+      internalID: -3105877070490141527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitEffect3_0003_17
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 231
+        width: 66
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b58fe035dbb372650800000000000000
+      internalID: 6207996295681865819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HitEffect3_0003_0: 7761346197278846728
+      HitEffect3_0003_1: 4306561933252565760
+      HitEffect3_0003_10: 4077539865212375100
+      HitEffect3_0003_11: 6269545286407823935
+      HitEffect3_0003_12: 1430413767718214253
+      HitEffect3_0003_13: -5237921694515659806
+      HitEffect3_0003_14: -8118768604542618083
+      HitEffect3_0003_15: 7695698519141011441
+      HitEffect3_0003_16: -3105877070490141527
+      HitEffect3_0003_17: 6207996295681865819
+      HitEffect3_0003_2: 3082881990734731914
+      HitEffect3_0003_3: 9035636095170613337
+      HitEffect3_0003_4: -6802739572495258097
+      HitEffect3_0003_5: 8755502572072292397
+      HitEffect3_0003_6: -9083533329823363023
+      HitEffect3_0003_7: 8249733169658177711
+      HitEffect3_0003_8: -8104333206305433407
+      HitEffect3_0003_9: 835471861485268347
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
