@@ -2,6 +2,7 @@ using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.Cinemachine;
 using Unity.Mathematics;
 using UnityEngine;
@@ -78,7 +79,7 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
 
     void Update()
     {
-        currentMousePosition = playerInput.actions["Pointer"].ReadValue<Vector2>(); // 마우스 위치 갱신 - 커서와 플레이어가 일정한 최소 거리를 유지
+        currentMousePosition = playerInput.actions["Pointer"].ReadValue<Vector2>();
 
         // 스택시스템 각도 계산 갱신 
         stackSystem.UpdateSpinCharge();
@@ -90,7 +91,7 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
     }
 
 
-    float minRadius = 1f;
+    public float minRadius;
     /// <summary>
     /// 마우스 위치 갱신 - 커서와 플레이어가 일정한 최소 거리를 유지해서, 플레이어 주변에 보이지 않는 원(안전 거리) 안쪽으로는 들어가지 못하도록 함.
     /// </summary>

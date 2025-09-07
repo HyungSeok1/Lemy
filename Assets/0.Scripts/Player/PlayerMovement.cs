@@ -8,14 +8,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float maxSpeed;
     [SerializeField] private float baseSpeedThreshold;
     [SerializeField] private float baseSpeedAccelerationCoef;
-
     [SerializeField] private float accelerationRate;
     [SerializeField] private float decelerationRate;
     [SerializeField] public float brakeCooldown;
 
 
     private Rigidbody2D rb;
-    private StackSystem stackSystem;
     private Animator animator;
     private Player player;
 
@@ -42,7 +40,6 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rb = Player.Instance.rb;
-        stackSystem = Player.Instance.stackSystem;
         animator = Player.Instance.animator;
         env = Player.Instance.envFieldReceiver;
 
@@ -51,7 +48,6 @@ public class PlayerMovement : MonoBehaviour
         player = Player.Instance;
     }
 
-    private float accelCoef;
     private void FixedUpdate()
     {
         lastVelocity = currentVelocity;
@@ -72,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
             if (speed < maxSpeed) // 속도 한계치 안 넘었을때만 가속 적용
             {
                 if (speed < baseSpeedThreshold)
-                    speed = Mathf.MoveTowards(speed, maxSpeed, accelCoef * accelerationRate * Time.fixedDeltaTime);
+                    speed = Mathf.MoveTowards(speed, maxSpeed, baseSpeedAccelerationCoef * accelerationRate * Time.fixedDeltaTime);
                 else
                     speed = Mathf.MoveTowards(speed, maxSpeed, accelerationRate * Time.fixedDeltaTime);
 
@@ -89,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
         {
             speed = 0f;
             isMoving = false;
-            animator.SetBool("isFlying", false); 
+            animator.SetBool("isFlying", false);
         }
 
         // 방향을 즉시 바꾸는 스킬을 사용한 경우 적용되는 코드 (ex. Dash)
@@ -109,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
             SetBodyVelocity(dir * speed);
 
         currentVelocity = rb.linearVelocity;
-        animator.SetBool("isFlying", true); 
+        animator.SetBool("isFlying", true);
     }
 
     public void TryBrake() // 브레이크

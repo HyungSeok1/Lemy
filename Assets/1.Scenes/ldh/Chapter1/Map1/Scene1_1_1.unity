@@ -415,7 +415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6562039363769469402, guid: 9dfd18fa2404ed3449a01a88778752ec, type: 3}
       propertyPath: orthographic size
-      value: 14
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -540,11 +540,27 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3863573248092889516, guid: 74c3bf92996839d45a4e6b449c4c9108, type: 3}
+      propertyPath: debugText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863573248092889516, guid: 74c3bf92996839d45a4e6b449c4c9108, type: 3}
+      propertyPath: minRadius
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863573248092889516, guid: 74c3bf92996839d45a4e6b449c4c9108, type: 3}
       propertyPath: moneyManager
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3863573248092889516, guid: 74c3bf92996839d45a4e6b449c4c9108, type: 3}
+      propertyPath: directionIndicator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863573248092889516, guid: 74c3bf92996839d45a4e6b449c4c9108, type: 3}
       propertyPath: playerInputManager
+      value: 
+      objectReference: {fileID: 1215114205}
+    - target: {fileID: 3863573248092889516, guid: 74c3bf92996839d45a4e6b449c4c9108, type: 3}
+      propertyPath: playerInputController
       value: 
       objectReference: {fileID: 1215114205}
     - target: {fileID: 7342224023359209886, guid: 74c3bf92996839d45a4e6b449c4c9108, type: 3}
@@ -599,7 +615,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44ddaa1710c033c469d94505e7e51382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minRadius: 3
 --- !u!114 &1215114206
 MonoBehaviour:
   m_ObjectHideFlags: 0
