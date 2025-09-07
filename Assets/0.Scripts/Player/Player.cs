@@ -79,7 +79,7 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
 
     void Update()
     {
-        currentMousePosition = playerInput.actions["Pointer"].ReadValue<Vector2>();
+        currentMousePosition = GetProcessedPointerPosition(); // 마우스 위치 갱신 - 커서와 플레이어가 일정한 최소 거리를 유지
 
         // 스택시스템 각도 계산 갱신 
         stackSystem.UpdateSpinCharge();

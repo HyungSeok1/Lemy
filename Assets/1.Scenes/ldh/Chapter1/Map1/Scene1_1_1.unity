@@ -373,6 +373,10 @@ PrefabInstance:
       propertyPath: camBound
       value: 
       objectReference: {fileID: 2101579562}
+    - target: {fileID: 5041406253961592946, guid: 9dfd18fa2404ed3449a01a88778752ec, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
     - target: {fileID: 5365670018186142773, guid: 9dfd18fa2404ed3449a01a88778752ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -186,7 +186,7 @@ public class CursorManager : PersistentSingleton<CursorManager>
 
     private void FollowMouse()
     {
-        Vector2 screenPos = Player.Instance.playerInput.actions["Pointer"].ReadValue<Vector2>(); // 마우스 위치 - 커서는 가공된 값을 쓰지 않음.
+        Vector2 screenPos = Player.Instance.currentMousePosition;
 
         rt.position = screenPos;
 
