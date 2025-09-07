@@ -20,6 +20,13 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
 
     private GameSaveData saveData;
 
+    public int CurrentSlot
+    {
+        get => currentSlot;
+    }
+    private int currentSlot;
+
+
     public void SaveGame(int slot)
     {
         saveData = new GameSaveData();
@@ -43,6 +50,8 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
 
     public void LoadGame(int slot)
     {
+        currentSlot = slot;
+
         string path = GetPathForSlot(slot);
 
         if (!File.Exists(path))
@@ -68,7 +77,22 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
 
         //TODO: position은 씬 로딩 후 적용해야 함. 변경 필요.
         Player.Instance.Load(data.playerData.positionData);
+    }
 
+    public GameSaveData GetCurrentData()
+    {
+        string path = GetPathForSlot(CurrentSlot);
+
+        if (!File.Exists(path))
+        {
+            Debug.LogWarning("path에 json 파일이 없음");
+            return null;
+        }
+
+        string json = File.ReadAllText(path);
+        GameSaveData data = JsonUtility.FromJson<GameSaveData>(json);
+
+        return data;
     }
 
     public SaveMeta PeekMeta(int slot)

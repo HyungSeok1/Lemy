@@ -53,6 +53,8 @@ public abstract class Enemy : Entity, IDamageable
         }
 
         OnEnemyDamaged?.Invoke(Player.Instance.transform.position, transform.position);
+
+        SoundManager.Instance.PlaySFX("frontSlash2", 0.1f);
     }
 
     public virtual void Knockback(Vector2 direction, float force = 5f)

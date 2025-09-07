@@ -112,7 +112,8 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
     private bool isEntering;
     private void EnterDialogue(string knotName)
     {
-        Player.Instance.playerInput.SwitchCurrentActionMap("UI");
+        Player.Instance.playerInputController.EnableUIActionMap();
+
         if (dialoguePlaying) return;
         dialoguePlaying = true;
         isEntering = true;
@@ -186,8 +187,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
 
     public void ExitDialogue()
     {
-
-        Player.Instance.playerInput.SwitchCurrentActionMap("Player");
+        Player.Instance.playerInputController.EnablePlayerActionMap();
         dialoguePlaying = false;
 
         // inform other parts of our system that we've finished dialogue

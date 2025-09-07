@@ -22,13 +22,10 @@ public class Map101_101_Door : MonoBehaviour
             door.localPosition += new Vector3(0, 18 / transform.localScale.y, 0);
 
         }
-    }
-
-    private void OnEnable()
-    {
         // 이벤트 구독
         TimelineManager.Instance.OnTimelineChanged += HandleTimelineChanged;
     }
+
 
     private void OnDisable()
     {

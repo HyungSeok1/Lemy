@@ -15,30 +15,13 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
-        string sceneName = "Chapter1_1";
-        SceneTransitionManager.Instance.TransitionCoroutine("", null);
-
-        //chapter, stage 값 적용
-        GameStateManager.Instance.currentChapter = 1;
-        GameStateManager.Instance.currentMap = 1;
+     
 
     }
 
     public void ContinueGame()
     {
-        PlayerData data = SaveLoadManager.Instance.PlayerData;
-
-        if (data == null)
-        {
-            NewGame();
-        }
-        else
-        {
-            // 저장된 챕터/스테이지 씬 로드
-            string sceneName = $"Chapter{data.stateData.chapter}_{data.stateData.chapter}_{data.stateData.number}";
-            SceneTransitionManager.Instance.TransitionCoroutine("", data);
-
-        }
+      
     }
 
     public void Options()

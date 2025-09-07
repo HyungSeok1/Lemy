@@ -4288,6 +4288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cutscene Trigger
       objectReference: {fileID: 0}
+    - target: {fileID: 7685821068386113159, guid: 844c8083a73b40147b183642998d2be2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
