@@ -18,16 +18,16 @@ EditorBuildSettings:
     path: Assets/1.Scenes/jaeyongpark0121/SkillUITest.unity
     guid: bbea74d88d68a7a4da651e6bb2f9f8c1
   - enabled: 1
-    path: Assets/1.Scenes/jaeyongpark0121/Map1/Chapter101_102.unity
+    path: Assets/1.Scenes/jaeyongpark0121/Legacy/Map1/Chapter101_102.unity
     guid: 9d82b3bd9c987f446babbb0b8a9fa879
   - enabled: 1
-    path: Assets/1.Scenes/jaeyongpark0121/Map1/Chapter101_103.unity
+    path: Assets/1.Scenes/jaeyongpark0121/Legacy/Map1/Chapter101_103.unity
     guid: 9d056f5f10d6fe048a45a6ea43866c55
   - enabled: 1
-    path: Assets/1.Scenes/jaeyongpark0121/Map1/Chapter101_104.unity
+    path: Assets/1.Scenes/jaeyongpark0121/Legacy/Map1/Chapter101_104.unity
     guid: 68eff2a89071a7c44903be1e127ef5f0
   - enabled: 0
-    path: Assets/1.Scenes/jaeyongpark0121/Map3/Chapter301_3.unity
+    path: Assets/1.Scenes/jaeyongpark0121/Legacy/Map3/Chapter301_3.unity
     guid: 12c50a134ddc972468d3dc283ff449f1
   - enabled: 1
     path: Assets/1.Scenes/jaeyongpark0121/Temp_Ending/Chapter1001_101.unity
