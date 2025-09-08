@@ -6,24 +6,15 @@ using UnityEngine.Pool;
 /// </summary>
 public class DroppedItem : MonoBehaviour
 {
-    private IObjectPool<DroppedItem> pool;
     [HideInInspector] public ItemData ItemData;
 
-    [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] new private Rigidbody2D rigidbody2D;
-
-    public void SetPool(IObjectPool<DroppedItem> poolRef)
-    {
-        pool = poolRef;
-    }
 
     public void Init(ItemData data, Vector3 dropPoint, Vector2 speedVector)
     {
         ItemData = data;
         gameObject.transform.position = dropPoint;
         rigidbody2D.linearVelocity = speedVector;
-
-        spriteRenderer.sprite = data.icon;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -35,7 +26,8 @@ public class DroppedItem : MonoBehaviour
     {
         Player.Instance.inventory.AddItem(ItemData, 1);
         print(ItemData);
-    
-        pool.Release(this);
+
+        // DroppedItemManager를 통해 적절한 풀에 반환
+        DroppedItemManager.Instance.ReturnToPool(this);
     }
 }
