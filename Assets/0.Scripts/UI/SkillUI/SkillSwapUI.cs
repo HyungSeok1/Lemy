@@ -1,6 +1,8 @@
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
 
 /// <summary>
 /// skill 선택창 ui
@@ -26,7 +28,7 @@ public class SkillSwapUI : MonoBehaviour
 
     private void Start()
     {
-        playerSkillController = Player.Instance.playerSkillController;    
+        playerSkillController = Player.Instance.playerSkillController;
     }
 
     // Update is called once per frame
@@ -47,9 +49,10 @@ public class SkillSwapUI : MonoBehaviour
             DestorySkillUI();
 
             OnSkillSwapUIClosed?.Invoke();
+            StartCoroutine(LayoutGroupModify(true));
         }
 
-        if(skillSwapUIOpened)
+        if (skillSwapUIOpened)
         {
             // TODO : 창 열린동안 캐릭터 못움직이게 하고싶음..
         }
@@ -94,10 +97,19 @@ public class SkillSwapUI : MonoBehaviour
                     currentSkillSlot.skillImage.sprite = currentSkillSlot.skill.skilldata.icon;
                 }
             }
-            
-
         }
 
+        StartCoroutine(LayoutGroupModify(false));
+    }
+
+    private IEnumerator LayoutGroupModify(bool layoutTurnedOn) // 한번 정렬 후 레이아웃 끄기;;
+    {
+        yield return null; // 한 프레임 대기
+        for (int i = 0; i < skillLineParents.Length; i++)
+        {
+            var layout = skillLineParents[i].GetComponent<HorizontalLayoutGroup>();
+            layout.enabled = layoutTurnedOn;
+        }
     }
 
     void DestorySkillUI()
