@@ -4,10 +4,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ItemData", menuName = "Game/ItemData")]
 public class ItemData : ScriptableObject
 {
-    public string id; // ItemDatabase에서의 매핑에 쓰임
-
     public Sprite icon;
-    public string itemName;
+    public string itemName; // ItemDatabase에서의 매핑에 쓰임
     public bool stackable;
 }
 

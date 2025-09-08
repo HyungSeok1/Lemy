@@ -1,3 +1,4 @@
+using System;
 using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
@@ -10,14 +11,11 @@ public class Cocoon : Enemy
     /// 
     /// </summary>
     /// 
-    [SerializeField] private GameObject itemPrefab;
-    [SerializeField] private Transform itemSpawnPoint;
+    [SerializeField] private GameObject keyObjectPrefab;
+    [SerializeField] private Transform keySpawnPoint;
 
     [SerializeField] private ParticleSystem hitSparkPrefab;
     [SerializeField] private Transform sparkSpawnPoint;
-
-
-
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected override void Start()
@@ -26,37 +24,21 @@ public class Cocoon : Enemy
         currentHealth = 9999; // 사실상 무적
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Open(Action onGetKey)
     {
-        /*
-        if(Input.GetKeyDown(KeyCode.Q))
-        {
-            Open();
-        }
-        */
-    }
-    
-    public void Open()
-    {
-        if (currentState == State.Dead) return;
-
-        // 애니메이션 ( 스프라이트 변경? 컷씬? )
-
         // 파괴되는 소리
         Vector3 pos = transform.position;
         SoundManager.Instance.PlaySFXAt("eggCrack2", pos, 1f);
 
-        InstantiateObject();
+        // 키 생성
+        Vector3 spawnPos = sparkSpawnPoint != null ? sparkSpawnPoint.position : transform.position;
+        var keyObject = Instantiate(keyObjectPrefab, spawnPos, Quaternion.identity);
+        keyObject.transform.localScale = Vector3.one; // 강제로 1,1,1로 맞추기
+        keyObject.SetActive(true);
+        keyObject.GetComponent<Key>().OnGetKey += onGetKey;
 
-        GetComponent<Collider2D>().enabled = false;
 
-        ChangeState(State.Dead);
-
-        gameObject.SetActive(false); // 파괴된 상태가 되는 애니메이션이 있다면 이건 삭제..
-
-        Debug.Log("Open!");
-
+        Destroy(gameObject); 
     }
 
 
@@ -69,25 +51,12 @@ public class Cocoon : Enemy
         Vector3 spawnPos = sparkSpawnPoint != null ? sparkSpawnPoint.position : transform.position;
         var spark = Instantiate(hitSparkPrefab, spawnPos, Quaternion.identity);
         spark.Play();
-
-        Debug.Log("날 때려도 소용없다.");
-
     }
 
-    /// <summary>
-    /// 자신이 정한 위치에, 자신이 정한 오브젝트를 1,1,1로 소환
-    /// </summary>
-    void InstantiateObject()
-    {
-        Vector3 spawnPos = sparkSpawnPoint != null ? sparkSpawnPoint.position : transform.position;
-        var item = Instantiate(itemPrefab, spawnPos, Quaternion.identity);
-        item.transform.localScale = Vector3.one; // 강제로 1,1,1로 맞추기
-        item.SetActive(true);
-    }
 
     protected override void Attack(Player player) { }
     protected override void OnEnterState(State newState) { }
-    protected override void OnUpdateState(State state){ }
+    protected override void OnUpdateState(State state) { }
     protected override void OnExitState(State oldState) { }
 
 }

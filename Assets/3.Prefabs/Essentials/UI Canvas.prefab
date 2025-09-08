@@ -3682,7 +3682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8846045562466578563
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6416,6 +6416,7 @@ GameObject:
   - component: {fileID: 6525123347309756563}
   - component: {fileID: 4801158732127768607}
   - component: {fileID: 8414123135653678720}
+  - component: {fileID: 3947738542143252110}
   m_Layer: 5
   m_Name: UI Canvas
   m_TagString: Untagged
@@ -6531,6 +6532,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd93c46a0e138d4e81031f6d25ae854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiCanvasGroup: {fileID: 3947738542143252110}
+  fadeDuration: 0.5
+--- !u!225 &3947738542143252110
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4710143463715671188}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &4806613037024636440
 GameObject:
   m_ObjectHideFlags: 0
@@ -8672,7 +8687,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -0.4249878, y: 400}
+  m_AnchoredPosition: {x: -0.42492676, y: 400}
   m_SizeDelta: {x: -1760.85, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5988016598805847855

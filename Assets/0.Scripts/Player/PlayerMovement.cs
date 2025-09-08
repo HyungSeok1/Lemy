@@ -81,12 +81,6 @@ public class PlayerMovement : MonoBehaviour
         if (!isLeftHeld || speed >= maxSpeed)
             speed = Mathf.Lerp(speed, 0, Time.fixedDeltaTime * decelerationRate);
 
-        else if (speed < 1f) // 속도가 거의 0에 가까워지면 이동 중이 아니라고 판단
-        {
-            speed = 0f;
-            isMoving = false;
-            animator.SetBool("isFlying", false);
-        }
 
         // 방향을 즉시 바꾸는 스킬을 사용한 경우 적용되는 코드 (ex. Dash)
         if (skillVelocity != Vector2.zero)
@@ -104,8 +98,17 @@ public class PlayerMovement : MonoBehaviour
         else
             SetBodyVelocity(dir * speed);
 
+        if (speed < 1f) // 속도가 거의 0에 가까워지면 이동 중이 아니라고 판단
+        {
+            speed = 0f;
+            isMoving = false;
+            animator.SetBool("isFlying", false);
+        }
+        else
+        {
+            animator.SetBool("isFlying", true);
+        }
         currentVelocity = rb.linearVelocity;
-        animator.SetBool("isFlying", true);
     }
 
     public void TryBrake() // 브레이크
@@ -135,6 +138,13 @@ public class PlayerMovement : MonoBehaviour
         speed = 0f;
         dir = Vector2.zero;
         rb.linearVelocity = Vector2.zero;
+    }
+
+    public void OnEnterDialogue()
+    {
+        StopMovement();
+        isLeftHeld = false;
+        gameObject.transform.rotation = Quaternion.identity;
     }
 
     public float GetMaxSpeed()

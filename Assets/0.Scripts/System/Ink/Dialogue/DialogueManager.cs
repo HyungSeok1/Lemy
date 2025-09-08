@@ -112,6 +112,9 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
     private bool isEntering;
     private void EnterDialogue(string knotName)
     {
+        // 멈추기
+        Player.Instance.movement.OnEnterDialogue();
+
         Player.Instance.playerInputController.EnableUIActionMap();
 
         if (dialoguePlaying) return;

@@ -17,13 +17,13 @@ public class ItemDatabase : ScriptableObject
     {
         // id가 비거나 중복인 항목은 첫 항목만 채택
         idItemMap = db
-            .Where(i => i != null && !string.IsNullOrWhiteSpace(i.id))
-            .GroupBy(i => i.id)
+            .Where(i => i != null && !string.IsNullOrWhiteSpace(i.itemName))
+            .GroupBy(i => i.itemName)
             .ToDictionary(g => g.Key, g => g.First());
     }
 
     /// 세이브용 ID
-    public string GetId(ItemData item) => item ? item.id : null;
+    public string GetId(ItemData item) => item ? item.itemName : null;
 
     /// 로드시 ID → ItemData 복구
     public ItemData GetById(string id)

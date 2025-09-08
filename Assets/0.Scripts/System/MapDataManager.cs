@@ -11,7 +11,7 @@ public class MapDataManager : PersistentSingleton<MapDataManager>, ISaveable<Map
 
     // 맵별 데이터 넣어놓기
     public List<MapData> mapdataList;
-    private MapData currentMapData;
+    public MapData currentMapData;
 
 
     // (chapter,map,number) 키
@@ -128,7 +128,7 @@ public class MapDataManager : PersistentSingleton<MapDataManager>, ISaveable<Map
         {
             foreach (var entityGuide in data.entityGuideList)
                 entityGuide.spawnFlag = true;
-            foreach (var sectionEntry in data.sectionList)
+            foreach (var sectionEntry in data.challengeZoneList)
                 sectionEntry.executionFlag = true;
         }
     }

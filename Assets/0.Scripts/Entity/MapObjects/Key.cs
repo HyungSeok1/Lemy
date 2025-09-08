@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Playables;
@@ -12,45 +13,40 @@ using UnityEngine.SceneManagement;
 /// 
 /// HasKey로 어디서든 
 /// </summary>
-public class Key : MonoBehaviour, ICutsceneObject
+public class Key : MonoBehaviour
 {
-    [SerializeField] KeyData keyData;
-    [SerializeField] GameObject keyEffect;
+    public event Action OnGetKey;
+
+    [SerializeField] private KeyData keyData; // 그냥 씬 전환용도
+    [SerializeField] private ItemData keyItem;
+    [SerializeField] private GameObject keyEffect;
 
     private void Start()
     {
-        if (HasKey(keyData.keyID)) gameObject.SetActive(false); // 이미 가지고있으면 삭제
-
-        if (keyEffect == null)
+        var sr = keyEffect.GetComponent<SpriteRenderer>();
+        if (sr != null)
         {
-            keyEffect = transform.Find("KeyEffect").gameObject;
-        }
-
-        if (keyEffect != null)
-        {
-            var sr = keyEffect.GetComponent<SpriteRenderer>();
-            if (sr != null)
-            {
-                sr.DOKill(); // 혹시 모를 중복 애니메이션 제거
-                sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 1f);
-                sr.DOFade(0f, 1f) // 1초 동안 alpha 0까지
-                  .SetLoops(-1, LoopType.Yoyo); // 무한 반복 (1 ↔ 0 ↔ 1)
-            }
+            sr.DOKill(); // 혹시 모를 중복 애니메이션 제거
+            sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 1f);
+            sr.DOFade(0f, 1f) // 1초 동안 alpha 0까지
+              .SetLoops(-1, LoopType.Yoyo); // 무한 반복 (1 ↔ 0 ↔ 1)
         }
     }
 
-    /*
-    private void OnEnable()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.LogError("켜짐");
-        // TimelineManager에 바인딩
-        if (TimelineManager.Instance != null)
+        if (collision.CompareTag("Player"))
         {
-            Debug.LogError("바인드");
-            TimelineManager.Instance.BindByTrackName(gameObject, "Key");
+            OnGetKey?.Invoke(); // 제약구간 클리어 처리
+            Player.Instance.inventory.AddItem(keyItem, 1); // 아이템 주기
+
+            // 컷씬 실행
+            TimelineManager.Instance.PlayTimeline(TimelineID.GetKey); // 컷씬에서 씬 변경도 추가할까 아니면 그냥 이 코드에 둔 채로 놔둘까....
+            StartCoroutine(TestTransition());
         }
     }
-    */
+
+    #region 키 주웠을때의 애니메이션 나오는 타임라인 관련
     private void OnEnable()
     {
         // 이벤트 구독
@@ -63,32 +59,6 @@ public class Key : MonoBehaviour, ICutsceneObject
         if (TimelineManager.Instance != null)
             TimelineManager.Instance.OnTimelineChanged -= HandleTimelineChanged;
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (HasKey(keyData.keyID)) return; // 이미 가지고있으면 반응 X.
-
-        if (collision.CompareTag("Player"))
-        {
-            if (keyData != null)
-            {
-                PlayerPrefs.SetInt($"Key_{keyData.keyID}", 1);
-                PlayerPrefs.Save();
-
-                Debug.Log($"Key {keyData.keyID} 획득!");
-            }
-
-            // 컷씬 실행
-            TimelineManager.Instance.PlayTimeline(TimelineID.GetKey); // 컷씬에서 씬 변경도 추가할까 아니면 그냥 이 코드에 둔 채로 놔둘까....
-            StartCoroutine(TestTransition());
-        }
-    }
-
-    public void SetCameraToKey()
-    {
-        CameraSwitcher.ActiveCamera.Follow = transform;
-    }
-
 
     private IEnumerator TestTransition()
     {
@@ -103,21 +73,11 @@ public class Key : MonoBehaviour, ICutsceneObject
         CameraSwitcher.ActiveCamera.Follow = Player.Instance.transform;
     }
 
-    // 키를 가졌는지 어디서든 체크 가능
-    public static bool HasKey(int id)
-    {
-        return PlayerPrefs.GetInt($"Key_{id}", 0) == 1;
-    }
-
     private void HandleTimelineChanged(PlayableDirector director, PlayableAsset asset)
     {
         // 교체될 때마다 자동 바인딩
         TimelineManager.Instance.BindByTrackName(gameObject, "Key");
     }
-
-    public void BindCutsceneTrackReference()
-    {
-        throw new System.NotImplementedException();
-    }
+    #endregion
 }
 
