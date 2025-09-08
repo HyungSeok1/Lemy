@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6714698d8aa99974185877c104ebd03d
+guid: 1338a45ac09167e48a0c39f8f28d3afa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6509798422530365643
-    second: BackgroundNPC1_0001_0
+      213: -8489250540430570440
+    second: wall6_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BackgroundNPC1_0001_0
+      name: wall6_1_0
       rect:
         serializedVersion: 2
-        x: 74
-        y: 6
-        width: 189
-        height: 349
+        x: 0
+        y: 223
+        width: 5000
+        height: 1640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc81256cc23775a50800000000000000
-      internalID: 6509798422530365643
+      spriteID: 83cc7588c9f103a80800000000000000
+      internalID: -8489250540430570440
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      BackgroundNPC1_0001_0: 6509798422530365643
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
