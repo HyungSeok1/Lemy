@@ -6,18 +6,18 @@ public class PlayerMovement : MonoBehaviour
     //이동 관련 변수들
     [SerializeField] private float rotationSpeed;
     [SerializeField] private float maxSpeed;
-    [SerializeField] private float baseSpeed;
+    [SerializeField] private float baseSpeedThreshold;
+    [SerializeField] private float baseSpeedAccelerationCoef;
     [SerializeField] private float accelerationRate;
     [SerializeField] private float decelerationRate;
     [SerializeField] public float brakeCooldown;
 
-    public float lastBrakeTime = -Mathf.Infinity;
 
     private Rigidbody2D rb;
-    private StackSystem stackSystem;
     private Animator animator;
     private Player player;
 
+    [HideInInspector] public float lastBrakeTime = -Mathf.Infinity;
     [HideInInspector] public Vector2 lastVelocity;
     [HideInInspector] Vector2 currentVelocity;
     [HideInInspector] public bool isLeftHeld = false;
@@ -40,7 +40,6 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rb = Player.Instance.rb;
-        stackSystem = Player.Instance.stackSystem;
         animator = Player.Instance.animator;
         env = Player.Instance.envFieldReceiver;
 
@@ -64,9 +63,14 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, 0f, newAngle);
 
             dir = transform.right;
+
+
             if (speed < maxSpeed) // 속도 한계치 안 넘었을때만 가속 적용
             {
-                speed = Mathf.MoveTowards(speed, maxSpeed, accelerationRate * Time.fixedDeltaTime);
+                if (speed < baseSpeedThreshold)
+                    speed = Mathf.MoveTowards(speed, maxSpeed, baseSpeedAccelerationCoef * accelerationRate * Time.fixedDeltaTime);
+                else
+                    speed = Mathf.MoveTowards(speed, maxSpeed, accelerationRate * Time.fixedDeltaTime);
 
                 if (ghostSkillSpeed != 0f)
                     speed = ghostSkillSpeed;
@@ -77,12 +81,6 @@ public class PlayerMovement : MonoBehaviour
         if (!isLeftHeld || speed >= maxSpeed)
             speed = Mathf.Lerp(speed, 0, Time.fixedDeltaTime * decelerationRate);
 
-        else if (speed < 0.2f) // 속도가 거의 0에 가까워지면 이동 중이 아니라고 판단
-        {
-            speed = 0f;
-            isMoving = false;
-            animator.SetBool("isFlying", false); // 비행 애니메이션 중지
-        }
 
         // 방향을 즉시 바꾸는 스킬을 사용한 경우 적용되는 코드 (ex. Dash)
         if (skillVelocity != Vector2.zero)
@@ -100,6 +98,16 @@ public class PlayerMovement : MonoBehaviour
         else
             SetBodyVelocity(dir * speed);
 
+        if (speed < 1f) // 속도가 거의 0에 가까워지면 이동 중이 아니라고 판단
+        {
+            speed = 0f;
+            isMoving = false;
+            animator.SetBool("isFlying", false);
+        }
+        else
+        {
+            animator.SetBool("isFlying", true);
+        }
         currentVelocity = rb.linearVelocity;
     }
 
@@ -119,7 +127,7 @@ public class PlayerMovement : MonoBehaviour
         if (!isMoving)
         {
             isMoving = true;
-            speed = baseSpeed; // 기본 속도로 시작
+            speed = baseSpeedThreshold; // 기본 속도로 시작
             SetBodyVelocity(transform.right * speed); // 현재 방향으로 속도 설정
             animator.SetBool("isFlying", true); // 비행 애니메이션 시작
         }
@@ -130,6 +138,13 @@ public class PlayerMovement : MonoBehaviour
         speed = 0f;
         dir = Vector2.zero;
         rb.linearVelocity = Vector2.zero;
+    }
+
+    public void OnEnterDialogue()
+    {
+        StopMovement();
+        isLeftHeld = false;
+        gameObject.transform.rotation = Quaternion.identity;
     }
 
     public float GetMaxSpeed()

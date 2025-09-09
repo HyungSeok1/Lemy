@@ -171,10 +171,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 7342224023359209886, guid: 74c3bf92996839d45a4e6b449c4c9108, type: 3}
-      propertyPath: decelerationRate
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -256,6 +252,30 @@ PrefabInstance:
     - target: {fileID: 4710143463715671188, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
       propertyPath: m_Name
       value: UI Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047615897190947331, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047615897190947331, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047615897190947331, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047615897190947331, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5838204292505714967, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5838204292505714967, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8384840362504910870, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
       propertyPath: m_Pivot.x
@@ -390,30 +410,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 826631921884131655, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
-      propertyPath: sfxMaxDistance
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 826631921884131655, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
-      propertyPath: sfxClips.Array.size
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 826631921884131655, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
-      propertyPath: 'sfxClips.Array.data[16]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 8716c71a6becce84e8fc777ab08f657f, type: 3}
-    - target: {fileID: 826631921884131655, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
-      propertyPath: 'sfxClips.Array.data[17]'
-      value: 
-      objectReference: {fileID: 8300000, guid: fe05b02d603e4bd43a32ba58d21c1dab, type: 3}
-    - target: {fileID: 826631921884131655, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
-      propertyPath: 'sfxClips.Array.data[18]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 8672a66cd4e07fe478eeed1393fe60e7, type: 3}
-    - target: {fileID: 826631921884131655, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
-      propertyPath: 'sfxClips.Array.data[19]'
-      value: 
-      objectReference: {fileID: 8300000, guid: e2e2fe2f656781648a1c544ea3700a22, type: 3}
     - target: {fileID: 6099510809330359780, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
       propertyPath: m_Name
       value: Managers

@@ -3,33 +3,32 @@ using UnityEngine;
 public class LdhTest : MonoBehaviour
 {
     [SerializeField] private float damage;
-    void Update()
+    public ItemData data1;
+    public ItemData data2;
+    public ItemData data3;
+
+
+    public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            Player.Instance.health.TakeDamage(damage);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            print(1);
-            print(2);
-
-            var data = SaveLoadManager.Instance.PlayerData;
-            if (data == null)
+            foreach (var mapData in MapDataManager.Instance.mapdataList)
             {
-                Debug.LogWarning("data Load Error");
-                return;
+                foreach (var item in mapData.challengeZoneList)
+                {
+                    print(item.executionFlag);
+                }
             }
-
-            if (SceneTransitionManager.Instance != null)
-                SceneTransitionManager.Instance.StartTransition("", data);
         }
-    }
 
-    public void ASDF()
-    {
-        print("ASDF");
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            Player.Instance.inventory.AddItem(data1, 1);
+            Player.Instance.inventory.AddItem(data2, 1);
+            Player.Instance.inventory.AddItem(data3, 1);
+        }
+
+
     }
 
 }

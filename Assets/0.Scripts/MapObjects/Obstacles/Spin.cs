@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
 /// <summary>
 /// 그냥 GameObject가 회전하도록 하는 코드입니다.
@@ -7,6 +8,8 @@ using System.Collections;
 /// </summary>
 public class Spin : ObstacleBase
 {
+    [SerializeField] private bool reversed;
+
     [SerializeField] private float rotationSpeed = 360f;
     [SerializeField] private float _damage;
 
@@ -21,9 +24,10 @@ public class Spin : ObstacleBase
     }
     void Update()
     {
-        transform.Rotate(0f, 0f, rotationSpeed * Time.deltaTime);
+        transform.Rotate(0f, 0f, (reversed ? -1f : 1f) * rotationSpeed * Time.deltaTime);
+
         timer += Time.deltaTime;
-        if(timer >= time)
+        if (timer >= time)
         {
             SoundManager.Instance.PlaySFXAt("cogSpin3", pos, 1f);
             Debug.Log("Spin Sound");

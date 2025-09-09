@@ -25,13 +25,6 @@ public class PlayerSkillController : MonoBehaviour, ISaveable<PlayerSkillData>
     // Data에서 로드하여 처음에 가져오는 것
     public List<ISkill> learnedSkills = new();
 
-    // Save Data에서 불러와 처음 가지고있던 스킬 장착해주는 것도 처리. 
-    private void Start()
-    {
-
-
-    }
-
     /// <summary>
     /// 특정 스킬을 배웁니다.
     /// </summary>
@@ -78,7 +71,7 @@ public class PlayerSkillController : MonoBehaviour, ISaveable<PlayerSkillData>
             currentSkills[0].ExecuteSkill();
         else
         {
-            Debug.Log("Skill not ready or not assigned.");
+            Debug.LogError("Skill not ready or not assigned.");
         }
     }
 
@@ -90,7 +83,7 @@ public class PlayerSkillController : MonoBehaviour, ISaveable<PlayerSkillData>
             currentSkills[1].ExecuteSkill();
         else
         {
-            Debug.Log("Skill not ready or not assigned.");
+            Debug.LogError("Skill not ready or not assigned.");
         }
     }
     public void ExecuteSkill2(InputAction.CallbackContext context)
@@ -135,7 +128,7 @@ public class PlayerSkillController : MonoBehaviour, ISaveable<PlayerSkillData>
             var skill = skillDatabase.AddSkillComponent(gameObject, learnedSkillName);
             learnedSkills.Add(skill);
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 4; i++)
                 if (learnedSkillName == data.currentSkills[i])
                     ChangeSkill(skill, i); // 이름 같으면 실행
         }

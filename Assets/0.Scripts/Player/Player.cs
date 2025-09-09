@@ -2,10 +2,12 @@ using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.Cinemachine;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// 플레이어의 입력, 애니메이션 등 관리
@@ -49,6 +51,7 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
     public PlayerStats stats;
     public PlayerMovement movement;
     public PlayerInventory inventory;
+    public PlayerInputController playerInputController;
     [SerializeField] private SpriteRenderer spriteRenderer;
 
     // SlashSkill에서 움직임 상태가 바뀌면 스킬 멈춰야해서 만든 프로퍼티 - 박재용
@@ -62,7 +65,7 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
 
     void Start()
     {
-        SetActiveMapKeepingGlobal("Player");
+        playerInputController.EnablePlayerActionMap();
         CutsceneManager.Instance.OnTimelineChanged += BindCutsceneTrackReference;
         RegisterToSwitchTarget();
     }
@@ -76,15 +79,7 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
 
     void Update()
     {
-        if (!GameEventsManager.Instance.dialogueEvents.isInDialogue)
-        {
-            currentMousePosition = playerInput.actions["Pointer"].ReadValue<Vector2>();
-        }
-        else
-        {
-            animator.SetBool("isFlying", false);
-            rb.linearVelocity = Vector2.zero;
-        }
+        currentMousePosition = playerInput.actions["Pointer"].ReadValue<Vector2>();
 
         // 스택시스템 각도 계산 갱신 
         stackSystem.UpdateSpinCharge();
@@ -95,6 +90,24 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
         }
     }
 
+
+    public float minRadius;
+    /// <summary>
+    /// 마우스 위치 갱신 - 커서와 플레이어가 일정한 최소 거리를 유지해서, 플레이어 주변에 보이지 않는 원(안전 거리) 안쪽으로는 들어가지 못하도록 함.
+    /// </summary>
+    /// <returns></returns>
+    public Vector2 GetProcessedPointerPosition()
+    {
+        Vector2 raw = playerInput.actions["Pointer"].ReadValue<Vector2>();
+        Vector2 playerPos = Camera.main.WorldToScreenPoint(Player.Instance.transform.position);
+        Vector2 dir = raw - playerPos;
+        float sqrDir = dir.sqrMagnitude;
+
+        if (sqrDir < minRadius * minRadius)
+            raw = playerPos + dir.normalized * minRadius;
+
+        return raw; // 가공된 값 반환
+    }
 
     public void OnLeftClick(InputAction.CallbackContext context)
     {
@@ -109,29 +122,14 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
         }
     }
 
-    // 액션맵 조작
-    void SetActiveMapKeepingGlobal(string mapToEnable)
-    {
-        foreach (var map in playerInput.actions.actionMaps)
-        {
-            if (map.name == "Global")
-                continue;               // Global은 건드리지 않는다
-            map.Disable();             // Global 외엔 전부 끈다
-        }
-
-        var target = playerInput.actions.FindActionMap(mapToEnable);
-        if (target != null)
-            target.Enable();          // 지정한 맵만 켠다
-        else
-            Debug.LogError($"맵 '{mapToEnable}'을 찾을 수 없습니다.");
-    }
-
     public void DieEffect()
     {
         transform.rotation = quaternion.identity;
         rb.linearVelocity = Vector2.zero;
         movement.speed = 0;
         movement.dir = Vector2.right;
+
+        SoundManager.Instance.PlaySFX("playerDie", 0.1f);
 
         StartCoroutine(DieEffectAndRespawn());
     }
@@ -140,6 +138,9 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
     private IEnumerator DieEffectAndRespawn()
     {
         yield return null;
+
+        // 조작 끄기
+        playerInputController.TurnOnGlobalOnly();
 
         var follow = MainCameraScript.Instance.GetActiveCinemachineCam().GetCinemachineComponent(0) as CinemachineFollow;
         var originDamping = follow.TrackerSettings.PositionDamping;
@@ -165,9 +166,8 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
         avatarAnimator.SetTrigger("Die1Trigger");
 
         // 씬 바꿈 + 페이드아웃
-        var data = SaveLoadManager.Instance.PlayerData;
-        StartCoroutine(LoadSceneWithFadeOut(data, () => isSceneloaded = true));
-
+        StartCoroutine(LoadSceneWithFadeOut(() => isSceneloaded = true));
+        UICanvasManager.Instance.FadeOutUI(); // UI 페이드아웃
 
         // 2. 카메라 급격히 확대 (overlay도 같이 확대)
         var liveCam = MainCameraScript.Instance.GetActiveCinemachineCam();
@@ -195,9 +195,10 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
         yield return new WaitForSeconds(dieWaitTime);
 
         // 씬 전환 안됐으면 대기
-        if (!isSceneloaded)
-            yield return null;
+        yield return new WaitUntil(() => isSceneloaded);
+
         isSceneloaded = false; // 사용 후 플래그 변수 원상복구
+        playerInputController.TurnOnGlobalOnly();// 임시방편 막기
 
 
         // 4. 두 번째 애니메이션 실행 후 대기
@@ -220,11 +221,12 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
         liveCam2.Lens = lens2;
         ;
         yield return StartCoroutine(SceneTransitionManager.Instance.FadeInCoroutine());
+        UICanvasManager.Instance.FadeInUI(); // UI 페이드인
+        playerInputController.EnablePlayerActionMap(); // 조작 복구
 
         //while (true)
         //{
         //    if (elapsedTime > zoomOutTime) break; // 시간 초과시 루프 종료
-
         //    lens2.OrthographicSize = Mathf.Lerp(startorthographicSize2, zoomedOutOrthographicSize, elapsedTime / zoomOutTime);  // 원하는 값으로 변경
         //    liveCam2.Lens = lens2; // 반드시 구조체 통째로 다시 대입!
         //    elapsedTime += Time.deltaTime;
@@ -328,17 +330,16 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
     }
 
 
-    IEnumerator LoadSceneWithFadeOut(PlayerData data, Action action)
+    IEnumerator LoadSceneWithFadeOut(Action action)
     {
         yield return StartCoroutine(SceneTransitionManager.Instance.FadeOutCoroutine());
 
 
         if (SceneTransitionManager.Instance != null)
         {
-            yield return SceneTransitionManager.Instance.TransitionCoroutine("", data);
+            GameSaveData data = SaveLoadManager.Instance.GetCurrentData();
+            yield return SceneTransitionManager.Instance.TransitionCoroutine(data.playerData.stateData, data.playerData.positionData);
 
-            transform.position = data.positionData.pos;
-            health.ResetHealth();
             // 씬 바뀐 직후에 OrthographicSize 바꿔야함. (씬 바뀔시 축소된 OrthographicSize 적용안댐)
             CinemachineCamera liveCamA = MainCameraScript.Instance.mainCinemachineCamera;
             var lensA = MainCameraScript.Instance.mainCinemachineCamera.Lens;
@@ -349,13 +350,8 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
         }
         else
             Debug.Log("SceneTransitionManager.Instance is null");
-    }
 
-    // Animation 이벤트에 할당될 함수
-    public void OnDie2End()
-    {
-        animator.SetTrigger("DieEndTrigger");
-        avatarSpriteRenderer.enabled = false;
+        action?.Invoke();
     }
 
     #region SaveLoad

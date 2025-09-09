@@ -162,6 +162,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5047615897190947331, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047615897190947331, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047615897190947331, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047615897190947331, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5838204292505714967, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -255,91 +271,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
---- !u!1001 &335553554
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 446120110727895942, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-      propertyPath: camRange
-      value: 
-      objectReference: {fileID: 2101579562}
-    - target: {fileID: 446120110727895942, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-      propertyPath: fromStart
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 446120110727895942, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-      propertyPath: toChangeCamera
-      value: 
-      objectReference: {fileID: 927894526}
-    - target: {fileID: 446120110727895942, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-      propertyPath: toChangeCamSize
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 446120110727895942, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-      propertyPath: toChangeCameraName
-      value: ConfinedCinemachine
-      objectReference: {fileID: 0}
-    - target: {fileID: 2675513202248977562, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-      propertyPath: m_Name
-      value: BaseCameraSetter
-      objectReference: {fileID: 0}
-    - target: {fileID: 7593804143740880101, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7593804143740880101, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7593804143740880101, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7593804143740880101, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7593804143740880101, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7593804143740880101, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7593804143740880101, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7593804143740880101, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7593804143740880101, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7593804143740880101, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7593804143740880101, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7593804143740880101, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
 --- !u!1001 &377746379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -359,7 +290,7 @@ PrefabInstance:
     - target: {fileID: 4983167452068920015, guid: 9dfd18fa2404ed3449a01a88778752ec, type: 3}
       propertyPath: camBound
       value: 
-      objectReference: {fileID: 2101579562}
+      objectReference: {fileID: 0}
     - target: {fileID: 5041406253961592946, guid: 9dfd18fa2404ed3449a01a88778752ec, type: 3}
       propertyPath: m_LocalPosition.z
       value: -10
@@ -413,17 +344,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dfd18fa2404ed3449a01a88778752ec, type: 3}
---- !u!114 &927894526 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3801774912305204911, guid: 9dfd18fa2404ed3449a01a88778752ec, type: 3}
-  m_PrefabInstance: {fileID: 377746379}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1215114188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -481,11 +401,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74c3bf92996839d45a4e6b449c4c9108, type: 3}
---- !u!95 &1292871456 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8881733970178665582, guid: 2a4787b5ddb40be43981dce2257e4c2a, type: 3}
-  m_PrefabInstance: {fileID: 5341226616789239018}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1366362239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -537,7 +452,7 @@ PrefabInstance:
     - target: {fileID: 4048757198241262655, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
       propertyPath: m_SceneBindings.Array.data[3].value
       value: 
-      objectReference: {fileID: 1292871456}
+      objectReference: {fileID: 0}
     - target: {fileID: 6099510809330359780, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
       propertyPath: m_Name
       value: Managers
@@ -547,11 +462,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
---- !u!61 &2101579562 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 5867185555857813626, guid: 607e14f191ef0b847843a7ac0dfd4bd7, type: 3}
-  m_PrefabInstance: {fileID: 335553554}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5341226616789239018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -617,6 +527,5 @@ SceneRoots:
   - {fileID: 377746379}
   - {fileID: 1215114188}
   - {fileID: 166609003}
-  - {fileID: 335553554}
   - {fileID: 72842939}
   - {fileID: 5341226616789239018}

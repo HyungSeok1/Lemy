@@ -33,9 +33,9 @@ public class SoundManager : PersistentSingleton<SoundManager>
     [SerializeField] private bool canGrowPool = true;
 
     [Header("Volume (0~1, Linear)")]
-    [Range(0f, 1f)][SerializeField] private float masterVolume = 1f;
-    [Range(0f, 1f)][SerializeField] private float bgmVolume = 1f;
-    [Range(0f, 1f)][SerializeField] private float sfxVolume = 1f;
+    [Range(0f, 1f)][SerializeField] private float masterVolume;
+    [Range(0f, 1f)][SerializeField] private float bgmVolume;
+    [Range(0f, 1f)][SerializeField] private float sfxVolume;
 
     [SerializeField] private string masterParam;
     [SerializeField] private string bgmParam;
@@ -60,7 +60,6 @@ public class SoundManager : PersistentSingleton<SoundManager>
 
     protected override void Awake()
     {
-
         base.Awake();
         // audioDict 초기화
         foreach (var clip in bgmClips)
@@ -83,7 +82,11 @@ public class SoundManager : PersistentSingleton<SoundManager>
             var player = CreatePlayer();
             pool.Push(player);
         }
-        ApplyVolumes(); // ▼▼ 추가: 시작 시 Mixer에 반영
+    }
+
+    private void Start()
+    {
+        ApplyVolumes();
     }
 
     private void OnValidate()
@@ -192,6 +195,7 @@ public class SoundManager : PersistentSingleton<SoundManager>
         player.Play(clip, volume, pitch, target == null ? PlayMode.Simple : PlayMode.Tracking, target, Vector3.zero, loop: true);
         loopedPlayers.Add(player);
     }
+
     public void StopLoop(string clipName) // 루프 중인 사운드 정지
     {
         for (int i = loopedPlayers.Count - 1; i >= 0; i--)
@@ -222,8 +226,10 @@ public class SoundManager : PersistentSingleton<SoundManager>
     {
         var clip = GetClip(name, false);
         if (clip == null) return;
+
         var player = pool.Count > 0 ? pool.Pop() : canGrowPool ? CreatePlayer() : null;
         if (player == null) return;
+
         player.Play(clip, volume, pitch, mode, target, position, loop: false, () =>
         {
             onFinished?.Invoke();

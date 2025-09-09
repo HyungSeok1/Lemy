@@ -11,11 +11,11 @@ public class SmallKey : MonoBehaviour
     /// 
 
     [HideInInspector]
-    public SmallKeyMaker maker;
+    public AvoidChallenge maker;
 
     [SerializeField] GameObject keyEffect;
 
-    private void Start()
+    private void OnEnable()
     {
         if (keyEffect == null)
         {
@@ -34,6 +34,7 @@ public class SmallKey : MonoBehaviour
             }
         }
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))

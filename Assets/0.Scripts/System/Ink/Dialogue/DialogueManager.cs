@@ -74,7 +74,6 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
 
     private void UpdateInkDialogueVariable(string name, Ink.Runtime.Object value)
     {
-        Debug.Log("ink name = " + name);
         inkDialogueVariables.UpdateVariableState(name, value);
     }
 
@@ -112,7 +111,11 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
     private bool isEntering;
     private void EnterDialogue(string knotName)
     {
-        Player.Instance.playerInput.SwitchCurrentActionMap("UI");
+        // 멈추기
+        Player.Instance.movement.OnEnterDialogue();
+
+        Player.Instance.playerInputController.EnableUIActionMap();
+
         if (dialoguePlaying) return;
         dialoguePlaying = true;
         isEntering = true;
@@ -186,8 +189,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
 
     public void ExitDialogue()
     {
-
-        Player.Instance.playerInput.SwitchCurrentActionMap("Player");
+        Player.Instance.playerInputController.EnablePlayerActionMap();
         dialoguePlaying = false;
 
         // inform other parts of our system that we've finished dialogue

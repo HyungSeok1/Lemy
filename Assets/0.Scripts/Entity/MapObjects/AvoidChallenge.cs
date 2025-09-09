@@ -2,8 +2,10 @@ using UnityEngine;
 
 /// <summary>
 /// 작은 열쇠 생성기 (원 범위)
+/// 번개생성은 여기서 안함
+/// 키 생성만 해주는거. 이름만 AvoidChallenge임 (번개피하기니까)
 /// </summary>
-public class SmallKeyMaker : MonoBehaviour
+public class AvoidChallenge : ChallengeZone
 {
     [SerializeField] private GameObject smallKeyPrefab;      // 생성할 SmallKey 프리팹
     [SerializeField] private GameObject keyPrefab;      // 생성할 Key 프리팹
@@ -13,32 +15,23 @@ public class SmallKeyMaker : MonoBehaviour
 
     private int collectedCount = 0;   // 먹힌 키 개수
 
-    void Start()
+    public override void Challenge()
     {
-        SpawnNextKey();
+        base.Challenge();
+        SpawnSmallKey();
     }
 
-    public void OnKeyCollected()
+    public override void BeatChallenge()
     {
-        collectedCount++;
-
-        if (collectedCount < totalKeys)
-        {
-            SpawnNextKey();
-        }
-        else
-        {
-            TriggerFinalEvent();
-        }
+        base.BeatChallenge();
     }
 
-    private void SpawnNextKey()
+    private void SpawnSmallKey()
     {
         Vector3 randomPos = GetRandomPosition();
-        GameObject key = Instantiate(smallKeyPrefab, randomPos, Quaternion.identity);
 
-        // SmallKey가 자신을 만든 Maker를 알 수 있도록 참조 전달
-        SmallKey keyScript = key.GetComponent<SmallKey>();
+        GameObject smallKey = Instantiate(smallKeyPrefab, randomPos, Quaternion.identity);
+        SmallKey keyScript = smallKey.GetComponent<SmallKey>();
         keyScript.maker = this;
     }
 
@@ -53,22 +46,27 @@ public class SmallKeyMaker : MonoBehaviour
         return transform.position + new Vector3(x, y, 0f);
     }
 
-    private void TriggerFinalEvent()
+    private void SpawnKey()
     {
-        Debug.Log("모든 작은 열쇠를 먹음! 이벤트 발생!");
         collectedCount = 0;
 
-        // 자식에 KeyPrefab이 있는지 확인
-        Transform existingKey = transform.Find("Key"); // 이름으로 찾는 방법
-        if (existingKey != null)
+        GameObject key = Instantiate(keyPrefab, transform.position, Quaternion.identity, transform);
+        key.SetActive(true);
+        key.GetComponent<Key>().OnGetKey += BeatChallenge;
+    }
+
+    public void OnKeyCollected()
+    {
+        SoundManager.Instance.PlaySFX("dash1", 0.1f);
+        collectedCount++;
+
+        if (collectedCount < totalKeys)
         {
-            existingKey.gameObject.SetActive(true);
+            SpawnSmallKey();
         }
         else
         {
-            // 못 찾았으면 새로 생성하고 부모로 붙여줌
-            GameObject key = Instantiate(keyPrefab, transform.position, Quaternion.identity, transform);
-            key.name = "Key"; // 다음에 찾을 수 있게 이름 고정
+            SpawnKey();
         }
     }
 

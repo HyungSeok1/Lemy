@@ -1,5 +1,79 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &212742917634043232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1743583968223760286}
+  - component: {fileID: 783848922069205984}
+  - component: {fileID: 439364081026164719}
+  m_Layer: 0
+  m_Name: TimelineManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1743583968223760286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212742917634043232}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 647822151777583147}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &783848922069205984
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212742917634043232}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 5619ace7629ffe04eab0de44296246c4, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -339633220133088666, guid: 5619ace7629ffe04eab0de44296246c4, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 4710817594711021720, guid: 5619ace7629ffe04eab0de44296246c4, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 7500648512304096415, guid: 5619ace7629ffe04eab0de44296246c4, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
+--- !u!114 &439364081026164719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212742917634043232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4417fe2d06e3e824680cf82e8889c9ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  director: {fileID: 783848922069205984}
+  timelines:
+  - id: 0
+    asset: {fileID: 11400000, guid: 5619ace7629ffe04eab0de44296246c4, type: 2}
+  - id: 1
+    asset: {fileID: 11400000, guid: a96c8f31069882d43a063939a3597d5d, type: 2}
 --- !u!1 &873627793721489513
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,16 +241,41 @@ MonoBehaviour:
     - position: {x: -10, y: -0.8, z: 0}
       prefab: {fileID: 6823866740245720468, guid: b56423eccfffebd4ebcc3c005b4997bb, type: 3}
       spawnFlag: 1
-    sectionList:
-    - id: df
+    challengeZoneList: []
+    saveableMapObjectList: []
+  - chapter: 1
+    map: 1
+    number: 2
+    entityGuideList: []
+    challengeZoneList:
+    - id: MonsterChallenge
       executionFlag: 1
-    - id: dffs
-      executionFlag: 0
-  - chapter: 0
+    saveableMapObjectList:
+    - id: Door
+      isActivated: 0
+  - chapter: 1
+    map: 1
+    number: 3
+    entityGuideList: []
+    challengeZoneList:
+    - id: AvoidChallenge
+      executionFlag: 1
+    saveableMapObjectList: []
+  - chapter: 1
+    map: 1
+    number: 4
+    entityGuideList: []
+    challengeZoneList:
+    - id: ObstacleChallenge
+      executionFlag: 1
+    saveableMapObjectList: []
+  currentMapData:
+    chapter: 0
     map: 0
     number: 0
     entityGuideList: []
-    sectionList: []
+    challengeZoneList: []
+    saveableMapObjectList: []
 --- !u!114 &8261196774451647436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,6 +335,10 @@ MonoBehaviour:
   currentChapter: 1
   currentMap: 0
   currentNumber: 0
+  currentState:
+    chapter: 0
+    map: 0
+    number: 0
 --- !u!1 &3734291831272273064
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,6 +709,7 @@ Transform:
   - {fileID: 1503839090188852049}
   - {fileID: 570636360227869775}
   - {fileID: 6992827873613689861}
+  - {fileID: 1743583968223760286}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8846755911990517991
@@ -916,7 +1020,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5103a1609bf21374789c96ea9c8b2cb7, type: 3}
   - {fileID: 8300000, guid: 11bc0bc5a3a019042a7d90c78371fb1b, type: 3}
   - {fileID: 8300000, guid: 2a012f0ee00caaf4cb62a8b3a6ca409e, type: 3}
-  - {fileID: 8300000, guid: 2a012f0ee00caaf4cb62a8b3a6ca409e, type: 3}
   - {fileID: 8300000, guid: 8716c71a6becce84e8fc777ab08f657f, type: 3}
   - {fileID: 8300000, guid: fe05b02d603e4bd43a32ba58d21c1dab, type: 3}
   - {fileID: 8300000, guid: 8672a66cd4e07fe478eeed1393fe60e7, type: 3}
@@ -925,7 +1028,7 @@ MonoBehaviour:
   canGrowPool: 1
   masterVolume: 1
   bgmVolume: 1
-  sfxVolume: 0.309
+  sfxVolume: 0.448
   masterParam: MasterVolume
   bgmParam: BGMVolume
   sfxParam: SFXVolume
@@ -933,7 +1036,7 @@ MonoBehaviour:
   sfxDoppler: 0
   sfxSpread: 0
   sfxMinDistance: 2
-  sfxMaxDistance: 25
+  sfxMaxDistance: 30
   sfxRolloff: 0
   customRolloff:
     serializedVersion: 2
@@ -1003,6 +1106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d96eb268c56424ca39e4b86dd0fcf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  money: 0
 --- !u!1 &8620750663854339257
 GameObject:
   m_ObjectHideFlags: 0

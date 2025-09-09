@@ -3,7 +3,6 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
-using UnityEngine.Splines.ExtrusionShapes;
 
 /// <summary>
 /// 
@@ -30,15 +29,15 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
     }
 
     // TODO: PendingLoad: 아마 예전에 씬전환후 데이터 넣어주는 용도였던거같은데, 구조 수정해야 할듯.
-    public void StartTransition(string entranceID = "", PlayerData pendingLoad = null)
+    public void StartTransition(StateData stateData, PositionData positionData)
     {
-        StartCoroutine(TransitionCoroutine(entranceID, pendingLoad));
+        StartCoroutine(TransitionCoroutine(stateData, positionData));
     }
 
     // 진짜 씬 바꿔주고 State 바꿔주는 것만 함.
-    public IEnumerator TransitionCoroutine(string entranceID = "", PlayerData pendingLoad = null)
+    public IEnumerator TransitionCoroutine(StateData stateData, PositionData positionData)
     {
-        targetScene = $"Scene{pendingLoad.stateData.chapter}_{pendingLoad.stateData.chapter}_{pendingLoad.stateData.number}";
+        targetScene = $"Scene{stateData.chapter}_{stateData.chapter}_{stateData.number}";
 
         GameStateManager.Instance.ChangeState(GameStateManager.GameState.LoadingScene);
 
@@ -50,6 +49,8 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
         }
 
         GameStateManager.Instance.ChangeState(GameStateManager.GameState.Playing);
+        GameStateManager.Instance.UpdateStateData(stateData); // stateData 적용
+        Player.Instance.transform.position = positionData.pos; // positionData 적용
     }
 
     public void FadeOut()
@@ -112,7 +113,7 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
         // 없으면 아무것도 안하고 리턴 
         if (string.IsNullOrEmpty(entranceID))
         {
-            Debug.LogWarning("포탈 번호가 지정이 안 됨..");
+            Debug.LogError("포탈 번호가 지정이 안 됨..");
             return;
         }
         // 모든 PortalExit을 검색
@@ -123,9 +124,9 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
         int count = matched.Length;
 
         if (count == 0)
-            Debug.LogWarning($"[SceneTransitionManager] '{entranceID}'에 매칭되는 PortalExit을 찾지 못했습니다.");
+            Debug.LogError($"[SceneTransitionManager] '{entranceID}'에 매칭되는 PortalExit을 찾지 못했습니다.");
         else if (count > 1)
-            Debug.LogWarning($"[SceneTransitionManager] '{entranceID}'에 매칭되는 PortalExit이 {count}개 존재합니다. 반드시 1개만 존재해야 합니다.");
+            Debug.LogError($"[SceneTransitionManager] '{entranceID}'에 매칭되는 PortalExit이 {count}개 존재합니다. 반드시 1개만 존재해야 합니다.");
         else
         {
             var exit = matched[0]; //portalExit형 인스턴스
@@ -139,7 +140,7 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
                 cinemachineCam.ForceCameraPosition(Player.Instance.transform.position, cinemachineCam.transform.rotation);
             }
             else
-                Debug.LogWarning("[SceneTransitionManager] PlayerController 인스턴스를 찾을 수 없습니다.");
+                Debug.LogError("[SceneTransitionManager] PlayerController 인스턴스를 찾을 수 없습니다.");
         }
     }
 

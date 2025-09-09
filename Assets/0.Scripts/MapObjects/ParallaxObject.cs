@@ -24,14 +24,10 @@ public class ParallaxObject : MonoBehaviour
     void Start()
     {
         var cam = Camera.main ? Camera.main.transform : null;
-        //if (cam != null)
-        //{
-        //    Vector3 camLocal = transform.parent ? transform.parent.InverseTransformPoint(cam.position) : cam.position;
 
-        //    // 씬에서 배치한 로컬 기준(base)을 0,0이라 가정
-        //    Vector3 offset = new Vector3(camLocal.x, camLocal.y, 0f);
-        //    transform.localPosition = Vector3.zero - offset * parallaxFactor;
-        //}
+        Vector3 camLocal = transform.parent ? transform.parent.InverseTransformPoint(cam.position) : cam.position;
+        Vector3 offset = new Vector3(camLocal.x - ParallaxManager.BasePoint.position.x, camLocal.y - ParallaxManager.BasePoint.position.y, 0f);
+        transform.localPosition = Vector3.zero - offset * parallaxFactor;
     }
 
     private void OnEnable()

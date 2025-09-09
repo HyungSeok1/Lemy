@@ -23,7 +23,7 @@ public class DashSkill : MonoBehaviour, ISkill
         if (!CanExecute) return;
         Player.Instance.animator.SetTrigger("isDash");
         float angle = Mathf.Atan2(Player.Instance.movement.dir.y, Player.Instance.movement.dir.x) * Mathf.Rad2Deg;
-        Instantiate(Player.Instance.DashEffect, transform.position, Quaternion.Euler(0f, 0f, angle+30f));
+        Instantiate(Player.Instance.DashEffect, transform.position, Quaternion.Euler(0f, 0f, angle + 30f));
 
         remainingCooldown = data.cooldown;
         Dash();
@@ -44,11 +44,12 @@ public class DashSkill : MonoBehaviour, ISkill
         // 회전
         Vector2 pointer = Player.Instance.currentMousePosition;
         Vector3 screen = new Vector3(pointer.x, pointer.y, Camera.main.nearClipPlane);
-        Vector2 dir = (Camera.main.ScreenToWorldPoint(screen) - Player.Instance.transform.position).normalized;
+        Vector2 dir = (Camera.main.ScreenToWorldPoint(screen) - Player.Instance.transform.position);
+        dir = dir.normalized;
 
         // 속도 초기화 & 가속
         Player.Instance.movement.skillVelocity = dir * data.dashPower;
-        SoundManager.Instance.PlaySFX("dash1", 0.05f);
+        SoundManager.Instance.PlaySFX("dash1", 0.5f);
     }
 
     public float GetNormalizedRemainingCooldown()
