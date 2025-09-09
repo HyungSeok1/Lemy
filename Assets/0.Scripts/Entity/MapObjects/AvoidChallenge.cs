@@ -18,7 +18,7 @@ public class AvoidChallenge : ChallengeZone
     public override void Challenge()
     {
         base.Challenge();
-        SpawnNextKey();
+        SpawnSmallKey();
     }
 
     public override void BeatChallenge()
@@ -26,27 +26,13 @@ public class AvoidChallenge : ChallengeZone
         base.BeatChallenge();
     }
 
-    private void SpawnNextKey()
+    private void SpawnSmallKey()
     {
         Vector3 randomPos = GetRandomPosition();
 
         GameObject smallKey = Instantiate(smallKeyPrefab, randomPos, Quaternion.identity);
         SmallKey keyScript = smallKey.GetComponent<SmallKey>();
         keyScript.maker = this;
-    }
-
-    public void OnKeyCollected()
-    {
-        collectedCount++;
-
-        if (collectedCount < totalKeys)
-        {
-            SpawnNextKey();
-        }
-        else
-        {
-            TriggerFinalEvent();
-        }
     }
 
     private Vector3 GetRandomPosition()
@@ -60,12 +46,27 @@ public class AvoidChallenge : ChallengeZone
         return transform.position + new Vector3(x, y, 0f);
     }
 
-    private void TriggerFinalEvent()
+    private void SpawnKey()
     {
         collectedCount = 0;
 
         GameObject key = Instantiate(keyPrefab, transform.position, Quaternion.identity, transform);
+        key.SetActive(true);
         key.GetComponent<Key>().OnGetKey += BeatChallenge;
+    }
+
+    public void OnKeyCollected()
+    {
+        collectedCount++;
+
+        if (collectedCount < totalKeys)
+        {
+            SpawnSmallKey();
+        }
+        else
+        {
+            SpawnKey();
+        }
     }
 
     private void OnDrawGizmosSelected()

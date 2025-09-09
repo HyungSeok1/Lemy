@@ -251,12 +251,16 @@ MonoBehaviour:
     map: 1
     number: 3
     entityGuideList: []
-    challengeZoneList: []
+    challengeZoneList:
+    - id: AvoidChallenge
+      executionFlag: 1
   - chapter: 1
     map: 1
     number: 4
     entityGuideList: []
-    challengeZoneList: []
+    challengeZoneList:
+    - id: ObstacleChallenge
+      executionFlag: 1
   currentMapData:
     chapter: 0
     map: 0
@@ -1003,7 +1007,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5103a1609bf21374789c96ea9c8b2cb7, type: 3}
   - {fileID: 8300000, guid: 11bc0bc5a3a019042a7d90c78371fb1b, type: 3}
   - {fileID: 8300000, guid: 2a012f0ee00caaf4cb62a8b3a6ca409e, type: 3}
-  - {fileID: 8300000, guid: 2a012f0ee00caaf4cb62a8b3a6ca409e, type: 3}
   - {fileID: 8300000, guid: 8716c71a6becce84e8fc777ab08f657f, type: 3}
   - {fileID: 8300000, guid: fe05b02d603e4bd43a32ba58d21c1dab, type: 3}
   - {fileID: 8300000, guid: 8672a66cd4e07fe478eeed1393fe60e7, type: 3}
@@ -1020,7 +1023,7 @@ MonoBehaviour:
   sfxDoppler: 0
   sfxSpread: 0
   sfxMinDistance: 2
-  sfxMaxDistance: 25
+  sfxMaxDistance: 30
   sfxRolloff: 0
   customRolloff:
     serializedVersion: 2

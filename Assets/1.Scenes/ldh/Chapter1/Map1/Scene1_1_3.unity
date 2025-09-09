@@ -469,6 +469,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8817044473138575910, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.4248047
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -522,7 +526,7 @@ MonoBehaviour:
   smallKeyPrefab: {fileID: 6458571013732839940, guid: df07116e308fe0c44ba43565fe32f0aa, type: 3}
   keyPrefab: {fileID: 1180649140}
   totalKeys: 5
-  radius: 5
+  radius: 15
 --- !u!1001 &1180649138
 PrefabInstance:
   m_ObjectHideFlags: 0
