@@ -113,7 +113,7 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
         // 없으면 아무것도 안하고 리턴 
         if (string.IsNullOrEmpty(entranceID))
         {
-            Debug.LogWarning("포탈 번호가 지정이 안 됨..");
+            Debug.LogError("포탈 번호가 지정이 안 됨..");
             return;
         }
         // 모든 PortalExit을 검색
@@ -124,9 +124,9 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
         int count = matched.Length;
 
         if (count == 0)
-            Debug.LogWarning($"[SceneTransitionManager] '{entranceID}'에 매칭되는 PortalExit을 찾지 못했습니다.");
+            Debug.LogError($"[SceneTransitionManager] '{entranceID}'에 매칭되는 PortalExit을 찾지 못했습니다.");
         else if (count > 1)
-            Debug.LogWarning($"[SceneTransitionManager] '{entranceID}'에 매칭되는 PortalExit이 {count}개 존재합니다. 반드시 1개만 존재해야 합니다.");
+            Debug.LogError($"[SceneTransitionManager] '{entranceID}'에 매칭되는 PortalExit이 {count}개 존재합니다. 반드시 1개만 존재해야 합니다.");
         else
         {
             var exit = matched[0]; //portalExit형 인스턴스
@@ -140,7 +140,7 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
                 cinemachineCam.ForceCameraPosition(Player.Instance.transform.position, cinemachineCam.transform.rotation);
             }
             else
-                Debug.LogWarning("[SceneTransitionManager] PlayerController 인스턴스를 찾을 수 없습니다.");
+                Debug.LogError("[SceneTransitionManager] PlayerController 인스턴스를 찾을 수 없습니다.");
         }
     }
 

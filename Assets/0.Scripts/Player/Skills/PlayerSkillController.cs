@@ -71,7 +71,7 @@ public class PlayerSkillController : MonoBehaviour, ISaveable<PlayerSkillData>
             currentSkills[0].ExecuteSkill();
         else
         {
-            Debug.Log("Skill not ready or not assigned.");
+            Debug.LogError("Skill not ready or not assigned.");
         }
     }
 
@@ -83,7 +83,7 @@ public class PlayerSkillController : MonoBehaviour, ISaveable<PlayerSkillData>
             currentSkills[1].ExecuteSkill();
         else
         {
-            Debug.Log("Skill not ready or not assigned.");
+            Debug.LogError("Skill not ready or not assigned.");
         }
     }
     public void ExecuteSkill2(InputAction.CallbackContext context)

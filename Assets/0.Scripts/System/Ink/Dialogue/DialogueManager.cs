@@ -74,7 +74,6 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
 
     private void UpdateInkDialogueVariable(string name, Ink.Runtime.Object value)
     {
-        Debug.Log("ink name = " + name);
         inkDialogueVariables.UpdateVariableState(name, value);
     }
 

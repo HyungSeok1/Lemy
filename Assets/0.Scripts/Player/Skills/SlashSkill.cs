@@ -154,8 +154,6 @@ public class SlashSkill : MonoBehaviour, ISkill
         int count = skillCol.Overlap(hits);
         foreach (var col in hits)
         {
-            Debug.Log($"충돌된 오브젝트: {col.name}"); // 테스트용 
-
             if (!col.TryGetComponent<IDamageable>(out var damageable)) continue;
 
             damageable.TakeDamage(data.damage + Player.Instance.stats.bonusATK);

@@ -34,7 +34,7 @@ public class GameStateManager : PersistentSingleton<GameStateManager>, ISaveable
     {
         base.Awake();
 
-        CurrentState = GameState.MainMenu;
+        CurrentGameState = GameState.MainMenu;
 
         SceneManager.sceneLoaded += HandleSceneLoaded;
 
@@ -55,12 +55,15 @@ public class GameStateManager : PersistentSingleton<GameStateManager>, ISaveable
     public int currentChapter;
     public int currentMap;
     public int currentNumber;
-    public GameState CurrentState { get; private set; }
+
+    public StateData currentState;
+
+    public GameState CurrentGameState { get; private set; }
 
     //임시
     public void ChangeState(GameState newState)
     {
-        CurrentState = newState;
+        CurrentGameState = newState;
     }
     #endregion
 

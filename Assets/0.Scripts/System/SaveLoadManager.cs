@@ -26,7 +26,6 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
     }
     private int currentSlot;
 
-
     public void SaveGame(int slot)
     {
         saveData = new GameSaveData();
@@ -75,7 +74,7 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
 
         // TODO: 씬 로딩 기능 추가 필요 (transitionManager)
 
-        //TODO: position은 씬 로딩 후 적용해야 함. 변경 필요.
+        // TODO: position은 씬 로딩 후 적용해야 함. 변경 필요.
         Player.Instance.Load(data.playerData.positionData);
     }
 

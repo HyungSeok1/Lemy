@@ -1124,7 +1124,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 15
+  m_SortingOrder: 85
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2504,7 +2504,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3105724581833259536}
-  - component: {fileID: 5730713209851162475}
   m_Layer: 0
   m_Name: MapLogicHolder
   m_TagString: Untagged
@@ -2528,24 +2527,6 @@ Transform:
   - {fileID: 4318652894098433420}
   m_Father: {fileID: 6045645033333198434}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5730713209851162475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6534296199644681426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 187cf04f5ec97754bb59dbb980b68f74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key1_1_2Data: {fileID: 0}
-  key1_1_3Data: {fileID: 0}
-  key1_1_4Data: {fileID: 0}
-  doorOpened1: {fileID: 6825904377382128796}
-  doorOpened2: {fileID: 2192002971884114660}
-  doorOpened3: {fileID: 8926919673490931942}
 --- !u!1 &6570075743792936539
 GameObject:
   m_ObjectHideFlags: 0
@@ -2653,7 +2634,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 15
+  m_SortingOrder: 85
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3326,8 +3307,9 @@ GameObject:
   m_Component:
   - component: {fileID: 696377673486021058}
   - component: {fileID: 1408700347507313174}
-  - component: {fileID: 8748635560511201534}
   - component: {fileID: 6001153675114325309}
+  - component: {fileID: 8886254478044248752}
+  - component: {fileID: 89486289907100884}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -3373,18 +3355,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8748635560511201534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8143186694517636689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f01763f4314e8934b8d15262028567c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &6001153675114325309
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3431,6 +3401,42 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 15, y: 30}
   m_EdgeRadius: 0
+--- !u!114 &8886254478044248752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8143186694517636689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 187cf04f5ec97754bb59dbb980b68f74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: Map1_Door
+  checker: {fileID: 89486289907100884}
+  doorObject: {fileID: 7335975251840666568}
+--- !u!114 &89486289907100884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8143186694517636689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2ac1c72e19e0924691bc25a1674e9fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canOpen: 0
+  keys:
+  - {fileID: 11400000, guid: 91226b65467cb784a924feaf44a2ef3a, type: 2}
+  - {fileID: 11400000, guid: a2229f0d215192d4abb94acd7e1a75e4, type: 2}
+  - {fileID: 11400000, guid: 42bd082a81a5668479db55a7594755f5, type: 2}
+  doors:
+  - {fileID: 6825904377382128796}
+  - {fileID: 2192002971884114660}
+  - {fileID: 8926919673490931942}
 --- !u!1 &8177603484385337163
 GameObject:
   m_ObjectHideFlags: 0
@@ -3643,7 +3649,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 15
+  m_SortingOrder: 85
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

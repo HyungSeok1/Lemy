@@ -2660,7 +2660,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8594802884280155343, guid: 8f94616d34e86ff44afb218343fa4afc, type: 3}
       propertyPath: exitID
-      value: 101102ONE
+      value: 11201
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2828,16 +2828,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6931184803620699338, guid: 8c0422cd717e96c4c8916df82c8451ab, type: 3}
+      propertyPath: targetMap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931184803620699338, guid: 8c0422cd717e96c4c8916df82c8451ab, type: 3}
       propertyPath: entranceID
-      value: 101101ONE
+      value: 11201
       objectReference: {fileID: 0}
     - target: {fileID: 6931184803620699338, guid: 8c0422cd717e96c4c8916df82c8451ab, type: 3}
       propertyPath: targetStage
       value: 101
       objectReference: {fileID: 0}
     - target: {fileID: 6931184803620699338, guid: 8c0422cd717e96c4c8916df82c8451ab, type: 3}
+      propertyPath: targetNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931184803620699338, guid: 8c0422cd717e96c4c8916df82c8451ab, type: 3}
       propertyPath: targetChapter
-      value: 101
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7469896326259094974, guid: 8c0422cd717e96c4c8916df82c8451ab, type: 3}
       propertyPath: m_Name
@@ -2861,6 +2869,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6079808148210061180}
     m_Modifications:
+    - target: {fileID: 2444842815823535241, guid: 51714993935a3994ab75305c2c0ad6ee, type: 3}
+      propertyPath: challenge
+      value: 
+      objectReference: {fileID: 8456137122048700217}
     - target: {fileID: 3740541792807638086, guid: 51714993935a3994ab75305c2c0ad6ee, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.8000001

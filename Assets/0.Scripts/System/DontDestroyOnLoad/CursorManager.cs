@@ -86,7 +86,6 @@ public class CursorManager : PersistentSingleton<CursorManager>
 
     private void OnDashImpulse(Vector2 v)
     {
-        Debug.Log($"CursorManager: Dash Impulse {v}");
         dashSpinTimer = 0f;
     }
 

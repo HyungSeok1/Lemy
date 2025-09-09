@@ -16,13 +16,6 @@ public class MonsterChallenge : ChallengeZone
         SpawnEnemies();
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.F))
-            SpawnEnemies();
-        
-    }
-
     public override void BeatChallenge()
     {
         base.BeatChallenge();

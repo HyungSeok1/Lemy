@@ -5,7 +5,7 @@ public class ChallengeTrigger : MonoBehaviour
     private enum ChallengeTriggerType { Zone, OnStart }
 
     [SerializeField] private string id;
-    [SerializeField] private ChallengeZone zone;
+    [SerializeField] private ChallengeZone challenge;
 
     [SerializeField] private ChallengeTriggerType triggerType;
     private bool flag; // 씬 들어왔을때 한번만 가능하도록 보장
@@ -32,7 +32,7 @@ public class ChallengeTrigger : MonoBehaviour
         foreach (var challengeZone in MapDataManager.Instance.currentMapData.challengeZoneList)
             if (challengeZone.id == id && challengeZone.executionFlag && flag)
             {
-                zone.Challenge();
+                challenge.Challenge();
                 flag = false; // 씬 안에선 한 번만
             }
     }

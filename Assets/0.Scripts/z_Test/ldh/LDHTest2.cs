@@ -2,14 +2,10 @@ using UnityEngine;
 
 public class LDHTest2 : MonoBehaviour
 {
-
-    private void OnDestroy()
+    public MonsterChallenge chal;
+    private void Update()
     {
-        print("OnDestroy");
-    }
-
-    private void OnEnable()
-    {
-        print("OnEnable");
+        if (Input.GetKeyDown(KeyCode.F))
+            chal.EnemyAllKillCheck();
     }
 }

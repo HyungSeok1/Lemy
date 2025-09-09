@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using System.Text.RegularExpressions;
 using System.IO;
-using UnityEditor;
 
 public class MapDataManager : PersistentSingleton<MapDataManager>, ISaveable<MapDataWrapper>
 {
