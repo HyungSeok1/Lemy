@@ -52,7 +52,10 @@ public class Cocoon : Enemy
         var spark = Instantiate(hitSparkPrefab, spawnPos, Quaternion.identity);
         spark.Play();
     }
-
+    public override void Knockback(Vector2 direction, float force = 5)
+    {
+        //base.Knockback 안함 (넉백 적용 X)
+    }
 
     protected override void Attack(Player player) { }
     protected override void OnEnterState(State newState) { }

@@ -410,18 +410,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 439364081026164719, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
-      propertyPath: timelines.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 439364081026164719, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
-      propertyPath: timelines.Array.data[1].id
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 439364081026164719, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
-      propertyPath: timelines.Array.data[1].asset
-      value: 
-      objectReference: {fileID: 11400000, guid: a96c8f31069882d43a063939a3597d5d, type: 2}
     - target: {fileID: 647822151777583147, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.4342594
@@ -461,18 +449,6 @@ PrefabInstance:
     - target: {fileID: 647822151777583147, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4048757198241262655, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
-      propertyPath: m_SceneBindings.Array.data[3].value
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132517440274855390, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
-      propertyPath: mapdataList.Array.data[1].saveableMapObjectList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132517440274855390, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
-      propertyPath: mapdataList.Array.data[1].saveableMapObjectList.Array.data[0].id
-      value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 6099510809330359780, guid: 4cc37e4e6cce7a744bc3790f6205cc54, type: 3}
       propertyPath: m_Name
@@ -603,18 +579,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5452084838685001317, guid: eb06d10642a80b745aa6eff5c0666cd9, type: 3}
-      propertyPath: data1
-      value: 
-      objectReference: {fileID: 11400000, guid: 91226b65467cb784a924feaf44a2ef3a, type: 2}
-    - target: {fileID: 5452084838685001317, guid: eb06d10642a80b745aa6eff5c0666cd9, type: 3}
-      propertyPath: data2
-      value: 
-      objectReference: {fileID: 11400000, guid: a2229f0d215192d4abb94acd7e1a75e4, type: 2}
-    - target: {fileID: 5452084838685001317, guid: eb06d10642a80b745aa6eff5c0666cd9, type: 3}
-      propertyPath: data3
-      value: 
-      objectReference: {fileID: 11400000, guid: 42bd082a81a5668479db55a7594755f5, type: 2}
     - target: {fileID: 5780872223548662020, guid: eb06d10642a80b745aa6eff5c0666cd9, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].value
       value: 

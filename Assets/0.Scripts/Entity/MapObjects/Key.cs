@@ -69,7 +69,7 @@ public class Key : MonoBehaviour
     public void SceneTransitionByKey()
     {
         SceneManager.LoadScene(keyData.ToMoveSceneName);
-        Player.Instance.transform.position = Vector3.zero;
+        Player.Instance.transform.position = new Vector3(-40, -5, 0);
         CameraSwitcher.ActiveCamera.Follow = Player.Instance.transform;
     }
 

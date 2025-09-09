@@ -72,6 +72,8 @@ MonoBehaviour:
   timelines:
   - id: 0
     asset: {fileID: 11400000, guid: 5619ace7629ffe04eab0de44296246c4, type: 2}
+  - id: 1
+    asset: {fileID: 11400000, guid: a96c8f31069882d43a063939a3597d5d, type: 2}
 --- !u!1 &873627793721489513
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,6 +242,7 @@ MonoBehaviour:
       prefab: {fileID: 6823866740245720468, guid: b56423eccfffebd4ebcc3c005b4997bb, type: 3}
       spawnFlag: 1
     challengeZoneList: []
+    saveableMapObjectList: []
   - chapter: 1
     map: 1
     number: 2
@@ -247,6 +250,9 @@ MonoBehaviour:
     challengeZoneList:
     - id: MonsterChallenge
       executionFlag: 1
+    saveableMapObjectList:
+    - id: Door
+      isActivated: 0
   - chapter: 1
     map: 1
     number: 3
@@ -254,6 +260,7 @@ MonoBehaviour:
     challengeZoneList:
     - id: AvoidChallenge
       executionFlag: 1
+    saveableMapObjectList: []
   - chapter: 1
     map: 1
     number: 4
@@ -261,12 +268,14 @@ MonoBehaviour:
     challengeZoneList:
     - id: ObstacleChallenge
       executionFlag: 1
+    saveableMapObjectList: []
   currentMapData:
     chapter: 0
     map: 0
     number: 0
     entityGuideList: []
     challengeZoneList: []
+    saveableMapObjectList: []
 --- !u!114 &8261196774451647436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,6 +335,10 @@ MonoBehaviour:
   currentChapter: 1
   currentMap: 0
   currentNumber: 0
+  currentState:
+    chapter: 0
+    map: 0
+    number: 0
 --- !u!1 &3734291831272273064
 GameObject:
   m_ObjectHideFlags: 0

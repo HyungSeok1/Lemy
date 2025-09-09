@@ -57,6 +57,7 @@ public class AvoidChallenge : ChallengeZone
 
     public void OnKeyCollected()
     {
+        SoundManager.Instance.PlaySFX("dash1", 0.1f);
         collectedCount++;
 
         if (collectedCount < totalKeys)
