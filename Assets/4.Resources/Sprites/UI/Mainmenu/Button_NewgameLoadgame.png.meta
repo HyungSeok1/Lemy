@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 3012335ad247f1047ae05dd84d3dae68
+guid: 333017caa958f0342abf0d0973744f35
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6470460504253458178
-    second: 3_0
+      213: -8998128413252028214
+    second: Button_NewgameLoadgame_0
+  - first:
+      213: -1334076060832628051
+    second: Button_NewgameLoadgame_1
+  - first:
+      213: -8679643794394446349
+    second: Button_NewgameLoadgame_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,8 +55,8 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.5, y: 0.5007752}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -72,7 +78,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -100,23 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 3_0
+      name: Button_NewgameLoadgame_0
       rect:
         serializedVersion: 2
-        x: 775
-        y: 0
-        width: 2534
-        height: 4243
+        x: 55
+        y: 92
+        width: 293
+        height: 112
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef817ce047e4436a0800000000000000
-      internalID: -6470460504253458178
+      spriteID: ac873ccd1e9302380800000000000000
+      internalID: -8998128413252028214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_NewgameLoadgame_1
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 85
+        width: 740
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da208b214e86c7de0800000000000000
+      internalID: -1334076060832628051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_NewgameLoadgame_2
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 86
+        width: 367
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f5023aa4f5bb8780800000000000000
+      internalID: -8679643794394446349
       vertices: []
       indices: 
       edges: []
@@ -126,7 +176,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      3_0: -6470460504253458178
+      Button_NewgameLoadgame_0: -8998128413252028214
+      Button_NewgameLoadgame_1: -1334076060832628051
+      Button_NewgameLoadgame_2: -8679643794394446349
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
