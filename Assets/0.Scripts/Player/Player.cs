@@ -251,6 +251,11 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
 
         }
 
+        if (collision.gameObject.CompareTag("Spike"))
+        {
+            
+        }
+
         if (collision.gameObject.CompareTag("Destructible"))
         {
             rb.linearVelocity = movement.lastVelocity;
