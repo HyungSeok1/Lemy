@@ -8,21 +8,22 @@ using UnityEngine;
 public abstract class Enemy : Entity, IDamageable
 {
     public static event Action<Vector3, Vector3> OnEnemyDamaged;
+    public event Action OnDie;
 
     protected int currentHealth;
 
     //색깔 변경용 변수
 
-    private SpriteRenderer spriteRenderer;
+    private SpriteRenderer colorSpriteRenderer;
     private Color originalColor;
 
     private void Initialize()
     {
 
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        if (spriteRenderer != null)
+        colorSpriteRenderer = GetComponent<SpriteRenderer>();
+        if (colorSpriteRenderer != null)
         {
-            originalColor = spriteRenderer.color;
+            originalColor = colorSpriteRenderer.color;
         }
 
         ChangeState(State.Idle);
@@ -47,12 +48,14 @@ public abstract class Enemy : Entity, IDamageable
 
 
         // 데미지 입는순간 살짝 하얘지기
-        if (spriteRenderer != null)
+        if (colorSpriteRenderer != null)
         {
             StartCoroutine(FlashWhite());
         }
 
         OnEnemyDamaged?.Invoke(Player.Instance.transform.position, transform.position);
+
+        SoundManager.Instance.PlaySFX("frontSlash2", 0.1f);
     }
 
     public virtual void Knockback(Vector2 direction, float force = 5f)
@@ -80,15 +83,16 @@ public abstract class Enemy : Entity, IDamageable
 
     protected virtual void Die()
     {
+        OnDie?.Invoke();
         Destroy(gameObject);
     }
 
     private IEnumerator FlashWhite()
 
     {
-        spriteRenderer.color = new Color(3,3,3);
+        colorSpriteRenderer.color = new Color(3, 3, 3);
         yield return new WaitForSeconds(0.2f); // 0.2초 동안 흰색 유지
-        spriteRenderer.color = originalColor;
+        colorSpriteRenderer.color = originalColor;
     }
 
 

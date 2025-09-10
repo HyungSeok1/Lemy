@@ -34,39 +34,44 @@ public class GameStateManager : PersistentSingleton<GameStateManager>, ISaveable
     {
         base.Awake();
 
-        CurrentState = GameState.MainMenu;
+        CurrentGameState = GameState.MainMenu;
 
         SceneManager.sceneLoaded += HandleSceneLoaded;
-        ChangeChapterAndStage(-1, -1, -1);
+
+        // 메인메뉴 안에서 -1로 초기화 (빌드본에서만.)
+#if !UNITY_EDITOR
+    UpdateStateData(new StateData(-1, -1, -1));
+#endif
     }
 
-    public void ChangeChapterAndStage(int targetChapter, int targetMap, int targetNumber)
+    public void UpdateStateData(StateData stateData)
     {
-        currentChapter = targetChapter;
-        currentMap = targetMap;
-        currentNumber = targetNumber;
+        currentChapter = stateData.chapter;
+        currentMap = stateData.map;
+        currentNumber = stateData.number;
     }
 
     #region 게임의 전역 상태 (GameState) FSM
     public int currentChapter;
     public int currentMap;
     public int currentNumber;
-    public GameState CurrentState { get; private set; }
+
+    public StateData currentState;
+
+    public GameState CurrentGameState { get; private set; }
 
     //임시
     public void ChangeState(GameState newState)
     {
-        CurrentState = newState;
+        CurrentGameState = newState;
     }
     #endregion
 
     private void HandleSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         // 필요하면 현재 챕터/스테이지 로깅
-        Debug.Log($"[GSM] scene loaded: {scene.name} (chapter:{currentChapter}, map:{currentMap})");
         if (currentMap / 100 == 1)
         {
-            // 🔊 BGM 시작
             SoundManager.Instance.PlayBGM("gwanmoon_bgm", 0.5f);
         }
     }

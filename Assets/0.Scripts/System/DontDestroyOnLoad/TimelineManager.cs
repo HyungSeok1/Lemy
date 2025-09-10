@@ -121,11 +121,10 @@ public class TimelineManager : PersistentSingleton<TimelineManager>
                         if (animator != null)
                         {
                             director.SetGenericBinding(track, animator);
-                            Debug.Log($"AnimationTrack '{track.name}'에 바인딩 완료!");
                         }
                         else
                         {
-                            Debug.LogWarning($"Animator가 {obj.name}에 없음!");
+                            Debug.LogError($"Animator가 {obj.name}에 없음!");
                         }
                     }
                     else if (track is SignalTrack)
@@ -134,16 +133,15 @@ public class TimelineManager : PersistentSingleton<TimelineManager>
                         if (receiver != null)
                         {
                             director.SetGenericBinding(track, receiver);
-                            Debug.Log($"SignalTrack '{track.name}'에 바인딩 완료!");
                         }
                         else
                         {
-                            Debug.LogWarning($"SignalReceiver가 {obj.name}에 없음!");
+                            Debug.LogError($"SignalReceiver가 {obj.name}에 없음!");
                         }
                     }
                     else
                     {
-                        Debug.LogWarning($"지원되지 않는 트랙 타입: {track.GetType()}");
+                        Debug.LogError($"지원되지 않는 트랙 타입: {track.GetType()}");
                     }
                 }
             }

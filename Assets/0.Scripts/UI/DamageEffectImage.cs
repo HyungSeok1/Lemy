@@ -11,9 +11,6 @@ public class DamageEffectImage : MonoBehaviour
     private void Start()
     {
         Player.Instance.health.OnDamaged += BlinkImageTwice;
-
-        print(Player.Instance);
-        print(Player.Instance.health);
     }
 
     private void BlinkImageTwice(float _)

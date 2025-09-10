@@ -36,7 +36,7 @@ public class PlayerInventory : MonoBehaviour, ISaveable<InventoryData>
     /// </summary>
     public int GetItemCount(string itemID)
     {
-        ItemData data = db.GetById(itemID);
+        ItemData data = db.GetItemByName(itemID);
         return GetItemCount(data);
     }
 
@@ -53,7 +53,7 @@ public class PlayerInventory : MonoBehaviour, ISaveable<InventoryData>
     /// </summary>
     public bool HasItem(string itemID, int count = 1)
     {
-        ItemData data = db.GetById(itemID);
+        ItemData data = db.GetItemByName(itemID);
         return HasItem(data, count);
     }
 
@@ -75,7 +75,7 @@ public class PlayerInventory : MonoBehaviour, ISaveable<InventoryData>
     /// </summary>
     public bool TryConsume(string itemID, int count = 1)
     {
-        ItemData data = db.GetById(itemID);
+        ItemData data = db.GetItemByName(itemID);
         return TryConsume(data, count);
     }
 
@@ -101,7 +101,7 @@ public class PlayerInventory : MonoBehaviour, ISaveable<InventoryData>
 
     public void AddItem(string itemID, int count)
     {
-        ItemData data = db.GetById(itemID);
+        ItemData data = db.GetItemByName(itemID);
         AddItem(data, count);
     }
 
@@ -135,7 +135,7 @@ public class PlayerInventory : MonoBehaviour, ISaveable<InventoryData>
 
     public void RemoveItem(string itemID, int count)
     {
-        ItemData data = db.GetById(itemID);
+        ItemData data = db.GetItemByName(itemID);
         RemoveItem(data, count);
     }
 
@@ -165,7 +165,7 @@ public class PlayerInventory : MonoBehaviour, ISaveable<InventoryData>
         {
             foreach (var dto in data.slots)
             {
-                var item = db.GetById(dto.itemId);
+                var item = db.GetItemByName(dto.itemId);
                 if (item == null) { Debug.LogWarning($"아이템이 db에 없음: {dto.itemId}"); continue; }
 
                 slots.Add(new InventorySlot

@@ -133,7 +133,10 @@ public class MapData
     //엔티티 생성할지말지 등을 결정
     public List<EntityGuide> entityGuideList;
     // 제약구간 활성화여부 등 처리. 제약구간에 딱 들어가면 켜질지말지 결정함
-    public List<SectionEntry> sectionList;
+    public List<ChallengeZoneEntry> challengeZoneList;
+
+    // 맵 오브젝트 활성화여부 등 처리. 시작하자마자 어떻게 할지 결정
+    public List<MapObjectEntry> saveableMapObjectList;
 }
 
 [Serializable]
@@ -145,11 +148,21 @@ public class EntityGuide
 }
 
 [Serializable]
-public class SectionEntry
+public class ChallengeZoneEntry
 {
     //true면 id에 해당하는 제약구간 실행함. 제약구간 클리어하거나, 경우에따라 제약구간 탈출하면 이 플래그를 false로 바꿈
     public string id;
     public bool executionFlag;
+}
+
+/// <summary>
+/// 실행된거 저장 - ex. Door 열림
+/// </summary>
+[Serializable]
+public class MapObjectEntry
+{
+    public string id;
+    public bool isActivated;
 }
 
 public class SaveMeta

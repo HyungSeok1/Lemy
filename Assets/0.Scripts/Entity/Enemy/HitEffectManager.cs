@@ -30,8 +30,6 @@ public class HitEffectManager : MonoBehaviour
 
         Vector3 spawnPos = enemyPos + new Vector3(dir.x, dir.y, 0) * distance; ;
 
-        Debug.Log("히트 이펙트");
-        Debug.Log("Dir"+dir);
 
         switch (ran)
         {

@@ -18,5 +18,5 @@ MonoBehaviour:
   chaseDetectionRangeMultiplier: 1.6
   damage: 20
   stayTime: 2
-  wanderRadius: 16
-  wanderInterval: 7
+  wanderRadius: 70
+  wanderInterval: 3

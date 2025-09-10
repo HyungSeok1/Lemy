@@ -33,7 +33,7 @@ public class CursorManager : PersistentSingleton<CursorManager>
     [Tooltip("감쇠 시간(초). 3초 동안 서서히 1배로 복귀")]
     [SerializeField] private float dashSpinDuration = 3f;
 
-    private enum State { Default, ClickHold}
+    private enum State { Default, ClickHold }
     private State state = State.Default;
 
     private Canvas canvas;
@@ -86,7 +86,6 @@ public class CursorManager : PersistentSingleton<CursorManager>
 
     private void OnDashImpulse(Vector2 v)
     {
-        Debug.Log($"CursorManager: Dash Impulse {v}");
         dashSpinTimer = 0f;
     }
 
@@ -186,11 +185,10 @@ public class CursorManager : PersistentSingleton<CursorManager>
 
     private void FollowMouse()
     {
-        Vector2 screenPos = Mouse.current != null ? Mouse.current.position.ReadValue()
-                                                  : (Vector2)Input.mousePosition;
-        
+        Vector2 screenPos = Player.Instance.playerInput.actions["Pointer"].ReadValue<Vector2>(); // 마우스 위치 - 커서는 가공된 값을 쓰지 않음.
+
         rt.position = screenPos;
-        
+
     }
 
     private void Animate()

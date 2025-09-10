@@ -60,6 +60,8 @@ public class Cyclops : Enemy
         anim.SetTrigger("isDie");
         agent.isStopped = true;
         agent.velocity = Vector3.zero;
+
+        base.Die();
     }
 
     private void OnDieAnimationEnd()
@@ -70,7 +72,7 @@ public class Cyclops : Enemy
             Destroy(parentObject);
         }
     }
-    
+
     private void OnDieAnimationStart()
     {
         foreach (Transform child in transform)

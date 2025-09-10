@@ -64,6 +64,8 @@ public class Kung : ObstacleBase
         curSpeed = speed;
         if (collider.CompareTag("Obstacle") || collider.CompareTag("Wall"))
         {
+            SoundManager.Instance.PlaySFX("lightning2", 0.1f);
+
             StartCoroutine(Stop(stopTime));
 
             switch (moveDirection)
