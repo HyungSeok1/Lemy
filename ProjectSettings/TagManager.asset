@@ -12,6 +12,7 @@ TagManager:
   - SavePoint
   - Wall
   - Item
+  - Spike
   layers:
   - Default
   - TransparentFX
