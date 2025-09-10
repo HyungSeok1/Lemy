@@ -5,8 +5,6 @@ using UnityEngine;
 public class Larva : Enemy
 {
     [SerializeField] private float damage;
-    [SerializeField] private ItemData meatItemData;
-
     Animator anim;
 
 
@@ -41,7 +39,7 @@ public class Larva : Enemy
 
     protected override void Die()
     {
-        DroppedItemManager.Instance.Drop(meatItemData, transform.position, Vector2.zero);
+        DroppedItemManager.Instance.Drop(DropItemData, transform.position, Vector2.zero);
 
         base.Die();
     }

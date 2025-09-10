@@ -15,6 +15,10 @@ public class DroppedItemManager : Singleton<DroppedItemManager>
     [SerializeField] private GameObject defaultPrefabReference;
     [SerializeField] private List<DroppedItemPrefabMapping> prefabMappings = new List<DroppedItemPrefabMapping>();
 
+    [Space(10)]
+    [Header("Drop settings")]
+    [SerializeField] private float RandomDropRadius = 1.5f;
+
     private Dictionary<ItemData, IObjectPool<DroppedItem>> pools = new Dictionary<ItemData, IObjectPool<DroppedItem>>();
     private Dictionary<ItemData, GameObject> prefabDict = new Dictionary<ItemData, GameObject>();
 
@@ -127,6 +131,12 @@ public class DroppedItemManager : Singleton<DroppedItemManager>
             return;
         }
 
+        if (count == 1)
+        {
+            Drop(data, position, speedVector);
+            return;
+        }
+
         var pool = GetOrCreatePool(data);
 
         for (int i = 0; i < count; i++)
@@ -140,7 +150,7 @@ public class DroppedItemManager : Singleton<DroppedItemManager>
             }
 
             // 약간의 랜덤 오프셋과 속도 벡터를 추가하여 아이템이 흩어지도록 함
-            Vector3 randomOffset = new Vector3(UnityEngine.Random.Range(-0.5f, 0.5f), UnityEngine.Random.Range(-0.5f, 0.5f), 0);
+            Vector3 randomOffset = new Vector3(UnityEngine.Random.Range(-RandomDropRadius, RandomDropRadius), UnityEngine.Random.Range(-RandomDropRadius, RandomDropRadius), 0);
             Vector2 randomSpeed = speedVector + new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f));
 
             droppedItem.Init(data, position + randomOffset, randomSpeed);

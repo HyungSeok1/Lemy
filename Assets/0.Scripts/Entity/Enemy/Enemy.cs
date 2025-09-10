@@ -11,6 +11,8 @@ public abstract class Enemy : Entity, IDamageable
     public event Action OnDie;
 
     protected int currentHealth;
+    [SerializeField] protected ItemData DropItemData;
+    [SerializeField] protected int DropItemCount = 1;
 
     //색깔 변경용 변수
 
