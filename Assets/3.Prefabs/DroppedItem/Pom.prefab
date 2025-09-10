@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2576298880884964316}
   m_Layer: 0
   m_Name: Pom
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,7 +115,7 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2048
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0

@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c4bb41a5ad1bf44089aaf64d7f11100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DropItemData: {fileID: 11400000, guid: 32729e58566d0864a8b451d51b85fe52, type: 2}
+  DropItemData: {fileID: 11400000, guid: b8016b62850ca3d429eae7cbd1666a8d, type: 2}
   DropItemCount: 7
   data: {fileID: 11400000, guid: db88d85c9e82d324c96b5f5c395b65a5, type: 2}
 --- !u!70 &1100150924043561141
