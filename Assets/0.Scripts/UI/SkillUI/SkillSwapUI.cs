@@ -38,18 +38,13 @@ public class SkillSwapUI : MonoBehaviour
         {
             skillSwapUIOpened = true;
             canvasGroup.alpha = 1f;
-            InitializeSkillUI();
-
-            OnSkillSwapUIOpened?.Invoke();
+            StartCoroutine(InitializeSkillUI());
         }
         else if(Input.GetKeyDown(KeyCode.Alpha1) && skillSwapUIOpened)
         {
             skillSwapUIOpened = false;
             canvasGroup.alpha = 0f;
-            DestorySkillUI();
-
-            OnSkillSwapUIClosed?.Invoke();
-            StartCoroutine(LayoutGroupModify(true));
+           StartCoroutine(DestroySkillUI());
         }
 
         if (skillSwapUIOpened)
@@ -58,7 +53,7 @@ public class SkillSwapUI : MonoBehaviour
         }
     }
 
-    void InitializeSkillUI()
+    private IEnumerator InitializeSkillUI()
     {
         // 자식들 삭제
         foreach (Transform child in skillLineParents[0]) GameObject.Destroy(child.gameObject);
@@ -99,7 +94,9 @@ public class SkillSwapUI : MonoBehaviour
             }
         }
 
-        StartCoroutine(LayoutGroupModify(false));
+        yield return LayoutGroupModify(false);
+
+        OnSkillSwapUIOpened?.Invoke();
     }
 
     private IEnumerator LayoutGroupModify(bool layoutTurnedOn) // 한번 정렬 후 레이아웃 끄기;;
@@ -112,8 +109,18 @@ public class SkillSwapUI : MonoBehaviour
         }
     }
 
-    void DestorySkillUI()
+    private IEnumerator DestroySkillUI()
     {
+        foreach (Transform lineParent in skillLineParents)
+        {
+            foreach (Transform child in lineParent)
+            {
+                GameObject.Destroy(child.gameObject);
+            }
+        }
 
+        yield return LayoutGroupModify(true);
+
+        OnSkillSwapUIClosed?.Invoke();
     }
 }
