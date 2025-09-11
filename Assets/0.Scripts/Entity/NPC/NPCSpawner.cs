@@ -1,14 +1,19 @@
+using System.Collections;
 using UnityEngine;
 
 public class NPCSpawner : MonoBehaviour
 {
-    [SerializeField] float spawnTime;
-    [SerializeField] float speed;
+    [SerializeField] float spawnMinTime;
+    [SerializeField] float spawnMaxTime;
     [SerializeField] Vector3 dir;
     [SerializeField] private GameObject[] NPC;
+    private bool keepSpawn = true;
 
-    float timer;
-
+    private void Start()
+    {
+        StartCoroutine(SpawnNPC());
+    }
+/*
     private void Update()
     {
         timer += Time.deltaTime;
@@ -19,11 +24,17 @@ public class NPCSpawner : MonoBehaviour
             timer = 0;
         }
     }
-
-    private GameObject Spawn()
+*/
+    private IEnumerator SpawnNPC()
     {
-        int ran = Random.Range(0, NPC.Length);
-        GameObject spawned = Instantiate(NPC[ran], transform);
-        return spawned;
+        while (keepSpawn)
+        {
+            float newSpawnTime = Random.Range(spawnMinTime, spawnMaxTime);
+            int ran = Random.Range(0, NPC.Length);
+            GameObject spawned = Instantiate(NPC[ran], transform);
+            spawned.GetComponent<NPCMover>().dir = dir;
+            yield return new WaitForSeconds(newSpawnTime);
+        }
     }
+
 }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2782859295784935895}
   - component: {fileID: 3825630531129219259}
   - component: {fileID: 2489221425036417325}
+  - component: {fileID: -2860837840093511063}
   m_Layer: 0
   m_Name: BackgroundNPC3
   m_TagString: NPC
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6146489364474479415}
@@ -79,9 +80,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: dd0fadc4dbf54e3478e86c2b30f8f96d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5411765}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -177,6 +178,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-2860837840093511063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295946429240040251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c92997627e06b214c8fd4f0968126fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeed: 1
+  maxSpeed: 2
+  dir: {x: 0, y: 0, z: 0}
 --- !u!1 &1872203883192990023
 GameObject:
   m_ObjectHideFlags: 0
