@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rescuestarter_Happy_0002_0: -2170552206014137761
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
