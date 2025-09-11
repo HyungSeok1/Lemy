@@ -3557,7 +3557,6 @@ GameObject:
   - component: {fileID: 696377673486021058}
   - component: {fileID: 1408700347507313174}
   - component: {fileID: 6001153675114325309}
-  - component: {fileID: 8886254478044248752}
   - component: {fileID: 89486289907100884}
   m_Layer: 0
   m_Name: Door
@@ -3650,21 +3649,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 15, y: 30}
   m_EdgeRadius: 0
---- !u!114 &8886254478044248752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8143186694517636689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 187cf04f5ec97754bb59dbb980b68f74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: Map1_Door
-  checker: {fileID: 89486289907100884}
-  doorObject: {fileID: 7335975251840666568}
 --- !u!114 &89486289907100884
 MonoBehaviour:
   m_ObjectHideFlags: 0
