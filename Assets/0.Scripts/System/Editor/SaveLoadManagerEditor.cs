@@ -25,5 +25,10 @@ public class SaveLoadManagerEditor : Editor
         {
 
         }
+
+        if (GUILayout.Button("Save Pure MapData"))
+        {
+            manager.SavePureMapdata(slot);
+        }
     }
 }

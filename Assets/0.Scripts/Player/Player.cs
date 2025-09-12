@@ -65,6 +65,8 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
 
     void Start()
     {
+        MainCameraScript.Instance.mainCinemachineCamera.Follow = transform;
+
         playerInputController.EnablePlayerActionMap();
         CutsceneManager.Instance.OnTimelineChanged += BindCutsceneTrackReference;
         RegisterToSwitchTarget();

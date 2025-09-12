@@ -77,6 +77,19 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
         yield return new WaitForSeconds(fadeDuration);
     }
 
+
+    public void StartTransitionWithFade(StateData stateData, PositionData positionData)
+    {
+        StartCoroutine(TransitionCoroutine(stateData, positionData));
+    }
+
+    public IEnumerator TransitionWithFade(StateData stateData, PositionData positionData)
+    {
+        yield return FadeInCoroutine();
+        yield return TransitionCoroutine(stateData, positionData);
+        yield return FadeOutCoroutine();
+    }
+
     #region Portal 전용 Transition
 
     public void StartPortalTransition(string targetScene, string entranceID)

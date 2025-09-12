@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Map2RescueStarter_0002_0: -7782048103681774895
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

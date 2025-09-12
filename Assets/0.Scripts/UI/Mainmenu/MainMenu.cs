@@ -8,28 +8,36 @@ using UnityEngine;
 /// </summary>
 public class MainMenu : MonoBehaviour
 {
-    private void OnEnable()
+    [SerializeField] private MainMenuUIManager uiManager;
+    [SerializeField] private SaveslotsPanel savePanel;
+
+    private void Start()
     {
-        GameStateManager.Instance.currentChapter = GameStateManager.Instance.currentMap = -1; //메인메뉴에선 -1입니다.
+        GameStateManager.Instance.currentStateData = new StateData(-1, -1, -1);
+        Player.Instance.playerInputController.EnableUIActionMap();
     }
 
-    public void NewGame()
+    private void Update()
     {
-     
-
     }
 
-    public void ContinueGame()
-    {
-      
-    }
-
-    public void Options()
+    public void Continue()
     {
 
     }
 
-    public void QuitGame()
+    public void StartGame()
+    {
+        uiManager.ShowPanel(savePanel.gameObject);
+        savePanel.ActiveSaveloadSlots();
+    }
+
+    public void Settings()
+    {
+
+    }
+
+    public void ExitGame()
     {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
@@ -37,5 +45,4 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
 #endif
     }
-
 }

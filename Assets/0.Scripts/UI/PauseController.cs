@@ -23,11 +23,6 @@ public class PauseController : MonoBehaviour
         isPaused = !isPaused;
         pauseMenuUI.SetActive(isPaused);
         Time.timeScale = isPaused ? 0f : 1f;
-
-        if (isPaused)
-            EventSystem.current.SetSelectedGameObject(continueButton.gameObject);
-        else
-            EventSystem.current.SetSelectedGameObject(null);
     }
 
     public void ContinueGame()

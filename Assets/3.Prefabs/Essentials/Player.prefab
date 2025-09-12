@@ -380,7 +380,7 @@ MonoBehaviour:
     m_ActionName: 'Player/Skill3[/Keyboard/e]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
-  m_DefaultActionMap: Player
+  m_DefaultActionMap: 
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!95 &7065087859338873885

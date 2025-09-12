@@ -23,7 +23,15 @@ public class PlayerHealth : MonoBehaviour, ISaveable<HealthData>
         CurrentHealth = maxHealth;
     }
 
+    private void Start()
+    {
+        OnDamaged += MainCameraScript.Instance.ShakeCamera;
+    }
 
+    private void OnDisable()
+    {
+        OnDamaged += MainCameraScript.Instance.ShakeCamera;
+    }
 
     public void TakeDamage(float damage, Vector2 direction = default, float force = 50f)
     {
