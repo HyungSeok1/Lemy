@@ -253,9 +253,10 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
 
         if (collision.gameObject.CompareTag("Spike"))
         {
-            pow = 3f; // 일반 벽보다 더 밀려남
-            StartCoroutine(WallBonk());
-            pow = 1f;
+            Vector3 dir = ( transform.position - collision.transform.position).normalized;
+            movement.skillVelocity = dir * 10f;
+            //DamageReaction damageReaction = GetComponent<DamageReaction>();
+            //damageReaction.Knockback(dir, 10f);
         }
 
         if (collision.gameObject.CompareTag("Destructible"))
