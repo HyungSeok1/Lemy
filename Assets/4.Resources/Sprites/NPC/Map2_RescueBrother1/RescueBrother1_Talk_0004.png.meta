@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RescueBrother1_Talk_0004_0: 6010991265270250110
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
