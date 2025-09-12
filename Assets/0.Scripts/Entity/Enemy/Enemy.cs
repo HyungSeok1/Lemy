@@ -21,13 +21,11 @@ public abstract class Enemy : Entity, IDamageable
 
     private void Initialize()
     {
-
         colorSpriteRenderer = GetComponent<SpriteRenderer>();
         if (colorSpriteRenderer != null)
         {
             originalColor = colorSpriteRenderer.color;
         }
-
         ChangeState(State.Idle);
 
     }
@@ -53,6 +51,10 @@ public abstract class Enemy : Entity, IDamageable
         if (colorSpriteRenderer != null)
         {
             StartCoroutine(FlashWhite());
+        }
+        else
+        {
+            Debug.LogError("컬러 스프라이트 렌더러가 없어서 하얀색 안됨 ㅋㅋ");
         }
 
         OnEnemyDamaged?.Invoke(Player.Instance.transform.position, transform.position);
