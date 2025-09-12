@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kungkung_0: -7061776714421302055
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
