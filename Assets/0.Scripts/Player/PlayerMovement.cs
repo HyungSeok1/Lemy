@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private Player player;
+    private SpriteRenderer spriteRenderer;
 
     [HideInInspector] public float lastBrakeTime = -Mathf.Infinity;
     [HideInInspector] public Vector2 lastVelocity;
@@ -35,6 +36,8 @@ public class PlayerMovement : MonoBehaviour
 
     public event Action<Vector2> OnSkillImpulse;
 
+    public bool canMove = true;
+
 
 
     private void Start()
@@ -42,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
         rb = Player.Instance.rb;
         animator = Player.Instance.animator;
         env = Player.Instance.envFieldReceiver;
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
         speed = 0f;
         isMoving = false;
@@ -50,6 +54,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // 이동 불가 상태 체크(ex. 대화,이벤트, 스킬 사용중 등)
+        if (!canMove) return;
+
         lastVelocity = currentVelocity;
 
         // 기본조작 입력받아 값 적용 & 플레이어 회전
@@ -63,6 +70,10 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, 0f, newAngle);
 
             dir = transform.right;
+
+            bool facingLeft = Mathf.Abs(Mathf.DeltaAngle(0f, newAngle)) > 90f;
+            if (spriteRenderer != null)
+                spriteRenderer.flipY = facingLeft;
 
 
             if (speed < maxSpeed) // 속도 한계치 안 넘었을때만 가속 적용
@@ -119,6 +130,15 @@ public class PlayerMovement : MonoBehaviour
         SetBodyVelocity(Vector2.zero);
         isMoving = false;
         SoundManager.Instance.PlaySFX("dashCancel", 0.05f);
+        animator.SetBool("isFlying", false);
+    }
+
+    public void Stop()
+    {
+        canMove = false;
+        speed = 0f;
+        SetBodyVelocity(Vector2.zero);
+        isMoving = false;
         animator.SetBool("isFlying", false);
     }
 
