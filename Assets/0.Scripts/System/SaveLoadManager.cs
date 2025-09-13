@@ -63,6 +63,8 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
 
     public void LoadGame(int slot)
     {
+        Player.Instance.GetComponent<SpriteRenderer>().enabled = true; // 임시로 비활성화했던것, 다시 활성화
+
         currentSlot = slot;
 
         string path = GetPathForSlot(slot);
@@ -98,6 +100,8 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
     /// <param name="slot"></param>
     public void LoadNewGame(int slot)
     {
+        Player.Instance.GetComponent<SpriteRenderer>().enabled = true; // 임시로 비활성화했던것, 다시 활성화
+
         currentSlot = slot;
 
         string path = GetPathForSlot(slot);
@@ -135,7 +139,11 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
     /// <returns></returns>
     public GameSaveData GetCurrentData()
     {
+#if UNITY_EDITOR
+        string path = GetPathForSlot(1);
+#else
         string path = GetPathForSlot(CurrentSlot);
+#endif
 
         if (!File.Exists(path))
         {
@@ -179,6 +187,7 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
     {
         saveData = new GameSaveData(); // isEmpty true
         saveData.playerData = new PlayerData();
+        saveData.playerData.skillData = new PlayerSkillData("Dash", "Heal","Slash" , null);
 
         // Pure Map data 가져오기
         string path1 = GetPureMapdataPath();

@@ -1,13 +1,9 @@
-using DG.Tweening;
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using Unity.Cinemachine;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 /// <summary>
 /// 플레이어의 입력, 애니메이션 등 관리

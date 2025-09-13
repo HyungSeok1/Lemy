@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Text;
 using UnityEngine;
@@ -9,7 +10,32 @@ using UnityEngine.InputSystem;
 public class PlayerInputController : MonoBehaviour
 {
     [SerializeField] private PlayerInput playerInput;
-    // 액션맵 조작
+    public event Action OnESCPressed;
+
+    private void Start()
+    {
+        Player.Instance.playerInputController.BindActionCallback("Global", "Pause", ctx => OnESCPressed?.Invoke());
+    }
+
+    public void BindActionCallback(string actionMapName, string actionName, Action<InputAction.CallbackContext> callback)
+    {
+        var actionMap = playerInput.actions.FindActionMap(actionMapName);
+        if (actionMap == null)
+        {
+            Debug.LogError($"액션맵 '{actionMapName}'을 찾을 수 없습니다.");
+            return;
+        }
+
+        var action = actionMap.FindAction(actionName);
+        if (action == null)
+        {
+            Debug.LogError($"액션 '{actionName}'을 액션맵 '{actionMapName}'에서 찾을 수 없습니다.");
+            return;
+        }
+
+        // 콜백 바인딩[170]
+        action.performed += callback;
+    }
 
     /// <summary>
     /// Global 맵만 켜기

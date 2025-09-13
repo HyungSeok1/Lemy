@@ -11,10 +11,11 @@ using UnityEngine;
 /// </summary>
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private MainMenuUIManager uiManager;
+    [SerializeField] private UIStacker uiManager;
 
     [SerializeField] private SaveslotsPanel savePanel;
     [SerializeField] private TMP_Text continueText;
+    [SerializeField] private SettingsPanel settingsPanel;
 
     [SerializeField] private float continueTargetAlpha;
 
@@ -28,6 +29,7 @@ public class MainMenu : MonoBehaviour
         GameStateManager.Instance.currentStateData = new StateData(-1, -1, -1);
 
         inputController = Player.Instance.playerInputController;
+        Player.Instance.GetComponent<SpriteRenderer>().enabled = false; 
 
         // 인풋 관련
         inputController.EnableGlobalOnly();
@@ -62,13 +64,13 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        uiManager.ShowPanel(savePanel.gameObject);
+        uiManager.ShowPanel(savePanel.SlotParent.gameObject);
         savePanel.ActiveSaveloadSlots();
     }
 
     public void Settings()
     {
-
+        uiManager.ShowPanel(settingsPanel.firstSettingsPanel.gameObject);
     }
 
     public void ExitGame()
