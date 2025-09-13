@@ -1,4 +1,4 @@
-﻿-> Map2RescueBrother1_1
+-> Map2RescueBrother1_1
 
 === Map2RescueBrother1_1 ===
 { QState("Map2RescueBrothers"):

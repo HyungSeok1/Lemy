@@ -49,3 +49,6 @@ INCLUDE Map2RescueBrothersDialogues\Map2RescueStarter.ink
 INCLUDE Map2RescueBrothersDialogues\Map2RescueBrother1_1.ink
 INCLUDE Map2RescueBrothersDialogues\Map2RescueBrother1_2.ink
 INCLUDE Map2RescueBrothersDialogues\Map2RescueBrother2.ink
+INCLUDE npc_talk_Map2_D.ink
+INCLUDE npc_talk_Map2_E.ink
+INCLUDE npc_talk_Map2_F.ink
