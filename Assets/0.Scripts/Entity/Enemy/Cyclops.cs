@@ -61,6 +61,8 @@ public class Cyclops : Enemy
         agent.isStopped = true;
         agent.velocity = Vector3.zero;
 
+        DroppedItemManager.Instance.Drop(DropItemData, DropItemCount, transform.position, Vector2.zero);
+
         base.Die();
     }
 

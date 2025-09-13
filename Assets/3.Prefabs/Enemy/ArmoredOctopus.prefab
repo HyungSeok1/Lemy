@@ -125,6 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c4bb41a5ad1bf44089aaf64d7f11100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DropItemData: {fileID: 11400000, guid: b8016b62850ca3d429eae7cbd1666a8d, type: 2}
+  DropItemCount: 5
   data: {fileID: 11400000, guid: 6b3ad25ebd9556646a6999ba8dd20a41, type: 2}
 --- !u!195 &7274123854949475347
 NavMeshAgent:

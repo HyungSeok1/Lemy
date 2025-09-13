@@ -1,6 +1,8 @@
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
 
 /// <summary>
 /// skill 선택창 ui
@@ -26,7 +28,7 @@ public class SkillSwapUI : MonoBehaviour
 
     private void Start()
     {
-        playerSkillController = Player.Instance.playerSkillController;    
+        playerSkillController = Player.Instance.playerSkillController;
     }
 
     // Update is called once per frame
@@ -36,26 +38,22 @@ public class SkillSwapUI : MonoBehaviour
         {
             skillSwapUIOpened = true;
             canvasGroup.alpha = 1f;
-            InitializeSkillUI();
-
-            OnSkillSwapUIOpened?.Invoke();
+            StartCoroutine(InitializeSkillUI());
         }
         else if(Input.GetKeyDown(KeyCode.Alpha1) && skillSwapUIOpened)
         {
             skillSwapUIOpened = false;
             canvasGroup.alpha = 0f;
-            DestorySkillUI();
-
-            OnSkillSwapUIClosed?.Invoke();
+           StartCoroutine(DestroySkillUI());
         }
 
-        if(skillSwapUIOpened)
+        if (skillSwapUIOpened)
         {
             // TODO : 창 열린동안 캐릭터 못움직이게 하고싶음..
         }
     }
 
-    void InitializeSkillUI()
+    private IEnumerator InitializeSkillUI()
     {
         // 자식들 삭제
         foreach (Transform child in skillLineParents[0]) GameObject.Destroy(child.gameObject);
@@ -94,14 +92,35 @@ public class SkillSwapUI : MonoBehaviour
                     currentSkillSlot.skillImage.sprite = currentSkillSlot.skill.skilldata.icon;
                 }
             }
-            
-
         }
 
+        yield return LayoutGroupModify(false);
+
+        OnSkillSwapUIOpened?.Invoke();
     }
 
-    void DestorySkillUI()
+    private IEnumerator LayoutGroupModify(bool layoutTurnedOn) // 한번 정렬 후 레이아웃 끄기;;
     {
+        yield return null; // 한 프레임 대기
+        for (int i = 0; i < skillLineParents.Length; i++)
+        {
+            var layout = skillLineParents[i].GetComponent<HorizontalLayoutGroup>();
+            layout.enabled = layoutTurnedOn;
+        }
+    }
 
+    private IEnumerator DestroySkillUI()
+    {
+        foreach (Transform lineParent in skillLineParents)
+        {
+            foreach (Transform child in lineParent)
+            {
+                GameObject.Destroy(child.gameObject);
+            }
+        }
+
+        yield return LayoutGroupModify(true);
+
+        OnSkillSwapUIClosed?.Invoke();
     }
 }

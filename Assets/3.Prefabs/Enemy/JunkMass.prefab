@@ -135,6 +135,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae4ec5fbedf8e544a8168c38181274e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DropItemData: {fileID: 11400000, guid: b8016b62850ca3d429eae7cbd1666a8d, type: 2}
+  DropItemCount: 6
   data: {fileID: 11400000, guid: d1a49a6e8f673f1479f2435cbe3ee16c, type: 2}
   projectilePrefab: {fileID: 7963376585308162227, guid: b9fd7225fa919b84a85fb06225134593, type: 3}
 --- !u!195 &8766982625819307660

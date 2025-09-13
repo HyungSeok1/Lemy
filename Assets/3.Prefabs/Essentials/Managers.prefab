@@ -575,7 +575,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9965f3e69140a454aa341d122d2bb8bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabReference: {fileID: 7457357992812885740, guid: 290673a35107c1f4dbc6ff85cdb8b07b, type: 3}
+  defaultPrefabReference: {fileID: 8139857811379112350, guid: 5f09cd0635dffd148b138770856b2467, type: 3}
+  prefabMappings:
+  - itemData: {fileID: 11400000, guid: ae84e6ed1e7c32341b289cca6ee238bd, type: 2}
+    prefab: {fileID: 1473285186333518259, guid: efe747e971019ed428c0cd83f6778cf1, type: 3}
+  - itemData: {fileID: 11400000, guid: b8016b62850ca3d429eae7cbd1666a8d, type: 2}
+    prefab: {fileID: 3497750357234673755, guid: 8338d809f08dcf147888c688eda8f7cd, type: 3}
+  - itemData: {fileID: 11400000, guid: e8fddea7f35801e43a59cb223617e68d, type: 2}
+    prefab: {fileID: 3497750357234673755, guid: 7436d88b7a567f4489f7a9fa68b7d608, type: 3}
+  RandomDropRadius: 1.5
 --- !u!1 &5154767381673263233
 GameObject:
   m_ObjectHideFlags: 0

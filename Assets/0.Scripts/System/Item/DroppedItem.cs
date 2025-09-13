@@ -6,36 +6,39 @@ using UnityEngine.Pool;
 /// </summary>
 public class DroppedItem : MonoBehaviour
 {
-    private IObjectPool<DroppedItem> pool;
-    [HideInInspector] public ItemData ItemData;
-
-    [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] new private Rigidbody2D rigidbody2D;
-
-    public void SetPool(IObjectPool<DroppedItem> poolRef)
-    {
-        pool = poolRef;
-    }
+    public ItemData ItemData;
 
     public void Init(ItemData data, Vector3 dropPoint, Vector2 speedVector)
     {
         ItemData = data;
         gameObject.transform.position = dropPoint;
-        rigidbody2D.linearVelocity = speedVector;
-
-        spriteRenderer.sprite = data.icon;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (!other.CompareTag("Player")) return;
         Pickup();
     }
 
     private void Pickup()
     {
-        Player.Instance.inventory.AddItem(ItemData, 1);
-        print(ItemData);
-    
-        pool.Release(this);
+        if (ItemData.GetType() == typeof(MoneyItemData)) // 돈 아이템인 경우
+        {
+            MoneyItemData moneyData = ItemData as MoneyItemData;
+            if (moneyData != null)
+            {
+                MoneyManager.Instance.AddMoney(moneyData.amount);
+                Debug.Log("Money Picked up: " + moneyData.amount);
+            }
+        }
+        else // 일반 아이템인 경우
+        {
+            Player.Instance.inventory.AddItem(ItemData, 1);
+            Debug.Log("Item Picked up: " + ItemData.itemName);
+        }
+
+
+        // DroppedItemManager를 통해 적절한 풀에 반환
+        DroppedItemManager.Instance.ReturnToPool(this);
     }
 }

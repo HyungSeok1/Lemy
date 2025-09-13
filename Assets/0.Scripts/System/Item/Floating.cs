@@ -5,6 +5,8 @@ public class Floating : MonoBehaviour
     public float amplitude;
     public float frequency;
 
+    public bool isFloating = true;
+
     Vector3 pos;
 
     void Start()
@@ -14,6 +16,7 @@ public class Floating : MonoBehaviour
 
     void Update()
     {
+        if (!isFloating) return;
         transform.position = pos + Vector3.up * Mathf.Sin(Time.time * frequency) * amplitude;
     }
 }

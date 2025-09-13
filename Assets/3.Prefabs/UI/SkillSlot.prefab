@@ -330,5 +330,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc5d44e351f98641b334b3f4da352ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillData: {fileID: 0}
   skillImage: {fileID: 6770099649266934920}
+  jitterRadius: 8
+  moveSpeed: 7

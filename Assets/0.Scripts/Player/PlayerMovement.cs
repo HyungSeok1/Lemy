@@ -5,7 +5,7 @@ public class PlayerMovement : MonoBehaviour
 {
     //이동 관련 변수들
     [SerializeField] private float rotationSpeed;
-    [SerializeField] private float maxSpeed;
+    [SerializeField] public float maxSpeed;
     [SerializeField] private float baseSpeedThreshold;
     [SerializeField] private float baseSpeedAccelerationCoef;
     [SerializeField] private float accelerationRate;

@@ -99,7 +99,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -13.856171, y: -25.216476}
+  m_Offset: {x: -0.6722336, y: -57.39824}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -109,7 +109,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 103.33125, y: 141.38042}
+  m_Size: {x: 183.21962, y: 185.17328}
   m_EdgeRadius: 0
 --- !u!114 &7010569285478778136
 MonoBehaviour:
@@ -126,5 +126,6 @@ MonoBehaviour:
   spawnMarker: {fileID: 8328517659050647296}
   lightningPrefab: {fileID: 4774045903684478734, guid: b5762ecc51243774da7041d77e5bc1d8, type: 3}
   lightningWarnerPrefab: {fileID: 4774045903684478734, guid: e39f35a4cd44879459f2f1a128fdb2a1, type: 3}
-  spawnInterval: 1.2
+  spawnInterval: 2
   minTiltFromHorizontal: 15
+  warningDuration: 1

@@ -16,6 +16,6 @@ public class ItemData : ScriptableObject
 [Serializable]
 public class InventorySlotDTO
 {
-    public string itemId; 
+    public string itemId;
     public int count;
 }

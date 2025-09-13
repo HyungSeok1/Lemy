@@ -134,7 +134,7 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
 
         StartCoroutine(DieEffectAndRespawn());
     }
-
+    
     // 사망 연출
     private IEnumerator DieEffectAndRespawn()
     {
@@ -243,13 +243,21 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
 
 
     [SerializeField] private float stunSpeedThreshold;
-    private float pow;
+    private float pow = 1f; // 밀려날 정도
     [SerializeField] private float slowDownDuration;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
 
+        }
+
+        if (collision.gameObject.CompareTag("Spike"))
+        {
+            Vector3 dir = ( transform.position - collision.transform.position).normalized;
+            movement.skillVelocity = dir * 10f;
+            //DamageReaction damageReaction = GetComponent<DamageReaction>();
+            //damageReaction.Knockback(dir, 10f);
         }
 
         if (collision.gameObject.CompareTag("Destructible"))
@@ -302,7 +310,6 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
         movement.speed = 0;
         rb.linearVelocity = Vector2.zero;
 
-        pow = 1f; // 밀려날 정도
 
         float elapsed = 0f;
         while (elapsed < slowDownDuration) // Bonk 상태 도중

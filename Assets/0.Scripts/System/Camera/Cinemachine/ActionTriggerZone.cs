@@ -16,6 +16,7 @@ public class ActionTriggerZone : MonoBehaviour
     [SerializeField] private float normalSize;    // 평소 OrthographicSize
     [SerializeField] private float zoomedSize;   // 트리거 진입 시 목표 크기
     [SerializeField] private float zoomDuration = 2f; // 줌에 걸릴 시간(초)
+    [SerializeField] private float maxSpeed;
 
 
     private BoxCollider2D box;
@@ -58,12 +59,14 @@ public class ActionTriggerZone : MonoBehaviour
 
         if (!other.CompareTag("Player")) return;
         StartZoom(zoomedSize);
+        Player.Instance.movement.maxSpeed = maxSpeed;
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
         StartZoom(normalSize);
+        Player.Instance.movement.maxSpeed = 30f;
     }
 
     private void StartZoom(float targetSize)

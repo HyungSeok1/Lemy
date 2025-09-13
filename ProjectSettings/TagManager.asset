@@ -11,6 +11,8 @@ TagManager:
   - Destructible
   - SavePoint
   - Wall
+  - Item
+  - Spike
   layers:
   - Default
   - TransparentFX

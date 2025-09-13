@@ -10,7 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4710143463715671188, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
       propertyPath: m_Name
-      value: UI Canvas
+      value: UI Canvas Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5838204292505714967, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5838204292505714967, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8384840362504910870, guid: 0dd3d21c32fb5d740a048f12ad66f4f6, type: 3}
       propertyPath: m_Pivot.x

@@ -255,7 +255,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 962ca66b8da1e874cbf93d272ff1fbbb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -300,6 +300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyData: {fileID: 0}
+  keyItem: {fileID: 0}
   keyEffect: {fileID: 2799871630676154595}
 --- !u!58 &8171155345874580550
 CircleCollider2D:

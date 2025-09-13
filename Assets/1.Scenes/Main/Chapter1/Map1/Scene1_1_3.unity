@@ -540,26 +540,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MapObjects
       objectReference: {fileID: 0}
-    - target: {fileID: 6157835333998449402, guid: afea75726db0aa141a86afabde56f540, type: 3}
-      propertyPath: exitID
-      value: 11301
-      objectReference: {fileID: 0}
-    - target: {fileID: 8735843784207284930, guid: afea75726db0aa141a86afabde56f540, type: 3}
-      propertyPath: targetMap
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8735843784207284930, guid: afea75726db0aa141a86afabde56f540, type: 3}
-      propertyPath: entranceID
-      value: 11102
-      objectReference: {fileID: 0}
-    - target: {fileID: 8735843784207284930, guid: afea75726db0aa141a86afabde56f540, type: 3}
-      propertyPath: targetNumber
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8735843784207284930, guid: afea75726db0aa141a86afabde56f540, type: 3}
-      propertyPath: targetChapter
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

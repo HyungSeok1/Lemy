@@ -124,8 +124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ce8ebd9b4d7b2348b40a79d3d1fa2ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DropItemData: {fileID: 11400000, guid: ae84e6ed1e7c32341b289cca6ee238bd, type: 2}
   damage: 10
-  meatItemData: {fileID: 11400000, guid: ae84e6ed1e7c32341b289cca6ee238bd, type: 2}
 --- !u!70 &100176796865358389
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
