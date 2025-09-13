@@ -269,6 +269,46 @@ MonoBehaviour:
     - id: ObstacleChallenge
       executionFlag: 1
     saveableMapObjectList: []
+  - chapter: 1
+    map: 2
+    number: 1
+    entityGuideList: []
+    challengeZoneList:
+    - id: ObstacleChallenge
+      executionFlag: 1
+    saveableMapObjectList: []
+  - chapter: 1
+    map: 2
+    number: 2
+    entityGuideList: []
+    challengeZoneList:
+    - id: ObstacleChallenge
+      executionFlag: 1
+    saveableMapObjectList: []
+  - chapter: 1
+    map: 2
+    number: 3
+    entityGuideList: []
+    challengeZoneList:
+    - id: ObstacleChallenge
+      executionFlag: 1
+    saveableMapObjectList: []
+  - chapter: 1
+    map: 3
+    number: 1
+    entityGuideList: []
+    challengeZoneList:
+    - id: ObstacleChallenge
+      executionFlag: 1
+    saveableMapObjectList: []
+  - chapter: 1
+    map: 4
+    number: 1
+    entityGuideList: []
+    challengeZoneList:
+    - id: ObstacleChallenge
+      executionFlag: 1
+    saveableMapObjectList: []
   currentMapData:
     chapter: 0
     map: 0
