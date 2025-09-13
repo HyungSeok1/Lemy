@@ -23,7 +23,7 @@ public class SaveLoadManagerEditor : Editor
 
         if (GUILayout.Button("Reset GameData"))
         {
-
+            manager.ResetData(slot);
         }
 
         if (GUILayout.Button("Save Pure MapData"))

@@ -30,7 +30,8 @@ public class PlayerHealth : MonoBehaviour, ISaveable<HealthData>
 
     private void OnDisable()
     {
-        OnDamaged += MainCameraScript.Instance.ShakeCamera;
+        if(MainCameraScript.Instance != null)
+            OnDamaged -= MainCameraScript.Instance.ShakeCamera;
     }
 
     public void TakeDamage(float damage, Vector2 direction = default, float force = 50f)

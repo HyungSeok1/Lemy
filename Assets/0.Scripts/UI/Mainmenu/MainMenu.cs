@@ -1,3 +1,6 @@
+using System.Collections;
+using System.IO;
+using TMPro;
 using UnityEngine;
 
 /// <summary>
@@ -9,21 +12,52 @@ using UnityEngine;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private MainMenuUIManager uiManager;
+
     [SerializeField] private SaveslotsPanel savePanel;
+    [SerializeField] private TMP_Text continueText;
+
+    [SerializeField] private float continueTargetAlpha;
+
+    private PlayerInputController inputController;
+
+    private bool continueAvailable = false;
+
 
     private void Start()
     {
         GameStateManager.Instance.currentStateData = new StateData(-1, -1, -1);
-        Player.Instance.playerInputController.EnableUIActionMap();
-    }
 
-    private void Update()
-    {
+        inputController = Player.Instance.playerInputController;
+
+        // 인풋 관련
+        inputController.EnableGlobalOnly();
+        inputController.CheckActionMapsStatus();
+        StartCoroutine(DelayedStart());
+
+        // 마지막으로 플레이한 슬롯정보 읽기 (Continue 버튼 활성화를 위해)
+        string slot = File.ReadAllText(SaveLoadManager.Instance.GetLastSlotPath());
+        string path = SaveLoadManager.Instance.GetMetaPathForSlot(int.Parse(slot));
+        string json = File.ReadAllText(path);
+        var metaData = JsonUtility.FromJson<SaveMeta>(json);
+        if (metaData.isEmpty)
+        {
+            continueText.CrossFadeAlpha(continueTargetAlpha, 0, false); // 즉시 알파 0.5로 변경
+            continueAvailable = false;
+        }
+        else
+        {
+            continueAvailable = true;
+        }
+
     }
 
     public void Continue()
     {
-
+        if (continueAvailable)
+        {
+            string slot = File.ReadAllText(SaveLoadManager.Instance.GetLastSlotPath());
+            SaveLoadManager.Instance.LoadGame(int.Parse(slot));
+        }
     }
 
     public void StartGame()
@@ -45,4 +79,12 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
 #endif
     }
+
+    private IEnumerator DelayedStart()
+    {
+        yield return null;
+        inputController.EnableUIActionMap();
+        inputController.CheckActionMapsStatus();
+    }
+
 }

@@ -1,20 +1,20 @@
+using System.Collections;
+using System.Text;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// 추후 수정 필요. 현재는 그냥 일단 강제로 꺼버리고 1프레임 뒤에 키고싶은걸 킴.
+/// </summary>
 public class PlayerInputController : MonoBehaviour
 {
-    private PlayerInput playerInput;
+    [SerializeField] private PlayerInput playerInput;
     // 액션맵 조작
-
-    private void Start()
-    {
-        playerInput = Player.Instance.playerInput;
-    }
 
     /// <summary>
     /// Global 맵만 켜기
     /// </summary>
-    public void TurnOnGlobalOnly()
+    public void EnableGlobalOnly()
     {
         foreach (var map in playerInput.actions.actionMaps)
         {
@@ -29,19 +29,19 @@ public class PlayerInputController : MonoBehaviour
 
     public void EnableUIActionMap()
     {
-        TurnOnThisActionMap("UI");
+        EnableThisActionMap("UI");
     }
 
 
     public void EnablePlayerActionMap()
     {
-        TurnOnThisActionMap("Player");
+        EnableThisActionMap("Player");
     }
 
     /// <summary>
     /// 모든 맵 끄기
     /// </summary>
-    public void TurnOffActionMap()
+    public void DisableAllActionMap()
     {
         foreach (var map in playerInput.actions.actionMaps)
             map.Disable();
@@ -51,7 +51,7 @@ public class PlayerInputController : MonoBehaviour
     /// Global 맵을 제외한 모든 액션맵을 끄고, 지정한 액션맵만 켭니다.
     /// </summary>
     /// <param name="mapToEnable"></param>
-    private void TurnOnThisActionMap(string mapToEnable)
+    private void EnableThisActionMap(string mapToEnable)
     {
         foreach (var map in playerInput.actions.actionMaps)
         {
@@ -67,5 +67,37 @@ public class PlayerInputController : MonoBehaviour
             Debug.LogError($"맵 '{mapToEnable}'을 찾을 수 없습니다.");
     }
 
-  
+
+
+    public void CheckActionMapsStatus()
+    {
+        // 확인할 액션맵 목록
+        string[] actionMapNames = { "Player", "UI", "Global" };
+
+        StringBuilder names = new StringBuilder();
+        StringBuilder statuses = new StringBuilder();
+
+        foreach (string mapName in actionMapNames)
+        {
+            var actionMap = playerInput.actions.FindActionMap(mapName);
+
+            if (actionMap != null)
+            {
+                names.Append(mapName).Append(" / ");
+                statuses.Append(actionMap.enabled ? "true" : "false").Append(" / ");
+            }
+            else
+            {
+                names.Append(mapName).Append(" / ");
+                statuses.Append("NotFound").Append(" / ");
+            }
+        }
+
+        // 마지막 구분자 제거
+        if (names.Length > 3) names.Length -= 3;
+        if (statuses.Length > 3) statuses.Length -= 3;
+
+        Debug.Log($"{names}\n{statuses}");
+    }
+
 }

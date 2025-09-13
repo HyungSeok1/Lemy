@@ -67,7 +67,6 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
     {
         MainCameraScript.Instance.mainCinemachineCamera.Follow = transform;
 
-        playerInputController.EnablePlayerActionMap();
         CutsceneManager.Instance.OnTimelineChanged += BindCutsceneTrackReference;
         RegisterToSwitchTarget();
     }
@@ -142,7 +141,7 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
         yield return null;
 
         // 조작 끄기
-        playerInputController.TurnOnGlobalOnly();
+        playerInputController.EnableGlobalOnly();
 
         var follow = MainCameraScript.Instance.GetActiveCinemachineCam().GetCinemachineComponent(0) as CinemachineFollow;
         var originDamping = follow.TrackerSettings.PositionDamping;
@@ -200,7 +199,7 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
         yield return new WaitUntil(() => isSceneloaded);
 
         isSceneloaded = false; // 사용 후 플래그 변수 원상복구
-        playerInputController.TurnOnGlobalOnly();// 임시방편 막기
+        playerInputController.EnableGlobalOnly();// 임시방편 막기
 
 
         // 4. 두 번째 애니메이션 실행 후 대기

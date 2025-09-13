@@ -10,7 +10,7 @@ public class MapDataManager : PersistentSingleton<MapDataManager>, ISaveable<Map
 
     // 맵별 데이터 넣어놓기
     public List<MapData> mapdataList;
-    public MapData currentMapData;
+    [HideInInspector] public MapData currentMapData;
 
 
     // (chapter,map,number) 키

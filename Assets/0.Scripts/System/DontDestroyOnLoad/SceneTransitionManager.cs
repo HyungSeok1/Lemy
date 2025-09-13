@@ -3,6 +3,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using System;
 
 /// <summary>
 /// 
@@ -29,13 +30,13 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
     }
 
     // TODO: PendingLoad: 아마 예전에 씬전환후 데이터 넣어주는 용도였던거같은데, 구조 수정해야 할듯.
-    public void StartTransition(StateData stateData, PositionData positionData)
+    public void StartTransition(StateData stateData, PositionData positionData, Action callback)
     {
-        StartCoroutine(TransitionCoroutine(stateData, positionData));
+        StartCoroutine(TransitionCoroutine(stateData, positionData, callback));
     }
 
     // 진짜 씬 바꿔주고 State 바꿔주는 것만 함.
-    public IEnumerator TransitionCoroutine(StateData stateData, PositionData positionData)
+    public IEnumerator TransitionCoroutine(StateData stateData, PositionData positionData, Action callback = null)
     {
         targetScene = $"Scene{stateData.chapter}_{stateData.chapter}_{stateData.number}";
 
@@ -51,6 +52,8 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
         GameStateManager.Instance.ChangeState(GameStateManager.GameState.Playing);
         GameStateManager.Instance.UpdateStateData(stateData); // stateData 적용
         Player.Instance.transform.position = positionData.pos; // positionData 적용
+
+        callback?.Invoke();
     }
 
     public void FadeOut()

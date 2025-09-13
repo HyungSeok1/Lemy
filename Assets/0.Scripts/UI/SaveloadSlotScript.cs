@@ -1,6 +1,8 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem.XInput;
+using System.IO;
 
 /// <summary>
 /// 각각의 세이브 슬롯
@@ -30,12 +32,13 @@ public class SaveloadSlotScript : MonoBehaviour, IPointerEnterHandler, IPointerE
         this.slot = slot;
 
         string path = SaveLoadManager.Instance.GetMetaPathForSlot(slot);
-        string json = JsonUtility.ToJson(path);
+        string json = File.ReadAllText(path);   
         var metaData = JsonUtility.FromJson<SaveMeta>(json);
 
         // 임시 하드코딩
         if (metaData.isEmpty)
         {
+            // 비었을때 true
             emptyFileText.gameObject.SetActive(true);
 
             fileNumText.gameObject.SetActive(!metaData.isEmpty);
@@ -43,12 +46,14 @@ public class SaveloadSlotScript : MonoBehaviour, IPointerEnterHandler, IPointerE
             elapsedTimeText.gameObject.SetActive(!metaData.isEmpty);
         }
         else
-        {
+        { 
+            //차있을때  false
+
             emptyFileText.gameObject.SetActive(false);
 
-            fileNumText.gameObject.SetActive(metaData.isEmpty);
-            chapterAndMapText.gameObject.SetActive(metaData.isEmpty);
-            elapsedTimeText.gameObject.SetActive(metaData.isEmpty);
+            fileNumText.gameObject.SetActive(!metaData.isEmpty);
+            chapterAndMapText.gameObject.SetActive(!metaData.isEmpty);
+            elapsedTimeText.gameObject.SetActive(!metaData.isEmpty);
 
             fileNumText.text = $"File {slot}";
             chapterAndMapText.text = $"{metaData.stateData.chapter}-{metaData.stateData.map}-{metaData.stateData.number}";

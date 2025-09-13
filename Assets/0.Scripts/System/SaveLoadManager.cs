@@ -1,8 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Data;
 using System.IO;
-using System.Linq;
 using UnityEngine;
 
 
@@ -20,6 +17,7 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
     private string GetPureMapdataPath() => Path.Combine(Application.persistentDataPath, $"PureMapdata.json");
 
     public string GetMetaPathForSlot(int slot) => Path.Combine(Application.persistentDataPath, $"save{slot}.meta.json");
+    public string GetLastSlotPath() => Path.Combine(Application.persistentDataPath, $"lastslot.txt");
 
     private GameSaveData saveData;
 
@@ -31,6 +29,8 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
 
     public void SaveGame(int slot)
     {
+        File.WriteAllText(GetLastSlotPath(), slot.ToString());
+
         saveData = new GameSaveData();
         saveData.playerData = new PlayerData();
         saveData.mapDataWrapper = new MapDataWrapper();
@@ -86,7 +86,9 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
 
         MapDataManager.Instance.Load(data.mapDataWrapper);
 
-        SceneTransitionManager.Instance.StartTransition(data.playerData.stateData, data.playerData.positionData); // 여기서 알아서 씬이동후 포지션 적용
+        Action inputCallback = () => Player.Instance.playerInputController.EnablePlayerActionMap();
+
+        SceneTransitionManager.Instance.StartTransition(data.playerData.stateData, data.playerData.positionData, inputCallback); // 여기서 알아서 씬이동후 포지션 적용
     }
 
 
@@ -107,7 +109,7 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
         }
 
         string json = File.ReadAllText(path);
-        GameSaveData data = JsonUtility.FromJson<GameSaveData>(json); // 깡통 파일
+        GameSaveData data = JsonUtility.FromJson<GameSaveData>(json); // 깡통 파일 (ResetData됨)
 
         // TODO: Scene1_1_1 시작지점 직접넣어주기.
         data.playerData.positionData = new PositionData(new Vector3(-25, -5, 0));
@@ -122,7 +124,9 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
 
         MapDataManager.Instance.Load(data.mapDataWrapper);
 
-        SceneTransitionManager.Instance.StartTransition(data.playerData.stateData, data.playerData.positionData); // 여기서 알아서 씬이동후 포지션 적용
+        Action inputCallback = () => Player.Instance.playerInputController.EnablePlayerActionMap();
+
+        SceneTransitionManager.Instance.StartTransition(data.playerData.stateData, data.playerData.positionData, inputCallback); // 여기서 알아서 씬이동후 포지션 적용
     }
 
     /// <summary>
@@ -163,10 +167,12 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
         GameSaveData data = JsonUtility.FromJson<GameSaveData>(json);
         MapDataWrapper mapData = data.mapDataWrapper;
 
+        print($"pure Data saved");
+
         // 저장
         string mapjson = JsonUtility.ToJson(mapData, true); // pretty print : true
-        string matDatapath = GetPureMapdataPath();
-        File.WriteAllText(path, mapjson);
+        string mapDataPath = GetPureMapdataPath();
+        File.WriteAllText(mapDataPath, mapjson);
     }
 
     public void ResetData(int slot)
