@@ -111,6 +111,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
     private bool isEntering;
     private void EnterDialogue(string knotName)
     {
+        Debug.Log("다이얼로그 시작");
         // 멈추기
         Player.Instance.movement.OnEnterDialogue();
 
@@ -189,6 +190,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
 
     public void ExitDialogue()
     {
+        Debug.Log("다이얼로그 끝");
         Player.Instance.playerInputController.EnablePlayerActionMap();
         dialoguePlaying = false;
 
