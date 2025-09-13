@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DashSkillData
   m_EditorClassIdentifier: 
   skillName: Dash
-  icon: {fileID: -3402551408532870362, guid: e449344540955e4459f8040624f7cc7d, type: 3}
+  icon: {fileID: -4324336256025624593, guid: 5b576946b71d50c49a12897051a6693b, type: 3}
   stackGaugeCost: 0
   dashPower: 53.64
   cooldown: 1

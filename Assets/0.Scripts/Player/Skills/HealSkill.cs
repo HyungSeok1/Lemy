@@ -9,15 +9,21 @@ public class HealSkill : MonoBehaviour, ISkill
 {
     public HealSkillData data;
     public SkillData skilldata => data;
-
+    public float remainingCooldown;
     private StackSystem stackSystem;
 
-    public bool CanExecute => stackSystem.GetCurrentStackValue() >= data.stackGaugeCost;
+    public bool CanExecute => remainingCooldown <= 0 && stackSystem.GetCurrentStackValue() >= data.stackGaugeCost;
+
+    private void Update()
+    {
+        if (remainingCooldown > 0)
+            remainingCooldown -= Time.deltaTime;
+    }
 
     public void ExecuteSkill()
     {
         if (!CanExecute) return;
-
+        remainingCooldown = data.cooldown;
         StartCoroutine(PerformHeal());
     }
 
