@@ -15,4 +15,4 @@ MonoBehaviour:
   <id>k__BackingField: MeatQuest
   displayName: MeatQuestDisplayName
   questPrerequisites: []
-  questStepPrefabs: []
+  questLogicPrefab: {fileID: 0}

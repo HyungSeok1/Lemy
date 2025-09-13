@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
+using System;
 
 public class InkExternalFunctions
 {
@@ -10,7 +11,15 @@ public class InkExternalFunctions
         //Quest
         story.BindExternalFunction("StartQuest", (string questId) => GameEventsManager.Instance.questEvents.StartQuest(questId));
         story.BindExternalFunction("AdvanceQuest", (string questId) => GameEventsManager.Instance.questEvents.AdvanceQuest(questId));
+        story.BindExternalFunction("AdvanceQuestToState", (string questId, string targetState) => GameEventsManager.Instance.questEvents.AdvanceQuest(questId, (QuestState)Enum.Parse(typeof(QuestState), targetState)));
         story.BindExternalFunction("FinishQuest", (string questId) => GameEventsManager.Instance.questEvents.FinishQuest(questId));
+
+        // Quest state and variables
+        story.BindExternalFunction("QState", (string questId) => QuestManager.Instance.GetQuestState(questId).ToString());
+        story.BindExternalFunction("QGetInt", (string questId, string key) => QuestManager.Instance.QGetInt(questId, key));
+        story.BindExternalFunction("QSetInt", (string questId, string key, int value) => QuestManager.Instance.QSetInt(questId, key, value));
+        story.BindExternalFunction("QAddInt", (string questId, string key, int delta) => QuestManager.Instance.QAddInt(questId, key, delta));
+        story.BindExternalFunction("QCheckInt", (string questId, string key, string op, int rhs) => QuestManager.Instance.QCheckInt(questId, key, op, rhs));
 
         //Animation
         story.BindExternalFunction("AnimationChange", (string objectNPC, string animationVariable) => AnimationChange(objectNPC, animationVariable));
@@ -37,6 +46,13 @@ public class InkExternalFunctions
         story.UnbindExternalFunction("StartQuest");
         story.UnbindExternalFunction("AdvanceQuest");
         story.UnbindExternalFunction("FinishQuest");
+
+        // Quest state and variables
+        story.UnbindExternalFunction("QState");
+        story.UnbindExternalFunction("QGetInt");
+        story.UnbindExternalFunction("QSetInt");
+        story.UnbindExternalFunction("QAddInt");
+        story.UnbindExternalFunction("QCheckInt");
 
         //Animation
         story.UnbindExternalFunction("AnimationChange");
