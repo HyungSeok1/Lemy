@@ -593,10 +593,6 @@ PrefabInstance:
       propertyPath: m_Creator
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 5232048158798894608, guid: 7f6a6137dd7f72c48bed85bec72e7bb7, type: 3}
-      propertyPath: m_DynamicOccludee
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6079808148210061180, guid: 7f6a6137dd7f72c48bed85bec72e7bb7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
