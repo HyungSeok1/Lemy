@@ -327,7 +327,7 @@ Transform:
   m_GameObject: {fileID: 697814167758462092}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -97.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -496,7 +496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 828e25e812618d14b976c4df32398186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxFactor: -0.05
+  parallaxFactor: -0.03
   parallaxCamera: {fileID: 0}
 --- !u!1 &1059521767019492717
 GameObject:
@@ -700,7 +700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 828e25e812618d14b976c4df32398186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxFactor: -0.06
+  parallaxFactor: -0.04
   parallaxCamera: {fileID: 0}
 --- !u!1 &1703815710563378214
 GameObject:
@@ -2097,7 +2097,7 @@ Transform:
   m_GameObject: {fileID: 5541109814204417117}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -60.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2967,7 +2967,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -3156,7 +3156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 828e25e812618d14b976c4df32398186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxFactor: -0.05
+  parallaxFactor: -0.03
   parallaxCamera: {fileID: 0}
 --- !u!1 &8305529643408691151
 GameObject:

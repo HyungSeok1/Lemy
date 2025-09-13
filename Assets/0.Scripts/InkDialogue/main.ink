@@ -36,3 +36,6 @@ INCLUDE ForgottenChamber.ink
 INCLUDE Map1_Intro.ink
 INCLUDE NPCRescueBasic.ink
 INCLUDE 101_CollectKey.ink
+INCLUDE npc_talk_Map2_D.ink
+INCLUDE npc_talk_Map2_E.ink
+INCLUDE npc_talk_Map2_F.ink
