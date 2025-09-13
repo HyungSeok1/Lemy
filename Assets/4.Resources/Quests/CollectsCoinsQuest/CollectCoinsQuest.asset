@@ -15,5 +15,4 @@ MonoBehaviour:
   <id>k__BackingField: CollectCoinsQuest
   displayName: Coin Moara!
   questPrerequisites: []
-  questStepPrefabs:
-  - {fileID: 587298757790463329, guid: 5cf6d29dfb3981c418876080d4f5cd6b, type: 3}
+  questLogicPrefab: {fileID: 587298757790463329, guid: 5cf6d29dfb3981c418876080d4f5cd6b, type: 3}

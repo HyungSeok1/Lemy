@@ -112,12 +112,12 @@ public class QuestEvents
         }
     }
 
-    public event Action<string> onAdvanceQuest;
-    public void AdvanceQuest(string id)
+    public event Action<string, QuestState> onAdvanceQuest;
+    public void AdvanceQuest(string id, QuestState targetState = QuestState.CAN_FINISH)
     {
         if (onAdvanceQuest != null)
         {
-            onAdvanceQuest(id);
+            onAdvanceQuest(id, targetState);
         }
     }
 
@@ -139,14 +139,7 @@ public class QuestEvents
         }
     }
 
-    public event Action<string, int, QuestStepState> onQuestStepStateChange;
-    public void QuestStepStateChange(string id, int stepIndex, QuestStepState questStepState)
-    {
-        if (onQuestStepStateChange != null)
-        {
-            onQuestStepStateChange(id, stepIndex, questStepState);
-        }
-    }
+    // Quest steps removed: no per-step state change events
 }
 
 public class DialogueEvents

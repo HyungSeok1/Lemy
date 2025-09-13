@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6870251426799987466}
   - component: {fileID: -2378321383895937764}
+  - component: {fileID: 3274937445728956425}
   m_Layer: 0
   m_Name: CollectCoinsQuestStep
   m_TagString: Untagged
@@ -39,8 +40,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 587298757790463329}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98cd8695f4b2676488bee57c9d33b944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinsCollected: 0
+  coinsToComplete: 5
+--- !u!114 &3274937445728956425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587298757790463329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98f1f1f19cb7a3442a44d0383615a3a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest:
+    info: {fileID: 0}
+    state: 0
