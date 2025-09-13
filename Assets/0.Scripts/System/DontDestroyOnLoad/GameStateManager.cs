@@ -56,7 +56,7 @@ public class GameStateManager : PersistentSingleton<GameStateManager>, ISaveable
     public int currentMap;
     public int currentNumber;
 
-    public StateData currentState;
+    public StateData currentStateData;
 
     public GameState CurrentGameState { get; private set; }
 

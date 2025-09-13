@@ -19,16 +19,18 @@ public class PlayerData
     public InventoryData inventoryData;
     public MoneyData moneyData;
     public NPCContainer npcContainer;
+    public PlaytimeData playtimeData;
 
     public PlayerData()
     {
         positionData = new PositionData(Vector3.zero);
-        stateData = new StateData(-1, -1, -1);
-        healthData = new HealthData(0);
+        stateData = new StateData(1, 1, 1);
+        healthData = new HealthData(100);
         skillData = new PlayerSkillData(null, null, null, null);
         inventoryData = new InventoryData();
         moneyData = new MoneyData(0);
         npcContainer = new NPCContainer();
+        playtimeData = new PlaytimeData();
     }
 }
 
@@ -116,6 +118,16 @@ public class NPCContainer
 }
 
 [Serializable]
+public class PlaytimeData
+{
+    public float totalPlaytime;
+    public PlaytimeData()
+    {
+        totalPlaytime = 0f;
+    }
+}
+
+[Serializable]
 public class MapDataWrapper
 {
     public List<MapData> mapList;
@@ -165,9 +177,11 @@ public class MapObjectEntry
     public bool isActivated;
 }
 
+[Serializable]
 public class SaveMeta
 {
-    public int slot;
-    public int chapter;
-    public int map;
+    public bool isEmpty;
+
+    public StateData stateData;
+    public PlaytimeData playtimeData;
 }
