@@ -116,7 +116,7 @@ public class PlayerSkillController : MonoBehaviour, ISaveable<PlayerSkillData>
         data.learnedSkills = learnedSkills
         .Where(s => s != null && s.skilldata != null) // 안전 체크
         .Select(s => s.skilldata.skillName)
-        .ToList();
+        .ToArray();
         data.currentSkills[0] = currentSkills[0]?.skilldata.skillName;
         data.currentSkills[1] = currentSkills[1]?.skilldata.skillName;
         data.currentSkills[2] = currentSkills[2]?.skilldata.skillName;

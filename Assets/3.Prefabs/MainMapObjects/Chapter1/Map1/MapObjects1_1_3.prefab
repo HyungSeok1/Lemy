@@ -5286,7 +5286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6931184803620699338, guid: 8c0422cd717e96c4c8916df82c8451ab, type: 3}
       propertyPath: entranceID
-      value: 11301
+      value: 11102
       objectReference: {fileID: 0}
     - target: {fileID: 6931184803620699338, guid: 8c0422cd717e96c4c8916df82c8451ab, type: 3}
       propertyPath: targetStage
@@ -5294,7 +5294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6931184803620699338, guid: 8c0422cd717e96c4c8916df82c8451ab, type: 3}
       propertyPath: targetNumber
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6931184803620699338, guid: 8c0422cd717e96c4c8916df82c8451ab, type: 3}
       propertyPath: targetChapter

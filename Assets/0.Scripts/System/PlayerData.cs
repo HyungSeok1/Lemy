@@ -26,7 +26,7 @@ public class PlayerData
         positionData = new PositionData(Vector3.zero);
         stateData = new StateData(1, 1, 1);
         healthData = new HealthData(100);
-        skillData = new PlayerSkillData(null, null, null, null);
+        skillData = new PlayerSkillData(null, null, null, null, null);
         inventoryData = new InventoryData();
         moneyData = new MoneyData(0);
         npcContainer = new NPCContainer();
@@ -73,11 +73,11 @@ public class HealthData
 [Serializable]
 public class PlayerSkillData
 {
-    public List<string> learnedSkills;
+    public string[] learnedSkills;
     public string[] currentSkills = new string[4];
-    public PlayerSkillData(string s0, string s1, string s2, string s3)
+    public PlayerSkillData(string[] learnedSkills, string s0, string s1, string s2, string s3)
     {
-        this.learnedSkills = new List<string>(); // null이면 빈 리스트
+        this.learnedSkills = learnedSkills; // null이면 빈 리스트
         currentSkills[0] = s0;
         currentSkills[1] = s1;
         currentSkills[2] = s2;

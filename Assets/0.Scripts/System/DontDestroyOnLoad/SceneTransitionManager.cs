@@ -1,9 +1,10 @@
+using DG.Tweening;
+using System;
 using System.Collections;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
-using DG.Tweening;
-using System;
 
 /// <summary>
 /// 
@@ -104,10 +105,13 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
     {
         GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.LoadingScene);
 
-        SceneManager.sceneLoaded += (scene, mode) =>
+        // 델리게이트를 변수에 저장
+        UnityAction<Scene, LoadSceneMode> sceneLoadedHandler = (scene, mode) =>
         {
             FindPortalAndTelePort(entranceID);
         };
+
+        SceneManager.sceneLoaded += sceneLoadedHandler;
 
         // 기다리기 
         AsyncOperation load = SceneManager.LoadSceneAsync(targetScene);
@@ -116,10 +120,7 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
             yield return null;
         }
 
-        SceneManager.sceneLoaded -= (scene, mode) =>
-        {
-            FindPortalAndTelePort(entranceID);
-        };
+        SceneManager.sceneLoaded -= sceneLoadedHandler;
 
         GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.Playing);
     }

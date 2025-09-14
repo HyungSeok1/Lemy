@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -13,11 +14,11 @@ using UnityEngine;
 /// </summary>
 public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
 {
-    private string GetPathForSlot(int slot) => Path.Combine(Application.persistentDataPath, $"save{slot}.json");
-    private string GetPureMapdataPath() => Path.Combine(Application.persistentDataPath, $"PureMapdata.json");
+    private string GetPathForSlot(int slot) => Path.Combine(Application.persistentDataPath, $"save{slot}.json"); // 로컬 O.  그러나 .json은 이미 있어야 함
+    private string GetPureMapdataPath() => Path.Combine(Application.persistentDataPath, $"PureMapdata.json"); // 로컬 X 
 
-    public string GetMetaPathForSlot(int slot) => Path.Combine(Application.persistentDataPath, $"save{slot}.meta.json");
-    public string GetLastSlotPath() => Path.Combine(Application.persistentDataPath, $"lastslot.txt");
+    public string GetMetaPathForSlot(int slot) => Path.Combine(Application.persistentDataPath, $"save{slot}.meta.json"); // 로컬 O.  그러나 .json은 이미 있어야 함
+    public string GetLastSlotPath() => Path.Combine(Application.persistentDataPath, $"lastslot.txt"); // 로컬 O, 그러나 .txt는 이미 있어야 함
 
     private GameSaveData saveData;
 
@@ -80,7 +81,7 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
 
 
         GameStateManager.Instance.Load(data.playerData.stateData);
-        Player.Instance.health.Load(data.playerData.healthData); 
+        Player.Instance.health.Load(data.playerData.healthData);
         Player.Instance.playerSkillController.Load(data.playerData.skillData);
         Player.Instance.inventory.Load(data.playerData.inventoryData);
         MoneyManager.Instance.Load(data.playerData.moneyData);
@@ -191,7 +192,8 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
     {
         saveData = new GameSaveData(); // isEmpty true
         saveData.playerData = new PlayerData();
-        saveData.playerData.skillData = new PlayerSkillData("Dash", "Heal", "Slash", null);
+        string[] skillList = new string[] { "Dash", "Heal", "Slash" };
+        saveData.playerData.skillData = new PlayerSkillData(skillList, "Dash", "Heal", null, "Slash");
 
         // Pure Map data 가져오기
         string path1 = GetPureMapdataPath();

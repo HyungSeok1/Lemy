@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// 씬 간 전환하는 포탈입니다.
@@ -21,6 +22,7 @@ public class PortalEntrance : MonoBehaviour
         if (other.TryGetComponent<Player>(out _))
         {
             print(gameObject.name + "포탈 진입");
+            print(SceneManager.GetActiveScene().name);
 
             string sceneName = $"Scene{targetChapter}_{targetMap}_{targetNumber}";
             GameStateManager.Instance.UpdateStateData(new StateData(targetChapter, targetMap, targetNumber));

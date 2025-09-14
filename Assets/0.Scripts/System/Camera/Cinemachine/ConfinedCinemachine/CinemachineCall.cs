@@ -69,7 +69,6 @@ public class CinemachineCall : MonoBehaviour
         else
         {
             // 카메라를 못 찾았을 경우 에러 메시지를 띄워서 실수를 방지합니다.
-            Debug.LogError($"'{toChangeCameraName}' 이라는 이름의 카메라를 씬에서 찾을 수 없습니다!", this.gameObject);
         }
 
         basedCamera = CameraSwitcher.ActiveCamera;
