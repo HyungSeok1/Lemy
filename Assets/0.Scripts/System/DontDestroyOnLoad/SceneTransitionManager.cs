@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 using System;
+using UnityEngine.Events;
 
 /// <summary>
 /// 
@@ -102,12 +103,14 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
 
     public IEnumerator PortalTransitionCoroutine(string targetScene, string entranceID)
     {
-        GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.LoadingScene);
+        // 화면을 어둡게
+        yield return FadeOutCoroutine();
 
-        SceneManager.sceneLoaded += (scene, mode) =>
-        {
-            FindPortalAndTelePort(entranceID);
-        };
+        GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.LoadingScene);
+        // 로드 완료 시 진입 지점으로 텔레포트
+        UnityAction<Scene, LoadSceneMode> onLoaded = null;
+        onLoaded = (scene, mode) => { FindPortalAndTelePort(entranceID); };
+        SceneManager.sceneLoaded += onLoaded;
 
         // 기다리기 
         AsyncOperation load = SceneManager.LoadSceneAsync(targetScene);
@@ -116,12 +119,12 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
             yield return null;
         }
 
-        SceneManager.sceneLoaded -= (scene, mode) =>
-        {
-            FindPortalAndTelePort(entranceID);
-        };
+        SceneManager.sceneLoaded -= onLoaded;
 
         GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.Playing);
+
+        // 화면을 밝게
+        yield return FadeInCoroutine();
     }
 
     private void FindPortalAndTelePort(string entranceID)
@@ -204,7 +207,7 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
         }
 
         GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.MainMenu);
-    } 
+    }
     #endregion
 
 }

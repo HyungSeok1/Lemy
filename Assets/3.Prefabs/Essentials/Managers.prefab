@@ -122,7 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeOverlayCanvas: {fileID: 7833042211936459431}
   fadeCanvas: {fileID: 3720348045184481400}
-  fadeDuration: 1
+  fadeDuration: 0.3
 --- !u!1 &1553848821516922445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,6 +1005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   director: {fileID: 6811728054096909985}
+  isCutscenePlaying: 0
 --- !u!320 &6811728054096909985
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -1234,7 +1235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2b3d35abc68cc445885d6f9fe3b54e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AllowCameraShake: 1
+  cameraShakeIntensity: 0
 --- !u!1 &8218481048945089630
 GameObject:
   m_ObjectHideFlags: 0
