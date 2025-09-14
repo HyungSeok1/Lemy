@@ -20,6 +20,7 @@ public class Key : MonoBehaviour
     [SerializeField] private KeyData keyData; // 그냥 씬 전환용도
     [SerializeField] private ItemData keyItem;
     [SerializeField] private GameObject keyEffect;
+    [SerializeField] private GameObject particlePrefab;
 
     private void Start()
     {
@@ -39,6 +40,11 @@ public class Key : MonoBehaviour
         {
             OnGetKey?.Invoke(); // 제약구간 클리어 처리
             Player.Instance.inventory.AddItem(keyItem, 1); // 아이템 주기
+            if (particlePrefab != null)
+            {
+                GameObject particle = Instantiate(particlePrefab, transform.position, Quaternion.identity);
+                Destroy(particle, 2f); // 파티클 수명 끝나면 삭제
+            }
 
             Player.Instance.movement.Stop(); // 이동 불가 상태로
             //Player.Instance.animator.SetBool("TakeKey", false);

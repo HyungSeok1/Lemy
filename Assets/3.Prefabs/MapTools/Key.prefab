@@ -302,6 +302,7 @@ MonoBehaviour:
   keyData: {fileID: 0}
   keyItem: {fileID: 0}
   keyEffect: {fileID: 2799871630676154595}
+  particlePrefab: {fileID: 58808057656875845, guid: c813455869783c843a8fd247b6145d66, type: 3}
 --- !u!58 &8171155345874580550
 CircleCollider2D:
   m_ObjectHideFlags: 0

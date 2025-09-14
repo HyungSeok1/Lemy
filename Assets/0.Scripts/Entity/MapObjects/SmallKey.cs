@@ -15,6 +15,8 @@ public class SmallKey : MonoBehaviour
 
     [SerializeField] GameObject keyEffect;
 
+    [SerializeField] private GameObject particlePrefab;
+
     private void OnEnable()
     {
         if (keyEffect == null)
@@ -42,6 +44,12 @@ public class SmallKey : MonoBehaviour
             // Maker에게 알림
             if (maker != null)
                 maker.OnKeyCollected();
+
+            if (particlePrefab != null)
+            {
+                GameObject particle = Instantiate(particlePrefab, transform.position, Quaternion.identity);
+                Destroy(particle, 2f); // 파티클 수명 끝나면 삭제
+            }
 
             // 자신 제거
             Destroy(gameObject);
