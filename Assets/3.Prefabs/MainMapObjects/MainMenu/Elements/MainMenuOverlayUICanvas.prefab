@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 2414960212131048783}
   - component: {fileID: 5590659204167986038}
   m_Layer: 5
-  m_Name: MainMenuCanvas2
+  m_Name: MainMenuOverlayUICanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
