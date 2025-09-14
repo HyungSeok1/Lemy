@@ -523,6 +523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   damageReaction: {fileID: 6381509775410684842}
+  hitStopDuration: 0.3
 --- !u!58 &633418903552513721
 CircleCollider2D:
   m_ObjectHideFlags: 0
