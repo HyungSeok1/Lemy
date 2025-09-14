@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
+using System;
 
 public class InkExternalFunctions
 {
@@ -10,10 +11,18 @@ public class InkExternalFunctions
         //Quest
         story.BindExternalFunction("StartQuest", (string questId) => GameEventsManager.Instance.questEvents.StartQuest(questId));
         story.BindExternalFunction("AdvanceQuest", (string questId) => GameEventsManager.Instance.questEvents.AdvanceQuest(questId));
+        story.BindExternalFunction("AdvanceQuestToState", (string questId, string targetState) => GameEventsManager.Instance.questEvents.AdvanceQuest(questId, (QuestState)Enum.Parse(typeof(QuestState), targetState)));
         story.BindExternalFunction("FinishQuest", (string questId) => GameEventsManager.Instance.questEvents.FinishQuest(questId));
 
+        // Quest state and variables
+        story.BindExternalFunction("QState", (string questId) => QuestManager.Instance.GetQuestState(questId).ToString());
+        story.BindExternalFunction("QGetInt", (string questId, string key) => QuestManager.Instance.QGetInt(questId, key));
+        story.BindExternalFunction("QSetInt", (string questId, string key, int value) => QuestManager.Instance.QSetInt(questId, key, value));
+        story.BindExternalFunction("QAddInt", (string questId, string key, int delta) => QuestManager.Instance.QAddInt(questId, key, delta));
+        story.BindExternalFunction("QCheckInt", (string questId, string key, string op, int rhs) => QuestManager.Instance.QCheckInt(questId, key, op, rhs));
+
         //Animation
-        story.BindExternalFunction("AnimationChange", (string objectNPC, string animationVariable) => AnimationChange(objectNPC, animationVariable));
+        story.BindExternalFunction("AnimationChange", (string objectNPC, string animationVariable, bool active) => AnimationChange(objectNPC, animationVariable, active));
 
         //Skill
         story.BindExternalFunction("GiveSkill", (string skillName) => Player.Instance.playerSkillController.AddSkill(skillName));
@@ -37,6 +46,13 @@ public class InkExternalFunctions
         story.UnbindExternalFunction("StartQuest");
         story.UnbindExternalFunction("AdvanceQuest");
         story.UnbindExternalFunction("FinishQuest");
+
+        // Quest state and variables
+        story.UnbindExternalFunction("QState");
+        story.UnbindExternalFunction("QGetInt");
+        story.UnbindExternalFunction("QSetInt");
+        story.UnbindExternalFunction("QAddInt");
+        story.UnbindExternalFunction("QCheckInt");
 
         //Animation
         story.UnbindExternalFunction("AnimationChange");
@@ -62,7 +78,7 @@ public class InkExternalFunctions
     /// </summary>
     /// <param name="objectNPC">NPC 오브젝트 이름</param>
     /// <param name="animationVariable">변경할 애니메이션 변수의 이름</param>
-    private void AnimationChange(string objectNPC, string animationVariable)
+    private void AnimationChange(string objectNPC, string animationVariable, bool active)
     {
         GameObject NPC = GameObject.Find(objectNPC);
         if (NPC != null)
@@ -70,7 +86,7 @@ public class InkExternalFunctions
             Animator animator = NPC.GetComponent<Animator>();
             if (animator != null)
             {
-                animator.SetBool(animationVariable, true); // true 또는 false는 필요에 따라 조정
+                animator.SetBool(animationVariable, active); // true 또는 false는 필요에 따라 조정
             }
             else
             {

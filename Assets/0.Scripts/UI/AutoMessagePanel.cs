@@ -41,7 +41,11 @@ public class AutoMessagePanel : MonoBehaviour
         if (type == OutputType.Message)
             seq.AppendCallback(() => autoMessage.text = message);
         else if (type == OutputType.Image)
-            seq.AppendCallback(() => autoImage.sprite = sprite);
+            seq.AppendCallback(() =>
+            {
+                autoImage.sprite = sprite;
+                autoImage.SetNativeSize();
+            });
 
         seq.Append(targetGroup.DOFade(1f, fadeDuration));
         seq.AppendInterval(displayTime);

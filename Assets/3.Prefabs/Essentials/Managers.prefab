@@ -139,6 +139,8 @@ MonoBehaviour:
       slots: []
     moneyData:
       amount: 0
+    playtimeData:
+      totalPlaytime: 0
   fadeCanvas: {fileID: 7833042211936459431}
   fadeDuration: 1
 --- !u!1 &1553848821516922445
@@ -375,7 +377,7 @@ MonoBehaviour:
   currentChapter: 1
   currentMap: 0
   currentNumber: 0
-  currentState:
+  currentStateData:
     chapter: 0
     map: 0
     number: 0
@@ -772,10 +774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2b3d35abc68cc445885d6f9fe3b54e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  masterVolume: 0
-  BGMVolume: 0
-  VFXVolume: 0
-  cameraShakeEnabled: 0
+  AllowCameraShake: 1
 --- !u!114 &2076320476907826702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1202,6 +1201,7 @@ MonoBehaviour:
   questInfos:
   - {fileID: 11400000, guid: ea2eea956b764a94992d1cd6e6fc4655, type: 2}
   - {fileID: 11400000, guid: a921f0a66bf491648b452fd3718df6f0, type: 2}
+  activeQuests: []
 --- !u!1 &8841312052880650584
 GameObject:
   m_ObjectHideFlags: 0

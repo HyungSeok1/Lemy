@@ -13,5 +13,5 @@
 
 === OctopusDies ===
 살려줘!!!
-~ AnimationChange("ArmoredOctopus1", "isDie")
+~ AnimationChange("ArmoredOctopus1", "isDie", true)
 ->END

@@ -2,9 +2,16 @@
 //Quest
 EXTERNAL StartQuest(questId)
 EXTERNAL AdvanceQuest(questId)
+EXTERNAL AdvanceQuestToState(questId, targetState)
 EXTERNAL FinishQuest(questId)
+//Quest State & Variables
+EXTERNAL QState(questId)
+EXTERNAL QGetInt(questId, key)
+EXTERNAL QSetInt(questId, key, value)
+EXTERNAL QAddInt(questId, key, delta)
+EXTERNAL QCheckInt(questId, key, op, rhs)
 //Animation
-EXTERNAL AnimationChange(objectNPC, animationVariable)
+EXTERNAL AnimationChange(objectNPC, animationVariable, active)
 //Skill
 EXTERNAL GiveSkill(skillName)
 //Item
@@ -36,6 +43,12 @@ INCLUDE ForgottenChamber.ink
 INCLUDE Map1_Intro.ink
 INCLUDE NPCRescueBasic.ink
 INCLUDE 101_CollectKey.ink
+
+//Map2
+INCLUDE Map2RescueBrothersDialogues\Map2RescueStarter.ink
+INCLUDE Map2RescueBrothersDialogues\Map2RescueBrother1_1.ink
+INCLUDE Map2RescueBrothersDialogues\Map2RescueBrother1_2.ink
+INCLUDE Map2RescueBrothersDialogues\Map2RescueBrother2.ink
 INCLUDE npc_talk_Map2_D.ink
 INCLUDE npc_talk_Map2_E.ink
 INCLUDE npc_talk_Map2_F.ink
