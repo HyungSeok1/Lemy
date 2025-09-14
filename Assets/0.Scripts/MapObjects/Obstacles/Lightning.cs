@@ -1,34 +1,76 @@
 using UnityEngine;
 
 /// <summary>
-/// 소환 후 1초 뒤에 자동으로 사라지는 번개
-/// 필요하다면 Damage, 이펙트, 사운드 등을 추가해 확장할 수 있습니다.
+/// 생성 '직후'에만 겹친 대상에게 1회 데미지, 이후에는 데미지 없음
+/// 애니메이션이 있다면 AnimEvent_Destroy()로 소멸, 없다면 lifeTime 후 파괴
 /// </summary>
 public class Lightning : ObstacleBase
 {
-    [Tooltip("몇 초 뒤에 삭제할지")]
-    [SerializeField] float lifeTime = 1f;
+    [Header("Lifetime")]
+    [Tooltip("몇 초 뒤에 삭제할지 (Animator 없을 때만 사용)")]
+    [SerializeField] private float lifeTime = 1f;
+
+    [Header("Damage")]
     [SerializeField] private float _damage;
-    [SerializeField] private float damageTime = 0.3f;
-    private bool hasDamage = true;
+
+    [Tooltip("데미지 적용 후 콜라이더를 비활성화할지 (권장: true)")]
+    [SerializeField] private bool disableColliderAfterSpawnHit = true;
+
+    [SerializeField] private Animator animator;
+
+    private Collider2D _col;
+    private bool _appliedSpawnHit = false;
 
     protected override float Damage => _damage;
-    [SerializeField] Animator animator;
 
-    void Awake()
+    private void Awake()
     {
-        // lifeTime이 지나면 오브젝트 파괴
         SoundManager.Instance.PlaySFX("lightning2", 0.1f);
+
         if (!animator) animator = GetComponent<Animator>();
+        _col = GetComponent<Collider2D>();
+
+        // 애니메이터가 없거나 컨트롤러가 없으면 lifeTime 뒤에 파괴
         if (!animator || animator.runtimeAnimatorController == null)
             Destroy(gameObject, lifeTime);
     }
 
-    void Update()
+    private void Start()
     {
-        if (damageTime > 0)
-            damageTime -= Time.deltaTime;
-        else hasDamage = false;
+        // ★ 생성 직후 1회 겹침 체크로만 데미지 적용
+        TryApplySpawnOverlapHit();
+    }
+
+    /// <summary>
+    /// 생성 시점에 이미 겹쳐 있는 플레이어(또는 대상)에게만 1회 판정
+    /// </summary>
+    private void TryApplySpawnOverlapHit()
+    {
+        if (_appliedSpawnHit || !_col) return;
+
+        // Player 레이어만 맞게 설정 (프로젝트 레이어명에 맞춰 변경)
+        ContactFilter2D filter = new ContactFilter2D();
+        filter.useTriggers = true; // 플레이어 콜라이더가 트리거여도 잡도록
+        filter.SetLayerMask(LayerMask.GetMask("Player"));
+        filter.useLayerMask = true;
+
+        // 필요 시 버퍼 크기 조정
+        Collider2D[] results = new Collider2D[8];
+        int count = _col.Overlap(filter, results);
+
+        for (int i = 0; i < count; i++)
+        {
+            Collider2D hit = results[i];
+            if (!hit) continue;
+
+            // ObstacleBase의 데미지 처리 로직을 그대로 재사용
+            base.OnTriggerEnter2D(hit);
+        }
+
+        _appliedSpawnHit = true;
+
+        // 이후에는 어떤 접촉에도 데미지 주지 않도록 콜라이더 비활성화
+        if (disableColliderAfterSpawnHit && _col) _col.enabled = false;
     }
 
     public void AnimEvent_Destroy()
@@ -37,9 +79,11 @@ public class Lightning : ObstacleBase
         Debug.Log("Lightning Destroyed by animator");
     }
 
+    // 이후 들어오는 접촉은 전부 무시 (안전망)
     protected override void OnTriggerEnter2D(Collider2D collider)
     {
-        if (!hasDamage) return;
-        base.OnTriggerEnter2D(collider);
+        // 생성 시 1회 판정만 허용
+        // (콜라이더를 끄지 않는 설정이라면, 여기서도 방어적으로 무시)
+        if (!_appliedSpawnHit) return; // Start()에서만 처리
     }
 }
