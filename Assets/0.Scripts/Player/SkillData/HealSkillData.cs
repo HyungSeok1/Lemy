@@ -7,6 +7,8 @@ public class HealSkillData : SkillData
 
     public int cooldown;
 
+    public int stackGuageCost;
+
     public ParticleSystem healParticle;
 
     // 애니메이션 관련 변수

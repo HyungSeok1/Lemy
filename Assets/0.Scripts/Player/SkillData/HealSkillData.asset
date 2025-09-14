@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Heal
   icon: {fileID: 2288273344247162755, guid: 8d61b4ae744c0cf49a9e4d16e18b91f0, type: 3}
-  stackGaugeCost: 2
+  stackGaugeCost: 60
   healAmount: 25
   cooldown: 2
+  stackGuageCost: 0
   healParticle: {fileID: 0}
   animationTriggerName: 
   animationTime: 0

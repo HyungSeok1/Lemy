@@ -42,7 +42,7 @@ public class ExplosionSkill : MonoBehaviour, ISkill
         // 스택 게이지 소모
         stackSystem.RemoveStackGauge(data.stackGaugeCost);
 
-        SoundManager.Instance.PlaySFX("lightning2", 0.07f);
+        SoundManager.Instance.PlaySFX("lightning2", 0.7f);
         // 마우스 위치를 월드 좌표로 가져오기
         Vector3 mousePosition = Mouse.current.position.ReadValue();
         Vector3 worldMousePosition = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, Camera.main.nearClipPlane));
