@@ -3444,7 +3444,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b0eafb51fd48c0445a54e03881ff4099, type: 3}
+  m_Sprite: {fileID: 2288273344247162755, guid: 8d61b4ae744c0cf49a9e4d16e18b91f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3769,7 +3769,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7518e138286a1d94fb4301521864de3e, type: 3}
+  m_Sprite: {fileID: -4324336256025624593, guid: 5b576946b71d50c49a12897051a6693b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8849,6 +8849,7 @@ MonoBehaviour:
   settings: {fileID: 7099803511300014944}
   backToMenuWarner: {fileID: 2697882160228993122}
   exitGameWarner: {fileID: 5377989792278156494}
+  isPaused: 0
 --- !u!114 &5956035004937903961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9573,7 +9574,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3686663018669187017, guid: 5ed63196e0e034149be8a458d2055090, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2d93d8d9b0595fb4087571d979ad3e48, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11499,7 +11500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3686663018669187017, guid: 5ed63196e0e034149be8a458d2055090, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b0eafb51fd48c0445a54e03881ff4099, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
