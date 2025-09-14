@@ -645,74 +645,38 @@ PrefabInstance:
       propertyPath: parallaxCamera
       value: 
       objectReference: {fileID: 1503701153}
-    - target: {fileID: 463203607402693641, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
-      propertyPath: parallaxFactor
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1842712500471151188, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
       propertyPath: parallaxCamera
       value: 
       objectReference: {fileID: 1503701153}
-    - target: {fileID: 1842712500471151188, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
-      propertyPath: parallaxFactor
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2148786088429871779, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
       propertyPath: parallaxCamera
       value: 
       objectReference: {fileID: 1503701153}
-    - target: {fileID: 2148786088429871779, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
-      propertyPath: parallaxFactor
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2855738731752377277, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
       propertyPath: parallaxCamera
       value: 
       objectReference: {fileID: 1503701153}
-    - target: {fileID: 2855738731752377277, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
-      propertyPath: parallaxFactor
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4092789965685235590, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
       propertyPath: parallaxCamera
       value: 
       objectReference: {fileID: 1503701153}
-    - target: {fileID: 4092789965685235590, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
-      propertyPath: parallaxFactor
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4673272911262915932, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
       propertyPath: parallaxCamera
       value: 
       objectReference: {fileID: 1503701153}
-    - target: {fileID: 4673272911262915932, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
-      propertyPath: parallaxFactor
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5519328311174067428, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
       propertyPath: parallaxCamera
       value: 
       objectReference: {fileID: 1503701153}
-    - target: {fileID: 5519328311174067428, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
-      propertyPath: parallaxFactor
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6092332368164771297, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
       propertyPath: parallaxCamera
       value: 
       objectReference: {fileID: 1503701153}
-    - target: {fileID: 6092332368164771297, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
-      propertyPath: parallaxFactor
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6433135796441001991, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
       propertyPath: parallaxCamera
       value: 
       objectReference: {fileID: 1503701153}
-    - target: {fileID: 6433135796441001991, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
-      propertyPath: parallaxFactor
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6484059425564086719, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
       propertyPath: parallaxCamera
       value: 
@@ -733,10 +697,6 @@ PrefabInstance:
       propertyPath: parallaxCamera
       value: 
       objectReference: {fileID: 1503701153}
-    - target: {fileID: 7562350183563900730, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
-      propertyPath: parallaxFactor
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7565130898922718435, guid: 438496c1afa68ea43999752c6240eba8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
