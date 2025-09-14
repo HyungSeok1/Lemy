@@ -80,7 +80,7 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
 
 
         GameStateManager.Instance.Load(data.playerData.stateData);
-        Player.Instance.health.Load(data.playerData.healthData);
+        Player.Instance.health.Load(data.playerData.healthData); 
         Player.Instance.playerSkillController.Load(data.playerData.skillData);
         Player.Instance.inventory.Load(data.playerData.inventoryData);
         MoneyManager.Instance.Load(data.playerData.moneyData);

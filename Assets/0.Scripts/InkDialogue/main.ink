@@ -11,7 +11,7 @@ EXTERNAL QSetInt(questId, key, value)
 EXTERNAL QAddInt(questId, key, delta)
 EXTERNAL QCheckInt(questId, key, op, rhs)
 //Animation
-EXTERNAL AnimationChange(objectNPC, animationVariable)
+EXTERNAL AnimationChange(objectNPC, animationVariable, active)
 //Skill
 EXTERNAL GiveSkill(skillName)
 //Item

@@ -22,7 +22,7 @@ public class InkExternalFunctions
         story.BindExternalFunction("QCheckInt", (string questId, string key, string op, int rhs) => QuestManager.Instance.QCheckInt(questId, key, op, rhs));
 
         //Animation
-        story.BindExternalFunction("AnimationChange", (string objectNPC, string animationVariable) => AnimationChange(objectNPC, animationVariable));
+        story.BindExternalFunction("AnimationChange", (string objectNPC, string animationVariable, bool active) => AnimationChange(objectNPC, animationVariable, active));
 
         //Skill
         story.BindExternalFunction("GiveSkill", (string skillName) => Player.Instance.playerSkillController.AddSkill(skillName));
@@ -78,7 +78,7 @@ public class InkExternalFunctions
     /// </summary>
     /// <param name="objectNPC">NPC 오브젝트 이름</param>
     /// <param name="animationVariable">변경할 애니메이션 변수의 이름</param>
-    private void AnimationChange(string objectNPC, string animationVariable)
+    private void AnimationChange(string objectNPC, string animationVariable, bool active)
     {
         GameObject NPC = GameObject.Find(objectNPC);
         if (NPC != null)
@@ -86,7 +86,7 @@ public class InkExternalFunctions
             Animator animator = NPC.GetComponent<Animator>();
             if (animator != null)
             {
-                animator.SetBool(animationVariable, true); // true 또는 false는 필요에 따라 조정
+                animator.SetBool(animationVariable, active); // true 또는 false는 필요에 따라 조정
             }
             else
             {
