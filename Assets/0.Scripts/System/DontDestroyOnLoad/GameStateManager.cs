@@ -65,7 +65,7 @@ public class GameStateManager : PersistentSingleton<GameStateManager>, ISaveable
         // 필요하면 현재 챕터/스테이지 로깅
         if (currentStateData.map / 100 == 1)
         {
-            SoundManager.Instance.PlayBGM("gwanmoon_bgm", 0.5f);
+            SoundManager.Instance.PlayBGM("yeonok_bgm", 1f);
         }
     }
 
