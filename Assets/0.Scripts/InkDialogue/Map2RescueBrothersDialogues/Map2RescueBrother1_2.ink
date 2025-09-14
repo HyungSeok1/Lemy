@@ -25,6 +25,7 @@
 뭐? 누나가 찾고 있다고? <br>울고 있었단 말이야??
 큰일났다! 먼저 가 볼게!
 ~ QSetInt("Map2RescueBrothers", "rescuedBrothersCount", QGetInt("Map2RescueBrothers", "rescuedBrothersCount") + 1)
+~ DestroyNPC("Map2RescueBrother1_2")
 -> END
 
 = can_finish

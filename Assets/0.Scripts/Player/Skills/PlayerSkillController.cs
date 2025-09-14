@@ -37,6 +37,8 @@ public class PlayerSkillController : MonoBehaviour, ISaveable<PlayerSkillData>
         {
             learnedSkills.Add(newSkill);
             Debug.Log($"Skill {skillName} added to PlayerSkills.");
+            DialoguePanel.Instance.autoMessagePanel.ShowMessageByTime($"\"{skillName}\" 스킬 획득. 1키를 눌러서 스킬 변경 창을 여십시오.", null, OutputType.Message);
+
         }
         else
         {

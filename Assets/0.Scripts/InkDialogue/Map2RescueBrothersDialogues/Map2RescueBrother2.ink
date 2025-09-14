@@ -19,6 +19,7 @@
 //(문 열림)
 뭐야. 저거 열리는 거였어?<br>크흠. 고맙다 꼬맹아.
 ~ QSetInt("Map2RescueBrothers", "rescuedBrothersCount", QGetInt("Map2RescueBrothers", "rescuedBrothersCount") + 1)
+~ DestroyNPC("Map2RescueBrother2")
 -> END
 
 = can_finish

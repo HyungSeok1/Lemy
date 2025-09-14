@@ -704,7 +704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623276978558674672, guid: 130131b2144fd3d42bfacf3a0f5a6213, type: 3}
       propertyPath: m_Name
-      value: RescueBrother1_2
+      value: Map2RescueBrother1_2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -818,7 +818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6623276978558674672, guid: 130131b2144fd3d42bfacf3a0f5a6213, type: 3}
       propertyPath: m_Name
-      value: RescueBrother1_1
+      value: Map2RescueBrother1_1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -835,7 +835,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 871565268697689593, guid: 15c19bca1d90d564d9bb9529aebd1e17, type: 3}
       propertyPath: m_Name
-      value: RescueBrother2
+      value: Map2RescueBrother2
       objectReference: {fileID: 0}
     - target: {fileID: 3482657989379723415, guid: 15c19bca1d90d564d9bb9529aebd1e17, type: 3}
       propertyPath: m_LocalPosition.x

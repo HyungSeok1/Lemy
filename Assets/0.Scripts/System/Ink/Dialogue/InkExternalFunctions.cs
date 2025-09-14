@@ -38,6 +38,9 @@ public class InkExternalFunctions
         story.BindExternalFunction("SpendMoney", (int amount) => MoneyManager.Instance.SpendMoney(amount));
         story.BindExternalFunction("HasEnoughMoney", (int amount) => MoneyManager.Instance.HasEnoughMoney(amount));
         story.BindExternalFunction("GetMoney", () => MoneyManager.Instance.Money);
+
+        //ETC
+        story.BindExternalFunction("DestroyNPC", (string objectNPC) => DestroyNPC(objectNPC));
     }
 
     public void Unbind(Story story)
@@ -96,6 +99,19 @@ public class InkExternalFunctions
         else
         {
             Debug.LogWarning($"GameObject '{objectNPC}'를 찾을 수 없습니다.");
+        }
+    }
+
+    private void DestroyNPC(string objectNPC)
+    {
+        GameObject NPC = GameObject.Find(objectNPC);
+        if (NPC != null)
+        {
+            GameObject.Destroy(NPC);
+        }
+        else
+        {
+            Debug.LogError($"GameObject '{objectNPC}'를 찾을 수 없습니다.");
         }
     }
 }
