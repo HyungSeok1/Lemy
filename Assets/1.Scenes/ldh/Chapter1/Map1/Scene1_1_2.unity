@@ -364,7 +364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6562039363769469402, guid: 9dfd18fa2404ed3449a01a88778752ec, type: 3}
       propertyPath: orthographic size
-      value: 14
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -634,17 +634,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: MapObjects
       objectReference: {fileID: 0}
-    - target: {fileID: 7798757574840632719, guid: 7f6a6137dd7f72c48bed85bec72e7bb7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7798757574840632719, guid: 7f6a6137dd7f72c48bed85bec72e7bb7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 10.6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 8461402888511766935, guid: 7f6a6137dd7f72c48bed85bec72e7bb7, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6a6137dd7f72c48bed85bec72e7bb7, type: 3}
