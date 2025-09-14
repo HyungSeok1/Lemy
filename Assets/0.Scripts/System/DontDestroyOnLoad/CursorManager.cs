@@ -61,6 +61,11 @@ public class CursorManager : PersistentSingleton<CursorManager>
         TryBindPlayerMovement();
     }
 
+    private void OnDestroy()
+    {
+        Cursor.visible = true;
+    }
+
     private void Update()
     {
         UpdateStateByInput();

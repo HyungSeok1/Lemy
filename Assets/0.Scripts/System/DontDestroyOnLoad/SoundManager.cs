@@ -58,6 +58,11 @@ public class SoundManager : PersistentSingleton<SoundManager>
     private Stack<SoundPlayer> pool = new(); // 사운드 플레이어 풀
     private List<SoundPlayer> loopedPlayers = new(); // 현재 루프 중인 사운드 플레이어 목록
 
+    private void OnDestroy()
+    {
+        print(20);
+    }
+
     protected override void Awake()
     {
         base.Awake();

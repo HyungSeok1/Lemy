@@ -181,6 +181,7 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
         return data;
     }
 
+#if UNITY_EDITOR
     /// <summary>
     /// 현재슬롯꺼 직빵으로 PureMapdata.asset으로 변환
     /// </summary>
@@ -218,7 +219,8 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
         }
 
         AssetDatabase.SaveAssets();
-    }
+    } 
+#endif
 
     public void ResetData(int slot)
     {

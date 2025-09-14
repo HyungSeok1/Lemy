@@ -29,7 +29,7 @@ public class MainMenu : MonoBehaviour
         GameStateManager.Instance.currentStateData = new StateData(-1, -1, -1);
 
         inputController = Player.Instance.playerInputController;
-        Player.Instance.GetComponent<SpriteRenderer>().enabled = false; 
+        Player.Instance.GetComponent<SpriteRenderer>().enabled = false;
 
         // 인풋 관련
         inputController.EnableGlobalOnly();
@@ -70,7 +70,7 @@ public class MainMenu : MonoBehaviour
 
     public void Settings()
     {
-        uiManager.ShowPanel(settingsPanel.firstSettingsPanel.gameObject);
+        uiManager.ShowPanel(settingsPanel.ingameSettings.gameObject);
     }
 
     public void ExitGame()
