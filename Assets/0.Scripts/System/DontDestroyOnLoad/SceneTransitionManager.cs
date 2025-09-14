@@ -5,7 +5,6 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
-
 /// <summary>
 /// 
 /// 세이브로드, 씬 로드, 페이드, GameState전환 등 해주는 스크립트입니다
@@ -57,42 +56,6 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
         callback?.Invoke();
     }
 
-    public void FadeOut()
-    {
-        StartCoroutine(FadeOutCoroutine());
-    }
-
-    public IEnumerator FadeOutCoroutine()
-    {
-        // 0f에서 시작
-        fadeOverlayCanvas.DOFade(1f, fadeDuration).SetEase(Ease.Linear).SetUpdate(true);
-        yield return new WaitForSeconds(fadeDuration);
-    }
-
-    public void FadeIn()
-    {
-        StartCoroutine(FadeInCoroutine());
-    }
-
-    public IEnumerator FadeInCoroutine()
-    {
-        // 1f에서 시작
-        fadeOverlayCanvas.DOFade(0f, fadeDuration).SetEase(Ease.Linear).SetUpdate(true);
-        yield return new WaitForSeconds(fadeDuration);
-    }
-
-
-    public void StartTransitionWithFade(StateData stateData, PositionData positionData)
-    {
-        StartCoroutine(TransitionCoroutine(stateData, positionData));
-    }
-
-    public IEnumerator TransitionWithFade(StateData stateData, PositionData positionData)
-    {
-        yield return FadeInCoroutine();
-        yield return TransitionCoroutine(stateData, positionData);
-        yield return FadeOutCoroutine();
-    }
 
     #region Portal 전용 Transition
 
@@ -103,15 +66,15 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
 
     public IEnumerator PortalTransitionCoroutine(string targetScene, string entranceID)
     {
+        // 화면을 어둡게
+        yield return FadeOut();
+
         GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.LoadingScene);
 
-        // 델리게이트를 변수에 저장
-        UnityAction<Scene, LoadSceneMode> sceneLoadedHandler = (scene, mode) =>
-        {
-            FindPortalAndTelePort(entranceID);
-        };
-
-        SceneManager.sceneLoaded += sceneLoadedHandler;
+        // 로드 완료 시 진입 지점으로 텔레포트
+        UnityAction<Scene, LoadSceneMode> onLoaded = null;
+        onLoaded = (scene, mode) => { FindPortalAndTelePort(entranceID); };
+        SceneManager.sceneLoaded += onLoaded;
 
         // 기다리기 
         AsyncOperation load = SceneManager.LoadSceneAsync(targetScene);
@@ -120,9 +83,12 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
             yield return null;
         }
 
-        SceneManager.sceneLoaded -= sceneLoadedHandler;
+        SceneManager.sceneLoaded -= onLoaded;
 
         GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.Playing);
+
+        // 화면을 밝게
+        yield return FadeIn();
     }
 
     private void FindPortalAndTelePort(string entranceID)
@@ -163,19 +129,6 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
 
     #endregion
 
-    public IEnumerator FadeOutRealtime()
-    {
-        // 0f에서 시작
-        fadeCanvas.DOFade(1f, fadeDuration).SetEase(Ease.Linear).SetUpdate(true);
-        yield return new WaitForSecondsRealtime(fadeDuration);
-    }
-
-    public IEnumerator FadeInRealtime()
-    {
-        // 1f에서 시작
-        fadeCanvas.DOFade(0f, fadeDuration).SetEase(Ease.Linear).SetUpdate(true);
-        yield return new WaitForSecondsRealtime(fadeDuration);
-    }
 
     #region MainMenu
 
@@ -205,7 +158,67 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
         }
 
         GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.MainMenu);
-    } 
+    }
+    #endregion
+
+    #region Fade 모음
+    //어두워짐
+    public IEnumerator OverlayFadeOut()
+    {
+        // 0f에서 시작
+        fadeOverlayCanvas.DOFade(1f, fadeDuration).SetEase(Ease.Linear).SetUpdate(true);
+        yield return new WaitForSeconds(fadeDuration);
+    }
+
+    // 밝아짐
+    public IEnumerator OverlayFadeIn()
+    {
+        // 1f에서 시작
+        fadeOverlayCanvas.DOFade(0f, fadeDuration).SetEase(Ease.Linear).SetUpdate(true);
+        yield return new WaitForSeconds(fadeDuration);
+    }
+
+    // 밝아짐
+    public IEnumerator FadeIn()
+    {
+        // 0f에서 시작
+        fadeCanvas.DOFade(0f, fadeDuration).SetEase(Ease.Linear).SetUpdate(true);
+        yield return new WaitForSeconds(fadeDuration);
+    }
+
+    public IEnumerator FadeOut()
+    {
+        // 1f에서 시작
+        fadeCanvas.DOFade(1f, fadeDuration).SetEase(Ease.Linear).SetUpdate(true);
+        yield return new WaitForSeconds(fadeDuration);
+    }
+
+    public void StartTransitionWithFade(StateData stateData, PositionData positionData)
+    {
+        StartCoroutine(TransitionCoroutine(stateData, positionData));
+    }
+
+    public IEnumerator TransitionWithFade(StateData stateData, PositionData positionData)
+    {
+        yield return OverlayFadeIn();
+        yield return TransitionCoroutine(stateData, positionData);
+        yield return OverlayFadeOut();
+    }
+
+    public IEnumerator FadeOutRealtime()
+    {
+        // 0f에서 시작
+        fadeCanvas.DOFade(1f, fadeDuration).SetEase(Ease.Linear).SetUpdate(true);
+        yield return new WaitForSecondsRealtime(fadeDuration);
+    }
+
+    public IEnumerator FadeInRealtime()
+    {
+        // 1f에서 시작
+        fadeCanvas.DOFade(0f, fadeDuration).SetEase(Ease.Linear).SetUpdate(true);
+        yield return new WaitForSecondsRealtime(fadeDuration);
+    }
+
     #endregion
 
 }

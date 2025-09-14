@@ -215,7 +215,7 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
         var lens2 = liveCam2.Lens;
         lens2.OrthographicSize = zoomedOutOrthographicSize;
         liveCam2.Lens = lens2;
-        yield return StartCoroutine(SceneTransitionManager.Instance.FadeInCoroutine());
+        yield return StartCoroutine(SceneTransitionManager.Instance.OverlayFadeIn());
         UICanvasManager.Instance.FadeInUI(); // UI 페이드인
         playerInputController.EnablePlayerActionMap(); // 조작 복구
 
@@ -333,7 +333,7 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
 
     IEnumerator LoadSceneWithFadeOut(Action action)
     {
-        yield return StartCoroutine(SceneTransitionManager.Instance.FadeOutCoroutine());
+        yield return StartCoroutine(SceneTransitionManager.Instance.OverlayFadeOut());
 
 
         if (SceneTransitionManager.Instance != null)
