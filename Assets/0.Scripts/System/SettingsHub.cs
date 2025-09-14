@@ -10,5 +10,5 @@ using UnityEngine;
 /// </summary>
 public class SettingsHub : PersistentSingleton<SettingsHub>
 {
-    public bool AllowCameraShake = true;
+    public float cameraShakeIntensity;
 }

@@ -14,6 +14,12 @@ public class UIStacker : MonoBehaviour
         Player.Instance.playerInputController.OnESCPressed += ESCBehaviour;
     }
 
+    private void OnDisable()
+    {
+        if(Player.Instance != null && Player.Instance.playerInputController != null)
+            Player.Instance.playerInputController.OnESCPressed -= ESCBehaviour;
+    }
+
     public void ESCBehaviour()
     {
         if (panelStack.Count > 1)

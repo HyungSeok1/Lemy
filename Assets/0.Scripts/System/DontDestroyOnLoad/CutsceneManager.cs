@@ -8,14 +8,26 @@ public class CutsceneManager : PersistentSingleton<CutsceneManager>
     [SerializeField] PlayableDirector director;
 
     public event Action OnTimelineChanged;
-
+    [HideInInspector] public bool isCutscenePlaying = false;
     protected override void Awake()
     {
         base.Awake();
     }
 
+    void OnEnable()
+    {
+        director.stopped += OnTimelineStopped;
+    }
+
+    void OnDisable()
+    {
+        director.stopped -= OnTimelineStopped;
+    }
+
     public void PlayCutscene(TimelineAsset cutscene)
     {
+        isCutscenePlaying = true;
+
         if (cutscene == null)
             Debug.LogError("cutscene이 null");
 
@@ -25,12 +37,14 @@ public class CutsceneManager : PersistentSingleton<CutsceneManager>
         OnTimelineChanged.Invoke(); // 바인딩
 
         var receiver = GetComponent<CameraSwitchReceiver>();
-        if (receiver != null)
-        {
-        
-        }
 
         director.Play();
+
+    }
+
+    private void OnTimelineStopped(PlayableDirector aDirector)
+    {
+        isCutscenePlaying = false;
     }
 
     /// <summary>

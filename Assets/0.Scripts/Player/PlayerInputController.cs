@@ -17,6 +17,50 @@ public class PlayerInputController : MonoBehaviour
         Player.Instance.playerInputController.BindActionCallback("Global", "Pause", ctx => OnESCPressed?.Invoke());
     }
 
+    /// <summary>
+    /// 특정 Action Map에서 특정 Action 비활성화
+    /// </summary>
+    public void DisableActionInMap(string mapName, string actionName)
+    {
+        var actionMap = playerInput.actions.FindActionMap(mapName);
+        if (actionMap == null)
+        {
+            Debug.LogWarning($"Action Map '{mapName}' not found!");
+            return;
+        }
+
+        var action = actionMap.FindAction(actionName);
+        if (action != null)
+        {
+            action.Disable();
+            Debug.Log($"Disabled: {actionName} in map ({mapName})");
+        }
+        else
+            Debug.LogError($"Action '{actionName}' not found in map '{mapName}'");
+    }
+
+    /// <summary>
+    /// 특정 Action Map에서 특정 Action 활성화
+    /// </summary>
+    public void EnableActionInMap(string mapName, string actionName)
+    {
+        var actionMap = playerInput.actions.FindActionMap(mapName);
+        if (actionMap == null)
+        {
+            Debug.LogWarning($"Action Map '{mapName}' not found!");
+            return;
+        }
+
+        var action = actionMap.FindAction(actionName);
+        if (action != null)
+        {
+            action.Enable();
+            Debug.Log($"Enabled: {actionName} in map ({mapName})");
+        }
+        else
+            Debug.LogError($"Action '{actionName}' not found in map '{mapName}'");
+    }
+
     public void BindActionCallback(string actionMapName, string actionName, Action<InputAction.CallbackContext> callback)
     {
         var actionMap = playerInput.actions.FindActionMap(actionMapName);

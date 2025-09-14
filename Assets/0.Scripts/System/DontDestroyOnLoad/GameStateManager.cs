@@ -44,15 +44,10 @@ public class GameStateManager : PersistentSingleton<GameStateManager>, ISaveable
 
     public void UpdateStateData(StateData stateData)
     {
-        currentChapter = stateData.chapter;
-        currentMap = stateData.map;
-        currentNumber = stateData.number;
+        currentStateData = stateData;
     }
 
     #region 게임의 전역 상태 (GameState) FSM
-    public int currentChapter;
-    public int currentMap;
-    public int currentNumber;
 
     public StateData currentStateData;
 
@@ -68,7 +63,7 @@ public class GameStateManager : PersistentSingleton<GameStateManager>, ISaveable
     private void HandleSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         // 필요하면 현재 챕터/스테이지 로깅
-        if (currentMap / 100 == 1)
+        if (currentStateData.map / 100 == 1)
         {
             SoundManager.Instance.PlayBGM("gwanmoon_bgm", 0.5f);
         }
@@ -76,15 +71,11 @@ public class GameStateManager : PersistentSingleton<GameStateManager>, ISaveable
 
     public void Save(ref StateData data)
     {
-        data.chapter = currentChapter;
-        data.map = currentMap;
-        data.number = currentNumber;
+        data = currentStateData;
     }
 
     public void Load(StateData data)
     {
-        currentChapter = data.chapter;
-        currentMap = data.map;
-        currentNumber = data.number;
+        currentStateData = data;
     }
 }

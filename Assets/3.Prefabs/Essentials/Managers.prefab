@@ -354,9 +354,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fccd79a1eb71cde4781b0dbbca2ec11a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentChapter: 1
-  currentMap: 0
-  currentNumber: 0
   currentStateData:
     chapter: 0
     map: 0
@@ -856,7 +853,6 @@ Transform:
   - {fileID: 6992827873613689861}
   - {fileID: 1743583968223760286}
   - {fileID: 6096329029551987670}
-  - {fileID: 6011722080955875820}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2076320476907826702
@@ -871,51 +867,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 242e7f55dac2773429048ec74f18611e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &6169856062699458390
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6011722080955875820}
-  - component: {fileID: 4310961298967819045}
-  m_Layer: 0
-  m_Name: SettingsHub
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6011722080955875820
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6169856062699458390}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 647822151777583147}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4310961298967819045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6169856062699458390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2b3d35abc68cc445885d6f9fe3b54e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AllowCameraShake: 1
 --- !u!1 &6246949447590442788
 GameObject:
   m_ObjectHideFlags: 0

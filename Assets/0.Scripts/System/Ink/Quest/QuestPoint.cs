@@ -49,6 +49,8 @@ public class QuestPoint : MonoBehaviour
 
     private void SubmitPressed(InputEventContext inputEventContext)
     {
+        if (CutsceneManager.Instance.isCutscenePlaying) return;
+
         if (!playerIsNear || !inputEventContext.Equals(InputEventContext.DEFAULT))
         {
             return;

@@ -5,5 +5,23 @@ using UnityEngine;
 /// </summary>
 public class IngameSettings : MonoBehaviour
 {
-   
+    public void OnMasterVolumeChanged(float value)
+    {
+        SoundManager.Instance.SetMasterVolume(value);
+    }
+
+    public void OnBGMVolumeChanged(float value)
+    {
+        SoundManager.Instance.SetBGMVolume(value);
+    }
+
+    public void OnSFXVolumeChanged(float value)
+    {
+        SoundManager.Instance.SetSFXVolume(value);
+    }
+
+    public void OnCameraShakeIntensityChanged(float value)
+    {
+        SettingsHub.Instance.cameraShakeIntensity = value;
+    }
 }

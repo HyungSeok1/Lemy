@@ -82,8 +82,13 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
         this.currentChoiceIndex = choiceIndex;
     }
 
+    /// <summary>
+    /// 대화 진행용
+    /// </summary>
+    /// <param name="inputEventContext"></param>
     private void SubmitPressed(InputEventContext inputEventContext)
     {
+        if (CutsceneManager.Instance.isCutscenePlaying) return;
         if (inputEventContext.Equals(InputEventContext.DEFAULT)) return; // DialogueManager가 먼저 등록됐을때 방어
         if (isEntering) return; // DialogTrigger가 등록됐을때 방어
 

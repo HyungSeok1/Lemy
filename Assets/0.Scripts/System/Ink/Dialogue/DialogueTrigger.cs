@@ -41,8 +41,13 @@ public class DialogueTrigger : MonoBehaviour
             GameEventsManager.Instance.inputEvents.onSubmitPressed -= SubmitPressed;
     }
 
+    /// <summary>
+    /// 대화 진입용
+    /// </summary>
+    /// <param name="inputEventContext"></param>
     private void SubmitPressed(InputEventContext inputEventContext)
     {
+        if (CutsceneManager.Instance.isCutscenePlaying) return;
         if (!playerIsNear || inputEventContext.Equals(InputEventContext.DIALOGUE) || dialogueKnotName.Equals("")) return;
         // 거리조건, InputEventContext DEFAULT임 조건, "" (Quest인것) 조건 세개만족시
         GameEventsManager.Instance.dialogueEvents.EnterDialogue(dialogueKnotName);

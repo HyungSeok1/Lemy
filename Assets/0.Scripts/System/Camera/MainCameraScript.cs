@@ -30,7 +30,7 @@ public class MainCameraScript : PersistentSingleton<MainCameraScript>
     {
         // TODO: 추후에 시네머신카메라가 도중 교체될 가능성이 있다면, 방어 코드 작성 필요
 
-        multiChannelPerlin.FrequencyGain = frequency;
+        multiChannelPerlin.FrequencyGain = frequency * SettingsHub.Instance.cameraShakeIntensity;
         DOTween.To(
             () => multiChannelPerlin.FrequencyGain,
             x => multiChannelPerlin.FrequencyGain = x,
