@@ -26,9 +26,9 @@ public class SaveLoadManagerEditor : Editor
             manager.ResetData(slot);
         }
 
-        if (GUILayout.Button("Save Pure MapData"))
+        if (GUILayout.Button("Convert PureMapData Asset"))
         {
-            manager.SavePureMapdata(slot);
+            manager.ConvertPureMapdataToAsset(slot);
         }
     }
 }

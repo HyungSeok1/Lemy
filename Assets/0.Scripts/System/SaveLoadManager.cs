@@ -1,6 +1,7 @@
 using System;
-using System.IO;
 using System.Collections.Generic;
+using System.IO;
+using UnityEditor;
 using UnityEngine;
 
 
@@ -15,10 +16,26 @@ using UnityEngine;
 public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
 {
     private string GetPathForSlot(int slot) => Path.Combine(Application.persistentDataPath, $"save{slot}.json"); // 로컬 O.  그러나 .json은 이미 있어야 함
-    private string GetPureMapdataPath() => Path.Combine(Application.persistentDataPath, $"PureMapdata.json"); // 로컬 X 
-
     public string GetMetaPathForSlot(int slot) => Path.Combine(Application.persistentDataPath, $"save{slot}.meta.json"); // 로컬 O.  그러나 .json은 이미 있어야 함
     public string GetLastSlotPath() => Path.Combine(Application.persistentDataPath, $"lastslot.txt"); // 로컬 O, 그러나 .txt는 이미 있어야 함
+
+#if UNITY_EDITOR
+    protected override void Awake()
+    {
+        base.Awake();
+    }
+#else
+    protected override void Awake()
+    {
+        base.Awake();
+
+        if (IsFirstRun())
+        {
+            InitializeGameFiles();
+            MarkAsNotFirstRun();
+        }
+    }
+#endif
 
     private GameSaveData saveData;
 
@@ -165,11 +182,10 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
     }
 
     /// <summary>
-    /// slot에 해당하는 데이터에서 갖고와서 넣어줌. 
-    /// 저장된 데이터는 "Pure Mapdata"가 됨.
-    /// 수동으로 mapdata 값들 원상복구후 넣기 필요. ( OR 자동으로 다 false하는거만으로 가능하면, 구현해도 되고.)
+    /// 현재슬롯꺼 직빵으로 PureMapdata.asset으로 변환
     /// </summary>
-    public void SavePureMapdata(int slot)
+    /// <param name="slot"></param>
+    public void ConvertPureMapdataToAsset(int slot)
     {
         // 현재 세이브데이터 가져오기
         string path = GetPathForSlot(slot);
@@ -180,14 +196,28 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
         }
         string json = File.ReadAllText(path);
         GameSaveData data = JsonUtility.FromJson<GameSaveData>(json);
-        MapDataWrapper mapData = data.mapDataWrapper;
+        MapDataWrapper pureMapdata = data.mapDataWrapper;
 
-        print($"pure Data saved");
+        string assetPath = "Assets/Resources/pureMapData.asset";
 
-        // 저장
-        string mapjson = JsonUtility.ToJson(mapData, true); // pretty print : true
-        string mapDataPath = GetPureMapdataPath();
-        File.WriteAllText(mapDataPath, mapjson);
+        // 기존 에셋이 있는지 확인
+        PureMapdataAsset existingAsset = AssetDatabase.LoadAssetAtPath<PureMapdataAsset>(assetPath);
+
+        if (existingAsset != null)
+        {
+            // 기존 에셋 업데이트
+            existingAsset.data = pureMapdata;
+            EditorUtility.SetDirty(existingAsset);
+        }
+        else
+        {
+            // 새 에셋 생성
+            PureMapdataAsset newAsset = ScriptableObject.CreateInstance<PureMapdataAsset>();
+            newAsset.data = pureMapdata;
+            AssetDatabase.CreateAsset(newAsset, assetPath);
+        }
+
+        AssetDatabase.SaveAssets();
     }
 
     public void ResetData(int slot)
@@ -198,9 +228,9 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
         saveData.playerData.skillData = new PlayerSkillData(skillList, "Dash", "Heal", null, "Slash");
 
         // Pure Map data 가져오기
-        string path1 = GetPureMapdataPath();
-        string mapJson = File.ReadAllText(path1);
-        saveData.mapDataWrapper = JsonUtility.FromJson<MapDataWrapper>(mapJson);
+        PureMapdataAsset asset = Resources.Load<PureMapdataAsset>("pureMapData");
+        if (asset != null) saveData.mapDataWrapper = asset.data;
+        else Debug.LogError("dasfsdfafds");
 
         string json = JsonUtility.ToJson(saveData, true); // pretty print : true
         string path = GetPathForSlot(slot);
@@ -216,5 +246,31 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
         string metaJson = JsonUtility.ToJson(saveMeta, true); // pretty print : true
         File.WriteAllText(GetMetaPathForSlot(slot), metaJson);
     }
+
+#if !UNITY_EDITOR
+    #region json/txt 파일 초기화 (빌드버전 최초 실행시에만.)
+    private const string FIRST_RUN_KEY = "GameFirstRun";
+   
+    private bool IsFirstRun()
+    {
+        return PlayerPrefs.GetInt(FIRST_RUN_KEY, 1) == 1;
+    }
+
+    private void MarkAsNotFirstRun()
+    {
+        PlayerPrefs.SetInt(FIRST_RUN_KEY, 0);
+        PlayerPrefs.Save();
+    }
+
+    private void InitializeGameFiles()
+    {
+        for (int slot = 1; slot <= 3; slot++)
+            ResetData(slot);
+        File.WriteAllText(GetLastSlotPath(), "1");
+    }
+
+    #endregion
+
+#endif
 }
 

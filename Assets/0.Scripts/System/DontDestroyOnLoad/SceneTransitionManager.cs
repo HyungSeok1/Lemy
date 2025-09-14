@@ -139,9 +139,9 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
 
     public IEnumerator LoadMainMenuWithFade()
     {
-        yield return FadeInRealtime();
-        yield return LoadMainMenuCoroutine();
         yield return FadeOutRealtime();
+        yield return LoadMainMenuCoroutine();
+        yield return FadeInRealtime();
     }
 
     public IEnumerator LoadMainMenuCoroutine()
