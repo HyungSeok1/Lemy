@@ -9,6 +9,7 @@ public class QuestManager : PersistentSingleton<QuestManager>
     [SerializeField] private QuestInfoSO[] questInfos;
     private Dictionary<string, Quest> questMap;
 
+    [SerializeField] private List<Quest> activeQuests = new List<Quest>();
 
     protected override void Awake()
     {
@@ -22,8 +23,6 @@ public class QuestManager : PersistentSingleton<QuestManager>
         GameEventsManager.Instance.questEvents.onStartQuest += StartQuest;
         GameEventsManager.Instance.questEvents.onAdvanceQuest += AdvanceQuest;
         GameEventsManager.Instance.questEvents.onFinishQuest += FinishQuest;
-
-        GameEventsManager.Instance.questEvents.onQuestStepStateChange += QuestStepStateChange;
     }
 
     private void OnDisable()
@@ -33,7 +32,6 @@ public class QuestManager : PersistentSingleton<QuestManager>
         GameEventsManager.Instance.questEvents.onStartQuest -= StartQuest;
         GameEventsManager.Instance.questEvents.onAdvanceQuest -= AdvanceQuest;
         GameEventsManager.Instance.questEvents.onFinishQuest -= FinishQuest;
-        GameEventsManager.Instance.questEvents.onQuestStepStateChange -= QuestStepStateChange;
     }
 
     private void Start()
@@ -41,11 +39,6 @@ public class QuestManager : PersistentSingleton<QuestManager>
 
         foreach (Quest quest in questMap.Values)
         {
-            // initialize any loaded quest steps
-            if (quest.state == QuestState.IN_PROGRESS)
-            {
-                quest.InstantiateCurrentQuestStep(this.transform);
-            }
             // broadcast the initial state of all quests on startup
             GameEventsManager.Instance.questEvents.QuestStateChange(quest);
         }
@@ -74,7 +67,7 @@ public class QuestManager : PersistentSingleton<QuestManager>
 
     private void Update()
     {
-        foreach (Quest quest in questMap.Values)
+        foreach (Quest quest in questMap.Values) // 필요 퀘스트가 완료되었는지 확인후 퀘스트 state 변경
         {
             if (quest.state == QuestState.REQUIREMENTS_NOT_MET && CheckRequirementsmet(quest))
             {
@@ -93,23 +86,16 @@ public class QuestManager : PersistentSingleton<QuestManager>
         }
 
         Debug.Log("Start: " + id);
-        quest.InstantiateCurrentQuestStep(this.transform);
         ChangeQuestState(quest.info.id, QuestState.IN_PROGRESS);
+        InstantiateQuestPrefab(quest.info.id);
+        activeQuests.Add(quest);
     }
 
-    private void AdvanceQuest(string id)
+    private void AdvanceQuest(string id, QuestState targetState = QuestState.CAN_FINISH)
     {
-        Debug.Log("Advance: " + id);
+        Debug.Log("Advance: " + id + " to " + targetState);
         Quest quest = GetQuestById(id);
-        quest.MoveToNextStep();
-        if (quest.CurrentStepExists())
-        {
-            quest.InstantiateCurrentQuestStep(this.transform);
-        }
-        else
-        {
-            ChangeQuestState(quest.info.id, QuestState.CAN_FINISH);
-        }
+        ChangeQuestState(quest.info.id, targetState);
     }
 
     private void FinishQuest(string id)
@@ -117,13 +103,7 @@ public class QuestManager : PersistentSingleton<QuestManager>
         Debug.Log("Finish: " + id);
         Quest quest = GetQuestById(id);
         ChangeQuestState(quest.info.id, QuestState.FINISHED);
-    }
-
-    private void QuestStepStateChange(string id, int stepIndex, QuestStepState questStepState)
-    {
-        Quest quest = GetQuestById(id);
-        quest.StoreQuestStepState(questStepState, stepIndex);
-        ChangeQuestState(id, quest.state);
+        activeQuests.Remove(quest);
     }
 
     private Dictionary<string, Quest> CreateQuestMap()
@@ -160,21 +140,73 @@ public class QuestManager : PersistentSingleton<QuestManager>
     public QuestState GetQuestState(string id)
     {
         Quest quest = GetQuestById(id);
-        return quest?.state ?? QuestState.REQUIREMENTS_NOT_MET;
+        if (quest == null)
+        {
+            Debug.LogError("Quest not found: " + id);
+            return QuestState.REQUIREMENTS_NOT_MET;
+        }
+        return quest.state;
     }
 
-    protected override void OnApplicationQuit()
+    public GameObject InstantiateQuestPrefab(string id)
     {
-        foreach (Quest quest in questMap.Values)
+        Quest quest = GetQuestById(id);
+        if (quest == null)
         {
-            QuestData questData = quest.GetQuestData();
-            //Debug.Log("Qust.info.id");
-            //Debug.Log("state = " + questData.state);
-            //Debug.Log("index = " + questData.questStepIndex);
-            //foreach (QuestStepState stepState in questData.questStepStates)
-            //{
-            //    Debug.Log("step state = " + stepState.state);
-            //}
+            Debug.LogError("Quest not found: " + id);
+            return null;
+        }
+
+        try
+        {
+            GameObject questPrefabInstance = Instantiate(quest.info.questLogicPrefab);
+            quest.questLogicInstance = questPrefabInstance.GetComponent<QuestLogic>();
+            quest.questLogicInstance.Initialize(quest);
+            return questPrefabInstance;
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"Failed to instantiate quest prefab for quest '{id}': {e.Message}");
+            return null;
         }
     }
+
+    #region Quest Variable Functions
+    private Quest TryGetQuest(string id)
+    {
+        if (string.IsNullOrEmpty(id) || questMap == null) return null;
+        Quest q;
+        return questMap.TryGetValue(id, out q) ? q : null;
+    }
+
+    public int QGetInt(string id, string key, int defaultValue = 0)
+    {
+        if (string.IsNullOrEmpty(id) || string.IsNullOrEmpty(key)) return defaultValue;
+        Quest quest = TryGetQuest(id);
+        return quest != null ? quest.GetIntVar(key, defaultValue) : defaultValue;
+    }
+
+    public void QSetInt(string id, string key, int value)
+    {
+        if (string.IsNullOrEmpty(id) || string.IsNullOrEmpty(key)) return;
+        Quest quest = TryGetQuest(id);
+        quest?.SetIntVar(key, value);
+    }
+
+    public int QAddInt(string id, string key, int delta)
+    {
+        if (string.IsNullOrEmpty(id) || string.IsNullOrEmpty(key)) return 0;
+        Quest quest = TryGetQuest(id);
+        return quest != null ? quest.AddIntVar(key, delta) : 0;
+    }
+
+    // Compare quest int variable with a value using an operator string
+    // Operators supported: >,>=,<,<=,==,!=
+    public bool QCheckInt(string id, string key, string op, int rhs)
+    {
+        if (string.IsNullOrEmpty(id) || string.IsNullOrEmpty(key)) return false;
+        Quest quest = TryGetQuest(id);
+        return quest != null && quest.CompareIntVar(key, op, rhs);
+    }
+    #endregion
 }

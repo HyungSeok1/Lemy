@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11f1c8644472e1c45bc912603c8f6eb4, type: 3}
-  m_Name: QuestExample
+  m_Name: Map2RescueBrothers
   m_EditorClassIdentifier: 
-  <id>k__BackingField: QuestExample
-  displayName: QuestExample
+  <id>k__BackingField: Map2RescueBrothers
+  displayName: RescueBrothers
   questPrerequisites: []
-  questLogicPrefab: {fileID: 587298757790463329, guid: 63b6b0a9544cea348af817f437f8d16b, type: 3}
+  questLogicPrefab: {fileID: 5811238963087369601, guid: d3d9b77fc0387284f980bdcbbc08a18b, type: 3}

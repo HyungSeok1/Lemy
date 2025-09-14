@@ -1,80 +1,97 @@
 using UnityEngine;
-
+using System.Collections.Generic;
+using System;
+[Serializable]
 public class Quest
 {
     public QuestInfoSO info;
 
     public QuestState state;
 
-    private int currentQuestStepIndex;
+    public Dictionary<string, int> questIntVariables = new Dictionary<string, int>();
 
-    private QuestStepState[] questStepStates;
+    public QuestLogic questLogicInstance;
 
     public Quest(QuestInfoSO questInfo)
     {
         this.info = questInfo;
         this.state = QuestState.REQUIREMENTS_NOT_MET;
-        this.currentQuestStepIndex = 0;
-        this.questStepStates = new QuestStepState[info.questStepPrefabs.Length];
-        for (int i = 0; i < questStepStates.Length; i++)
-        {
-            questStepStates[i] = new QuestStepState();
+    }
 
+    #region Quest Variables Functions
+    // Get integer variable value, returns defaultValue when missing
+    public int GetIntVar(string key, int defaultValue = 0)
+    {
+        if (string.IsNullOrEmpty(key)) return defaultValue;
+        int value;
+        return questIntVariables.TryGetValue(key, out value) ? value : defaultValue;
+    }
+
+    // Set integer variable value
+    public void SetIntVar(string key, int value)
+    {
+        if (string.IsNullOrEmpty(key)) return;
+        int oldValue = GetIntVar(key, 0);
+        if (oldValue == value) return; // no change
+        questIntVariables[key] = value;
+        // notify quest logic
+        try
+        {
+            questLogicInstance?.OnIntVarChanged(key, oldValue, value);
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"OnIntVarChanged error in quest '{info?.id}' key '{key}': {e.Message}");
         }
     }
 
-    public void MoveToNextStep()
+    // Add delta to integer variable (creates it if missing) and return new value
+    public int AddIntVar(string key, int delta)
     {
-        currentQuestStepIndex++;
+        if (string.IsNullOrEmpty(key)) return 0;
+        int oldValue = GetIntVar(key, 0);
+        int newValue = oldValue + delta;
+        if (newValue == oldValue) return newValue; // no change
+        questIntVariables[key] = newValue;
+        // notify quest logic
+        try
+        {
+            questLogicInstance?.OnIntVarChanged(key, oldValue, newValue);
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"OnIntVarChanged error in quest '{info?.id}' key '{key}': {e.Message}");
+        }
+        return newValue;
     }
 
-    public bool CurrentStepExists()
+    // Try get integer variable
+    public bool TryGetIntVar(string key, out int value)
     {
-        return (currentQuestStepIndex < info.questStepPrefabs.Length);
+        if (string.IsNullOrEmpty(key))
+        {
+            value = 0;
+            return false;
+        }
+        return questIntVariables.TryGetValue(key, out value);
     }
 
-    public void InstantiateCurrentQuestStep(Transform parentTransform)
+    // Compare variable to value with operator string. Supported: >,>=,<,<=,==,!=
+    public bool CompareIntVar(string key, string op, int rhs)
     {
-        GameObject questStepPrefab = GetCurrentQuestStepPrefab();
-        if (questStepPrefab != null)
+        int lhs = GetIntVar(key, 0);
+        switch (op)
         {
-            QuestStep questStep = Object.Instantiate<GameObject>(questStepPrefab, parentTransform)
-                .GetComponent<QuestStep>();
-            questStep.InitializeQuestStep(info.id, currentQuestStepIndex, questStepStates[currentQuestStepIndex].state);
+            case ">": return lhs > rhs;
+            case ">=": return lhs >= rhs;
+            case "<": return lhs < rhs;
+            case "<=": return lhs <= rhs;
+            case "==": return lhs == rhs;
+            case "!=": return lhs != rhs;
+            default:
+                Debug.LogWarning($"Unsupported comparison operator '{op}' for quest '{info.id}', key '{key}'.");
+                return false;
         }
     }
-
-    private GameObject GetCurrentQuestStepPrefab()
-    {
-        GameObject questStepPrefab = null;
-        if (CurrentStepExists())
-        {
-            questStepPrefab = info.questStepPrefabs[currentQuestStepIndex];
-        }
-        else
-        {
-            Debug.LogWarning("Tried to get quest tep prefab but stepIndex was out of range"
-               + "indicating that there's no current step: QuestId = " + info.id + ", stepIndex = "
-               + currentQuestStepIndex);
-        }
-        return questStepPrefab;
-    }
-
-    public void StoreQuestStepState(QuestStepState questStepState, int stepIndex)
-    {
-        if (stepIndex < questStepStates.Length)
-        {
-            questStepStates[stepIndex].state = questStepState.state;
-        }
-        else
-        {
-            Debug.LogWarning("Tried to access quest step data but stepIndex was out of range"
-                + "Quest Id = " + info.id + ", Step Index = " + stepIndex);
-        }
-    }
-
-    public QuestData GetQuestData()
-    {
-        return new QuestData(state, currentQuestStepIndex, questStepStates);
-    }
+    #endregion
 }

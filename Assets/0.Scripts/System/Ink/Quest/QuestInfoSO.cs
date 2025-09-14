@@ -4,9 +4,12 @@ using System.Collections.Generic;
 
 [CreateAssetMenu(fileName = "QuestInfoSO", menuName = "ScriptableObjects/QuestInfoSO", order = 1)]
 
+/// <summary>
+/// Quest의 정보를 담고 있는 ScriptableObject
+/// </summary>
 public class QuestInfoSO : ScriptableObject
 {
-    [field: SerializeField] public string id {  get; private set; }
+    [field: SerializeField] public string id { get; private set; }
 
     [Header("General")]
     public string displayName;
@@ -14,8 +17,8 @@ public class QuestInfoSO : ScriptableObject
     [Header("Requirements")]
     public QuestInfoSO[] questPrerequisites;
 
-    [Header("Steps")]
-    public GameObject[] questStepPrefabs;
+    [Header("Quest Logic Prefab")]
+    public GameObject questLogicPrefab; // 실제 퀘스트 로직이 들어있는 프리팹. Instantiate when starting the quest, Destroy when finishing the quest.
 
 
     private void OnValidate()
