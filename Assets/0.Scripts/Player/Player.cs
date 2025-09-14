@@ -147,11 +147,10 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
         collider.enabled = false;
 
         // 카메라 바꿔치기
-        MainCameraScript.Instance.overlayCamera.gameObject.SetActive(true);
         Camera overlayCam = MainCameraScript.Instance.overlayCamera;
         overlayCam.transform.position = Camera.main.transform.position;
 
-
+        playerAvatar.SetActive(true);
         // 아바타 위치를 플레이어와 똑같이 설정
         playerAvatar.transform.position = transform.position;
         playerAvatar.transform.rotation = Quaternion.identity;
@@ -199,7 +198,7 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
 
 
         // 4. 두 번째 애니메이션 실행 후 대기
-        avatarAnimator.SetTrigger("Die2Trigger");
+        avatarAnimator.SetTrigger("Die2Trigger"); // 이거 끝나면 PlayerAvatar를 AnimationEvent로 꺼줌
 
         yield return new WaitForSeconds(waitTimeForFadein);
 
@@ -232,7 +231,6 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
 
         // 그냥 한번에 변경. 기존에는 서서히 축소되도록 했었음.
 
-        MainCameraScript.Instance.overlayCamera.gameObject.SetActive(false);
         follow.TrackerSettings.PositionDamping = originDamping;
     }
 

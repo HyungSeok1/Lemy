@@ -10913,9 +10913,9 @@ GameObject:
   - component: {fileID: 5250931668638137144}
   - component: {fileID: 4963764706458341922}
   - component: {fileID: 1735985232130843774}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13785,11 +13785,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6931184803620699338, guid: 8c0422cd717e96c4c8916df82c8451ab, type: 3}
       propertyPath: targetMap
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6931184803620699338, guid: 8c0422cd717e96c4c8916df82c8451ab, type: 3}
       propertyPath: entranceID
-      value: 13101
+      value: 10201
       objectReference: {fileID: 0}
     - target: {fileID: 6931184803620699338, guid: 8c0422cd717e96c4c8916df82c8451ab, type: 3}
       propertyPath: targetStage
