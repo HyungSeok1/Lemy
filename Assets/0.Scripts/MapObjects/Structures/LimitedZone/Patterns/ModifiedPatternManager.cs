@@ -30,8 +30,9 @@ public class ModifiedPatternManager : Singleton<ModifiedPatternManager>
     [SerializeField] GameObject armoredOctopus;
 
     [Header("Enemy Spawn Effect")]
-    [SerializeField] GameObject spawnEffect_Cy;
-    [SerializeField] GameObject spawnEffect_Ju;
+    [SerializeField] GameObject spawnEffectWarning_Cy;
+    [SerializeField] GameObject spawnEffectWarning_Ju;
+    [SerializeField] GameObject spawnEffect;
 
     [Header("ConditionUI")]
     [SerializeField] GameObject conditionUI;
@@ -76,7 +77,7 @@ public class ModifiedPatternManager : Singleton<ModifiedPatternManager>
             //{ PatternName.Pattern1, () => new TestPattern1(testItem).Execute() }, // 생성자로 필요한 요소 넘겨주기
             { PatternName.Pattern2, () => new TestPattern2().Execute() },
             { PatternName.Pattern3, () => new TestPattern3().Execute() },
-            { PatternName.Map3_IntegratedPattern, () => new Map3_IntegratedPattern(junkMass, armoredOctopus, pom,lightning, lightningRod, lightningWarner, spawnEffect_Cy,spawnEffect_Ju, conditionUI, conditionText).Execute() }
+            { PatternName.Map3_IntegratedPattern, () => new Map3_IntegratedPattern(junkMass, armoredOctopus, pom,lightning, lightningRod, lightningWarner, spawnEffectWarning_Cy,spawnEffectWarning_Ju, spawnEffect, conditionUI, conditionText).Execute() }
         };
     }
 

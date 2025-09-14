@@ -25,8 +25,9 @@ public class Map3_IntegratedPattern : IPattern
     GameObject lightning;
     GameObject lightningWarner;
 
-    GameObject spawnEffect_Cy;
-    GameObject spawnEffect_Ju;
+    GameObject spawnEffectWarning_Cy;
+    GameObject spawnEffectWarning_Ju;
+    GameObject spawnEffect;
 
     GameObject conditionUI;
     TextMeshProUGUI conditionText;
@@ -43,8 +44,9 @@ public class Map3_IntegratedPattern : IPattern
         GameObject lightning,
         GameObject lightningRod,
         GameObject lightningWarner,
-        GameObject spawnEffect_Cy,
-        GameObject spawnEffect_Ju,
+        GameObject spawnEffectWarning_Cy,
+        GameObject spawnEffectWarning_Ju,
+        GameObject spawnEffect,
 
         GameObject conditionUI,
         TextMeshProUGUI conditionText
@@ -55,8 +57,9 @@ public class Map3_IntegratedPattern : IPattern
         this.pom = pom;
         this.lightning = lightning;
         this.lightningWarner = lightningWarner;
-        this.spawnEffect_Ju = spawnEffect_Ju;
-        this.spawnEffect_Cy = spawnEffect_Cy;
+        this.spawnEffectWarning_Ju = spawnEffectWarning_Ju;
+        this.spawnEffectWarning_Cy = spawnEffectWarning_Cy;
+        this.spawnEffect = spawnEffect;
         this.lightningRod = lightningRod;
 
         this.conditionUI = conditionUI;
@@ -656,16 +659,18 @@ public class Map3_IntegratedPattern : IPattern
         GameObject temp;
         Vector3 spawnPoint = zonePos + new Vector3(spawnPosFromCenter.x, spawnPosFromCenter.y, 11.93487f); // 이거 z 이상한 이유는 버그땜시....
 
-        temp = Object.Instantiate(spawnEffect_Cy, spawnPoint, Quaternion.identity);
+        temp = Object.Instantiate(spawnEffectWarning_Cy, spawnPoint, Quaternion.identity);
         EnemyWarning warning = temp.GetComponent<EnemyWarning>();
         warning.StartWarning(spawnPoint, spawnDelay);
         yield return new WaitForSeconds(spawnDelay);
 
-        temp = Object.Instantiate(cyclops, spawnPoint, Quaternion.identity);
-        navmeshTempList.Add(temp); // navmesh를 일단 저장함 
-        temp.SetActive(true);
-        temp = temp.transform.Find("ArmoredOctopus").gameObject; // 죽여야 하는 적은 navmesh 내부의 Cyclops
-        spawnList.Add(temp);
+        Debug.Log("외눈박이 스폰");
+        CoroutineRunner.Instance.StartCoroutine(SpawnWithEffect(spawnPoint, cyclops, temp, spawnList, navmeshTempList));
+
+        //navmeshTempList.Add(temp); // navmesh를 일단 저장함 
+        //temp.SetActive(true);
+        //temp = temp.transform.Find("ArmoredOctopus").gameObject; // 죽여야 하는 적은 navmesh 내부의 Cyclops
+        //spawnList.Add(temp);
 
     }
 
@@ -676,16 +681,36 @@ public class Map3_IntegratedPattern : IPattern
         GameObject temp;
         Vector3 spawnPoint = zonePos + new Vector3(spawnPosFromCenter.x, spawnPosFromCenter.y, 11.93487f);
 
-        temp = Object.Instantiate(spawnEffect_Ju, spawnPoint, Quaternion.identity);
+        temp = Object.Instantiate(spawnEffectWarning_Ju, spawnPoint, Quaternion.identity);
         EnemyWarning warning = temp.GetComponent<EnemyWarning>();
         warning.StartWarning(spawnPoint, spawnDelay);
         yield return new WaitForSeconds(spawnDelay);
 
-        temp = Object.Instantiate(junkMass, spawnPoint, Quaternion.identity);
-        navmeshTempList.Add(temp); // navmesh를 일단 저장함 
-        temp.SetActive(true);
-        temp = temp.transform.Find("JunkMass").gameObject; // 죽여야 하는 적은 navmesh 내부의 Cyclops
-        spawnList.Add(temp);
+        Debug.Log("쓰레기덩어리 스폰");
+        CoroutineRunner.Instance.StartCoroutine(SpawnWithEffect(spawnPoint, junkMass, temp, spawnList, navmeshTempList));
+
+        //navmeshTempList.Add(temp); // navmesh를 일단 저장함 
+        //temp.SetActive(true);
+        //temp = temp.transform.Find("JunkMass").gameObject; // 죽여야 하는 적은 navmesh 내부의 Cyclops
+        //spawnList.Add(temp);
+    }
+
+
+    // 피뢰침 소환 코드 (소환 이펙트 임시로 다른것 넣어놓음
+    IEnumerator SpawnLightningRod(float spawnDelay, Vector3 spawnPosFromCenter, List<GameObject> spawnList)
+    {
+        GameObject temp;
+        Vector3 spawnPoint = zonePos + new Vector3(spawnPosFromCenter.x, spawnPosFromCenter.y, 0);
+
+        temp = Object.Instantiate(spawnEffectWarning_Ju, spawnPoint, Quaternion.identity);
+        EnemyWarning warning = temp.GetComponent<EnemyWarning>();
+        warning.StartWarning(spawnPoint, spawnDelay);
+        yield return new WaitForSeconds(spawnDelay);
+
+        CoroutineRunner.Instance.StartCoroutine(SpawnWithEffect(spawnPoint, lightningRod, temp, spawnList, navmeshTempList));
+        //spawnList.Add(temp);
+
+        yield return null;
     }
 
     private void SpawnPom(float x, float y)
@@ -695,21 +720,36 @@ public class Map3_IntegratedPattern : IPattern
         return;
     }
 
-    // 피뢰침 소환 코드 (소환 이펙트 임시로 다른것 넣어놓음
-    IEnumerator SpawnLightningRod(float spawnDelay, Vector3 spawnPosFromCenter, List<GameObject> spawnList)
+    IEnumerator SpawnWithEffect(Vector3 spawnPoint, GameObject enemy ,GameObject temp ,List<GameObject> spawnList, List<GameObject> navmeshTempList)
     {
-        GameObject temp;
-        Vector3 spawnPoint = zonePos + new Vector3(spawnPosFromCenter.x, spawnPosFromCenter.y, 0);
+        GameObject effect = Object.Instantiate(spawnEffect, spawnPoint, Quaternion.identity);
+        if(enemy == cyclops)
+        {
+            effect.transform.localScale = new Vector3(2, 2, 1);
+        }
 
-        temp = Object.Instantiate(spawnEffect_Ju, spawnPoint, Quaternion.identity);
-        EnemyWarning warning = temp.GetComponent<EnemyWarning>();
-        warning.StartWarning(spawnPoint, spawnDelay);
-        yield return new WaitForSeconds(spawnDelay);
+        Animator anim = effect.GetComponent<Animator>();
+        if (anim != null)
+        {
+            float time = anim.GetCurrentAnimatorStateInfo(0).length / 1.5f;
+            yield return new WaitForSeconds(time);
+        }
 
-        temp = Object.Instantiate(lightningRod, spawnPoint, Quaternion.identity); spawnList.Add(temp); temp.SetActive(true);
+        temp = Object.Instantiate(enemy, spawnPoint, Quaternion.identity);
+        
+
+        if(enemy != lightningRod)
+        {
+            navmeshTempList.Add(temp); // navmesh를 일단 저장함 
+            temp.SetActive(true);
+
+            if (enemy == cyclops)
+                temp = temp.transform.Find("ArmoredOctopus").gameObject; // 죽여야 하는 적은 navmesh 내부의 Cyclops
+            else if (enemy == junkMass)
+                temp = temp.transform.Find("JunkMass").gameObject; // 죽여야 하는 적은 navmesh 내부의 Cyclops
+        }
+            
         spawnList.Add(temp);
-
-        yield return null;
     }
 
 
