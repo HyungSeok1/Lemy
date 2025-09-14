@@ -13,7 +13,6 @@ public class Lightning : ObstacleBase
     [Header("Damage")]
     [SerializeField] private float _damage;
 
-    [Tooltip("데미지 적용 후 콜라이더를 비활성화할지 (권장: true)")]
     [SerializeField] private bool disableColliderAfterSpawnHit = true;
 
     [SerializeField] private Animator animator;
@@ -30,14 +29,12 @@ public class Lightning : ObstacleBase
         if (!animator) animator = GetComponent<Animator>();
         _col = GetComponent<Collider2D>();
 
-        // 애니메이터가 없거나 컨트롤러가 없으면 lifeTime 뒤에 파괴
         if (!animator || animator.runtimeAnimatorController == null)
             Destroy(gameObject, lifeTime);
     }
 
     private void Start()
     {
-        // ★ 생성 직후 1회 겹침 체크로만 데미지 적용
         TryApplySpawnOverlapHit();
     }
 
@@ -63,13 +60,12 @@ public class Lightning : ObstacleBase
             Collider2D hit = results[i];
             if (!hit) continue;
 
-            // ObstacleBase의 데미지 처리 로직을 그대로 재사용
             base.OnTriggerEnter2D(hit);
         }
 
         _appliedSpawnHit = true;
 
-        // 이후에는 어떤 접촉에도 데미지 주지 않도록 콜라이더 비활성화
+        //콜라이더 비활성화
         if (disableColliderAfterSpawnHit && _col) _col.enabled = false;
     }
 
@@ -79,11 +75,9 @@ public class Lightning : ObstacleBase
         Debug.Log("Lightning Destroyed by animator");
     }
 
-    // 이후 들어오는 접촉은 전부 무시 (안전망)
     protected override void OnTriggerEnter2D(Collider2D collider)
     {
         // 생성 시 1회 판정만 허용
-        // (콜라이더를 끄지 않는 설정이라면, 여기서도 방어적으로 무시)
-        if (!_appliedSpawnHit) return; // Start()에서만 처리
+        if (!_appliedSpawnHit) return; 
     }
 }

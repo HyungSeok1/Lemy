@@ -22,8 +22,11 @@ public class LemyWobble : MonoBehaviour
 
     private void Start()
     {
+        
+        SoundManager.Instance.PlayBGM("gwanmoon_short", 1f); // 여기 사운드좀 넣겠습니다 죄송합니다 - 박재용
         originalPosition = transform.localPosition;
         Invoke(nameof(StartBrownianMotion), startDelay);
+
     }
 
     private void StartBrownianMotion()
