@@ -2,9 +2,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-
-
-
 /// <summary>
 /// 게임 State를 관리하는 클래스입니다.
 /// 
@@ -15,6 +12,8 @@ using UnityEngine.SceneManagement;
 /// 
 /// </summary>
 /// 
+
+
 public class GameStateManager : PersistentSingleton<GameStateManager>, ISaveable<StateData>
 {
 
@@ -29,7 +28,6 @@ public class GameStateManager : PersistentSingleton<GameStateManager>, ISaveable
         LoadingScene,
         Paused
     }
-
     protected override void Awake()
     {
         base.Awake();
@@ -61,7 +59,7 @@ public class GameStateManager : PersistentSingleton<GameStateManager>, ISaveable
     public GameState CurrentGameState { get; private set; }
 
     //임시
-    public void ChangeState(GameState newState)
+    public void ChangeGameState(GameState newState)
     {
         CurrentGameState = newState;
     }

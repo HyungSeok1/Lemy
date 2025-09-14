@@ -24,6 +24,8 @@ EXTERNAL AddMoney(amount)
 EXTERNAL SpendMoney(amount)
 EXTERNAL HasEnoughMoney(amount)
 EXTERNAL GetMoney()
+//ETC
+EXTERNAL DestroyNPC(objectNPC)
 
 VAR CollectCoinsQuestId = "CollectCoinsQuest"
 VAR CollectCoinsQueststate = "REQUIREMENTS_NOT_MET"

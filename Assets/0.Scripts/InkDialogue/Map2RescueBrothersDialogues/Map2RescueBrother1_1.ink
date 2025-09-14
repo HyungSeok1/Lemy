@@ -24,8 +24,8 @@
 뭐? 누나가 날 찾고 있어?<br>거기다 울고 있었다고?
 난 죽었구나! 이미 죽긴 했지만!! <br>당장 돌아가야겠어!!
 ~ AnimationChange("Map2RescueBrother1_1", "Talk", false)
-//(사라짐)
 ~ QSetInt("Map2RescueBrothers", "rescuedBrothersCount", QGetInt("Map2RescueBrothers", "rescuedBrothersCount") + 1)
+~ DestroyNPC("Map2RescueBrother1_1")
 -> END
 
 = can_finish

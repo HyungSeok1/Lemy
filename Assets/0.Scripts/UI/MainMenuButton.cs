@@ -25,10 +25,20 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     private Sequence underlineSeq;
     private Vector3 originalScale;
     private Vector3 hoverScale;
+    private bool isHovering = false;
 
     private void Awake()
     {
         Init();
+    }
+
+    private void Update()
+    {
+        if (isHovering)
+        {
+            Vector3 worldPos = Camera.main.ScreenToWorldPoint(new Vector3(Player.Instance.currentMousePosition.x, Player.Instance.currentMousePosition.y, 5f));
+            hoverParticles.transform.position = worldPos;
+        }
     }
 
     private void Init()
@@ -36,11 +46,8 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         originalScale = buttonText.rectTransform.localScale;
         hoverScale = originalScale * hoverScaleMultiplier;
 
-        if (hoverParticles != null)
-        {
-            var emission = hoverParticles.emission;
-            emission.rateOverTime = 0f;
-        }
+        var emission = hoverParticles.emission;
+        emission.rateOverTime = 0f;
 
         underline.sizeDelta = new Vector2(0, underline.sizeDelta.y);
     }
@@ -49,12 +56,10 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     {
         buttonText.rectTransform.DOScale(hoverScale, transitionDuration).SetEase(Ease.OutQuad);
 
-        if (hoverParticles != null)
-        {
-            var emission = hoverParticles.emission;
-            emission.rateOverTime = 5f;
-        }
-
+        isHovering = true;
+        var emission = hoverParticles.emission;
+        emission.rateOverTime = 5f;
+        hoverParticles.Play();
 
         if (underlineSeq != null && underlineSeq.IsActive())
             underlineSeq.Kill();
@@ -69,11 +74,11 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     {
         buttonText.rectTransform.DOScale(originalScale, transitionDuration).SetEase(Ease.OutQuad);
 
-        if (hoverParticles != null)
-        {
-            var emission = hoverParticles.emission;
-            emission.rateOverTime = 0f;
-        }
+        isHovering = false;
+        var emission = hoverParticles.emission;
+        emission.rateOverTime = 0f;
+        hoverParticles.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+
         if (underlineSeq != null)
             underline.DOSizeDelta(new Vector2(0, underline.sizeDelta.y), underlineAnimduration);
     }
@@ -81,15 +86,12 @@ public class MainMenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     public void OnPointerClick(PointerEventData eventData)
     {
         Sequence clickSequence = DOTween.Sequence();
-
-        // 1. 글자가 빠르게 커졌다가 hover 크기로 돌아옴
         clickSequence.Append(buttonText.rectTransform.DOScale(originalScale * clickScaleMultiplier, clickDuration));
         clickSequence.Append(buttonText.rectTransform.DOScale(hoverScale, clickDuration));
 
-        if (hoverParticles != null)
-        {
-            hoverParticles.Emit(20);
-        }
+        isHovering = false;
+        hoverParticles.Emit(20);
+        hoverParticles.Stop(true, ParticleSystemStopBehavior.StopEmitting);
     }
 
     private void OnDestroy()

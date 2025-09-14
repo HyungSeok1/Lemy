@@ -40,7 +40,7 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
     {
         targetScene = $"Scene{stateData.chapter}_{stateData.chapter}_{stateData.number}";
 
-        GameStateManager.Instance.ChangeState(GameStateManager.GameState.LoadingScene);
+        GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.LoadingScene);
 
         // 기다리기 
         AsyncOperation load = SceneManager.LoadSceneAsync(targetScene);
@@ -49,9 +49,9 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
             yield return null;
         }
 
-        GameStateManager.Instance.ChangeState(GameStateManager.GameState.Playing);
+        GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.Playing);
         GameStateManager.Instance.UpdateStateData(stateData); // stateData 적용
-        Player.Instance.transform.position = positionData.pos; // positionData 적용
+        Player.Instance.Load(positionData);
 
         callback?.Invoke();
     }
@@ -102,7 +102,7 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
 
     public IEnumerator PortalTransitionCoroutine(string targetScene, string entranceID)
     {
-        GameStateManager.Instance.ChangeState(GameStateManager.GameState.LoadingScene);
+        GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.LoadingScene);
 
         SceneManager.sceneLoaded += (scene, mode) =>
         {
@@ -121,7 +121,7 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
             FindPortalAndTelePort(entranceID);
         };
 
-        GameStateManager.Instance.ChangeState(GameStateManager.GameState.Playing);
+        GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.Playing);
     }
 
     private void FindPortalAndTelePort(string entranceID)

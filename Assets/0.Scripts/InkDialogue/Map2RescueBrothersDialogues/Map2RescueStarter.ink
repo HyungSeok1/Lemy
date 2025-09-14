@@ -47,10 +47,10 @@
 ~ AnimationChange("Map2RescueStarter", "Happy", true)
 우리 동생들을 전부 찾아 주다니.. <br>이 은혜를 어떻게 갚아야 하지?
 내가 줄 건 이것밖에 없네. 뭔가 더 주고 싶은데, <br>우리도 여기 너무 갑작스럽게 와서 딱히 가진 게 없어. 미안..
-// todo: 폭발스킬 주는 것으로 변경
+~ GiveSkill("Explosion")
 정말 고마웠어! 그럼 우린 다시 가 볼게! <br>나중에 또 만날 수 있으면 좋겠다!
-// todo: 사라 지는 애니메이션 추가
 ~ FinishQuest("Map2RescueBrothers")
+~ DestroyNPC("Map2RescueStarter")
 -> END
 
 = Error

@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class ParallaxUI : MonoBehaviour
 {
-    [Header("parallaxFactor: 얼마나 움직일지 결정합니다.\n-1에 가까울수록 원근감이 큽니다.\n('-1' ~ '+1' 이내로 설정해야 합니다.)")]
+    [Header("parallaxFactor: 얼마나 움직일지 결정합니다.\n카메라가 고정되어있으므로, 0에 가까울수록 원근감이 큽니다.\n('-1' ~ '+1' 이내로 설정해야 합니다.)")]
     [SerializeField] private float parallaxFactor;
 
     private Vector2 oldPos;

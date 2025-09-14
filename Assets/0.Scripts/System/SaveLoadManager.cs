@@ -140,7 +140,11 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
     public GameSaveData GetCurrentData()
     {
 #if UNITY_EDITOR
-        string path = GetPathForSlot(1);
+        string path;
+        if (CurrentSlot == 0)
+            path = GetPathForSlot(1);
+        else
+            path = GetPathForSlot(CurrentSlot);
 #else
         string path = GetPathForSlot(CurrentSlot);
 #endif
@@ -187,7 +191,7 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
     {
         saveData = new GameSaveData(); // isEmpty true
         saveData.playerData = new PlayerData();
-        saveData.playerData.skillData = new PlayerSkillData("Dash", "Heal","Slash" , null);
+        saveData.playerData.skillData = new PlayerSkillData("Dash", "Heal", "Slash", null);
 
         // Pure Map data 가져오기
         string path1 = GetPureMapdataPath();

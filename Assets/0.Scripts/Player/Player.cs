@@ -130,7 +130,7 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
 
         StartCoroutine(DieEffectAndRespawn());
     }
-    
+
     // 사망 연출
     private IEnumerator DieEffectAndRespawn()
     {
@@ -216,7 +216,6 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
         var lens2 = liveCam2.Lens;
         lens2.OrthographicSize = zoomedOutOrthographicSize;
         liveCam2.Lens = lens2;
-        ;
         yield return StartCoroutine(SceneTransitionManager.Instance.FadeInCoroutine());
         UICanvasManager.Instance.FadeInUI(); // UI 페이드인
         playerInputController.EnablePlayerActionMap(); // 조작 복구
@@ -250,7 +249,7 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
 
         if (collision.gameObject.CompareTag("Spike"))
         {
-            Vector3 dir = ( transform.position - collision.transform.position).normalized;
+            Vector3 dir = (transform.position - collision.transform.position).normalized;
             movement.skillVelocity = dir * 10f;
             //DamageReaction damageReaction = GetComponent<DamageReaction>();
             //damageReaction.Knockback(dir, 10f);
@@ -343,6 +342,7 @@ public class Player : PersistentSingleton<Player>, ISaveable<PositionData>, ICut
         {
             GameSaveData data = SaveLoadManager.Instance.GetCurrentData();
             yield return SceneTransitionManager.Instance.TransitionCoroutine(data.playerData.stateData, data.playerData.positionData);
+            health.Load(data.playerData.healthData);
 
             // 씬 바뀐 직후에 OrthographicSize 바꿔야함. (씬 바뀔시 축소된 OrthographicSize 적용안댐)
             CinemachineCamera liveCamA = MainCameraScript.Instance.mainCinemachineCamera;
