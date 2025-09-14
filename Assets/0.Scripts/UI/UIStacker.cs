@@ -1,6 +1,8 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class UIStacker : MonoBehaviour
 {
@@ -12,7 +14,7 @@ public class UIStacker : MonoBehaviour
         Player.Instance.playerInputController.OnESCPressed += ESCBehaviour;
     }
 
-    private void ESCBehaviour()
+    public void ESCBehaviour()
     {
         if (panelStack.Count > 1)
         {
@@ -31,6 +33,13 @@ public class UIStacker : MonoBehaviour
             if (GameStateManager.Instance.CurrentGameState == GameStateManager.GameState.Playing)
                 Pause.Instance.TogglePause();
         }
+        StartCoroutine(ClearSelectionDelayed());
+    }
+
+    private IEnumerator ClearSelectionDelayed()
+    {
+        yield return null; // 한 프레임 대기
+        EventSystem.current.SetSelectedGameObject(null);
     }
 
     /// <summary>
@@ -43,11 +52,11 @@ public class UIStacker : MonoBehaviour
         if (panelStack.Count == 0)
             background.SetActive(true);
 
+        if (panelStack.Count > 0 && turnOffPrev)
+            panelStack.Peek().Item1.SetActive(false);
+
         panel.SetActive(true);
         panelStack.Push((panel, callback));
-
-        if (panelStack.Count > 1 && turnOffPrev)
-            panelStack.Peek().Item1.SetActive(false);
     }
 
     public void HideCurrentPanel()

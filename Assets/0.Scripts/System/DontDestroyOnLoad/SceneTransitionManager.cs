@@ -18,10 +18,10 @@ using System;
 public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager>
 {
     private string targetScene;
-    public PlayerData loadedData;
 
-    [SerializeField] private CanvasGroup fadeCanvas;
-    [SerializeField] private float fadeDuration = 1f;
+    [SerializeField] private CanvasGroup fadeOverlayCanvas; // canvas space - camera ,  overlayCamera에만 보임
+    [SerializeField] private CanvasGroup fadeCanvas; // canvas space - overlay
+    [SerializeField] private float fadeDuration;
 
     protected override void Awake()
     {
@@ -64,7 +64,7 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
     public IEnumerator FadeOutCoroutine()
     {
         // 0f에서 시작
-        fadeCanvas.DOFade(1f, fadeDuration).SetEase(Ease.Linear).SetUpdate(true);
+        fadeOverlayCanvas.DOFade(1f, fadeDuration).SetEase(Ease.Linear).SetUpdate(true);
         yield return new WaitForSeconds(fadeDuration);
     }
 
@@ -76,7 +76,7 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
     public IEnumerator FadeInCoroutine()
     {
         // 1f에서 시작
-        fadeCanvas.DOFade(0f, fadeDuration).SetEase(Ease.Linear).SetUpdate(true);
+        fadeOverlayCanvas.DOFade(0f, fadeDuration).SetEase(Ease.Linear).SetUpdate(true);
         yield return new WaitForSeconds(fadeDuration);
     }
 
@@ -160,5 +160,51 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
         }
     }
 
-    #endregion 
+    #endregion
+
+    public IEnumerator FadeOutRealtime()
+    {
+        // 0f에서 시작
+        fadeCanvas.DOFade(1f, fadeDuration).SetEase(Ease.Linear).SetUpdate(true);
+        yield return new WaitForSecondsRealtime(fadeDuration);
+    }
+
+    public IEnumerator FadeInRealtime()
+    {
+        // 1f에서 시작
+        fadeCanvas.DOFade(0f, fadeDuration).SetEase(Ease.Linear).SetUpdate(true);
+        yield return new WaitForSecondsRealtime(fadeDuration);
+    }
+
+    #region MainMenu
+
+    public void StartLoadMainMenuWithFade()
+    {
+        StartCoroutine(LoadMainMenuWithFade());
+    }
+
+    public IEnumerator LoadMainMenuWithFade()
+    {
+        yield return FadeInRealtime();
+        yield return LoadMainMenuCoroutine();
+        yield return FadeOutRealtime();
+    }
+
+    public IEnumerator LoadMainMenuCoroutine()
+    {
+        targetScene = $"MainMenu";
+
+        GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.LoadingScene);
+
+        // 기다리기 
+        AsyncOperation load = SceneManager.LoadSceneAsync(targetScene);
+        while (load != null && !load.isDone)
+        {
+            yield return null;
+        }
+
+        GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.MainMenu);
+    } 
+    #endregion
+
 }

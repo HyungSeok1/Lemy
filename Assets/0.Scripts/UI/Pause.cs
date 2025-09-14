@@ -22,6 +22,7 @@ public class Pause : PersistentSingleton<Pause>
     {
         if (isPaused)
         {
+            Player.Instance.playerInputController.EnablePlayerActionMap();
             uiStacker.HideCurrentPanel();
             isPaused = !isPaused;
             Time.timeScale = 1f;
@@ -29,6 +30,7 @@ public class Pause : PersistentSingleton<Pause>
             return;
         }
 
+        Player.Instance.playerInputController.EnableUIActionMap();
         uiStacker.ShowPanel(pauseMenu);
         isPaused = !isPaused;
         GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.Paused);
@@ -40,13 +42,28 @@ public class Pause : PersistentSingleton<Pause>
         uiStacker.ShowPanel(settings);
     }
 
-    public void BackToMenu()
+    public void OnBackToMenuPressed()
     {
         uiStacker.ShowPanel(backToMenuWarner, null, false);
     }
 
-    public void ExitGame()
+    public void OnExitGamePressed()
     {
         uiStacker.ShowPanel(exitGameWarner, null, false);
+    }
+
+    // 실제 로직들
+    public void BackToMenu()
+    {
+        SceneTransitionManager.Instance.StartLoadMainMenuWithFade();
+    }
+
+    public void ExitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 }

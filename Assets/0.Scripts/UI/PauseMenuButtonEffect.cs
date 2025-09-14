@@ -36,19 +36,20 @@ public class ButtonScaleEffect : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        rect.DOScale(hoverScale, transitionDuration).SetEase(Ease.OutQuad);
+        rect.DOScale(hoverScale, transitionDuration).SetEase(Ease.OutQuad).SetUpdate(true); 
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        rect.DOScale(originalScale, transitionDuration).SetEase(Ease.OutQuad);
+        rect.DOScale(originalScale, transitionDuration).SetEase(Ease.OutQuad).SetUpdate(true); 
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
         Sequence clickSequence = DOTween.Sequence();
-        clickSequence.Append(rect.DOScale(originalScale * clickScaleMultiplier, clickDuration));
-        clickSequence.Append(rect.DOScale(hoverScale, clickDuration));
+        clickSequence.Append(rect.DOScale(originalScale * clickScaleMultiplier, clickDuration).SetUpdate(true));
+        clickSequence.Append(rect.DOScale(hoverScale, clickDuration).SetUpdate(true));
+
 
         // UnityEvent 호출 (버튼처럼)
         onClick?.Invoke();
@@ -57,5 +58,17 @@ public class ButtonScaleEffect : MonoBehaviour, IPointerEnterHandler, IPointerEx
     private void OnDestroy()
     {
         rect.DOKill();
+    }
+
+    private void OnEnable()
+    {
+        rect.DOKill();
+        rect.localScale = originalScale;
+    }
+
+    private void OnDisable()
+    {
+        rect.DOKill();
+        rect.localScale = originalScale;
     }
 }
