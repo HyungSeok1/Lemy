@@ -38,7 +38,7 @@ public class PlayerHealth : MonoBehaviour, ISaveable<HealthData>
     {
         if (Player.Instance.isInvincible) return;
 
-        SoundManager.Instance.PlaySFX("frontSlash2", 0.1f);
+        SoundManager.Instance.PlaySFX("enemy_hit3", 1f);
 
         OnDamaged?.Invoke(damage);
         damageReaction.Knockback(direction, force);

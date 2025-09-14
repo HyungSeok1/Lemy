@@ -1071,6 +1071,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: fe05b02d603e4bd43a32ba58d21c1dab, type: 3}
   - {fileID: 8300000, guid: 8672a66cd4e07fe478eeed1393fe60e7, type: 3}
   - {fileID: 8300000, guid: e2e2fe2f656781648a1c544ea3700a22, type: 3}
+  - {fileID: 8300000, guid: 4be5ad7270ee5ff4995e825ef68b6ec2, type: 3}
   initialPoolSize: 10
   canGrowPool: 1
   masterVolume: 1
