@@ -2,13 +2,11 @@ using UnityEngine;
 
 public class LdhTest : MonoBehaviour
 {
-    public int damage;
-
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.B))
         {
-            Player.Instance.health.TakeDamage(damage);
+            GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.Playing);
         }
 
         

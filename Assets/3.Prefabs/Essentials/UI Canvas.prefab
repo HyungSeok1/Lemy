@@ -916,7 +916,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8855261768781142073
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1601,7 +1601,7 @@ GameObject:
   - component: {fileID: 1235092181540889427}
   - component: {fileID: 4262298070612028403}
   m_Layer: 5
-  m_Name: Button3
+  m_Name: BackToMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1722,7 +1722,7 @@ GameObject:
   - component: {fileID: 6540261762981512096}
   - component: {fileID: 641496896447838348}
   m_Layer: 5
-  m_Name: Button1
+  m_Name: BackToGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2363,7 +2363,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9065558625646341980
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5044,7 +5044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee89dd35afe7f5e4cb19c0130d057272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotButtonParent: {fileID: 8828540585550767650}
+  emptyFileText: {fileID: 0}
   fileNumText: {fileID: 2496341242122915452}
   chapterAndMapText: {fileID: 1929608962305853232}
   elapsedTimeText: {fileID: 7500826376574405870}
@@ -5274,7 +5274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee89dd35afe7f5e4cb19c0130d057272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotButtonParent: {fileID: 1701859586032864130}
+  emptyFileText: {fileID: 0}
   fileNumText: {fileID: 2835371610666784653}
   chapterAndMapText: {fileID: 1801698717692913029}
   elapsedTimeText: {fileID: 6104685031420139331}
@@ -5885,9 +5885,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bcc9e5ca927d55449ff9d532fe942fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiManager: {fileID: 0}
-  pauseMenuUI: {fileID: 0}
-  backgroundImage: {fileID: 0}
+  uiStacker: {fileID: 0}
+  pauseMenuUI: {fileID: 1860314213660704837}
+  backgroundImage: {fileID: 528328331752966998}
 --- !u!114 &9177584965047398960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5900,6 +5900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c12b38ea4fa0284cb8634969f45e2a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  background: {fileID: 528328331752966998}
 --- !u!1 &3932924906592389990
 GameObject:
   m_ObjectHideFlags: 0
@@ -6496,7 +6497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee89dd35afe7f5e4cb19c0130d057272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotButtonParent: {fileID: 4030364798599640885}
+  emptyFileText: {fileID: 0}
   fileNumText: {fileID: 3322582005774716133}
   chapterAndMapText: {fileID: 5488716610074184998}
   elapsedTimeText: {fileID: 4942269058971904652}
@@ -6962,7 +6963,6 @@ RectTransform:
   - {fileID: 6761283452447858903}
   - {fileID: 4896644696980507277}
   - {fileID: 5693662892811260629}
-  - {fileID: 175168077166575973}
   - {fileID: 4858589445223283250}
   - {fileID: 522662923285064678}
   - {fileID: 2706771867214903441}
@@ -6970,6 +6970,7 @@ RectTransform:
   - {fileID: 8817044473138575910}
   - {fileID: 3225365615696171214}
   - {fileID: 7661438088622853111}
+  - {fileID: 175168077166575973}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -9182,7 +9183,7 @@ GameObject:
   - component: {fileID: 3205846817702594249}
   - component: {fileID: 3543299733214792146}
   m_Layer: 5
-  m_Name: Button2
+  m_Name: Settings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10261,7 +10262,7 @@ GameObject:
   - component: {fileID: 7781403975822208613}
   - component: {fileID: 7671000637562684778}
   m_Layer: 5
-  m_Name: Button4
+  m_Name: ExitGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

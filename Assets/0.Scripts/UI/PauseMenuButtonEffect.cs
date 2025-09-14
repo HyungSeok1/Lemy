@@ -1,11 +1,11 @@
 using DG.Tweening;
-using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 public class ButtonScaleEffect : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
-    [SerializeField] private TextMeshProUGUI buttonText;
+    private RectTransform rect;
 
     [Range(1.0f, 1.5f)]
     public float hoverScaleMultiplier = 1.1f; // 마우스 오버 시 크기 배율
@@ -16,37 +16,46 @@ public class ButtonScaleEffect : MonoBehaviour, IPointerEnterHandler, IPointerEx
     [Range(0f, 0.3f)]
     public float clickDuration = 0.1f; // 클릭 애니메이션 시간
 
+
+    [Header("Events")]
+    [SerializeField] private UnityEvent onClick = new UnityEvent(); // Inspector에서 할당 가능
+
+
     private Vector3 originalScale;
     private Vector3 hoverScale;
 
+
     private void Awake()
     {
-        if (buttonText == null)
-            buttonText = GetComponent<TextMeshProUGUI>();
+        if (rect == null)
+            rect = GetComponent<RectTransform>();
 
-        originalScale = buttonText.rectTransform.localScale;
+        originalScale = rect.localScale;
         hoverScale = originalScale * hoverScaleMultiplier;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        buttonText.rectTransform.DOScale(hoverScale, transitionDuration).SetEase(Ease.OutQuad);
+        rect.DOScale(hoverScale, transitionDuration).SetEase(Ease.OutQuad);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        buttonText.rectTransform.DOScale(originalScale, transitionDuration).SetEase(Ease.OutQuad);
+        rect.DOScale(originalScale, transitionDuration).SetEase(Ease.OutQuad);
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
         Sequence clickSequence = DOTween.Sequence();
-        clickSequence.Append(buttonText.rectTransform.DOScale(originalScale * clickScaleMultiplier, clickDuration));
-        clickSequence.Append(buttonText.rectTransform.DOScale(hoverScale, clickDuration));
+        clickSequence.Append(rect.DOScale(originalScale * clickScaleMultiplier, clickDuration));
+        clickSequence.Append(rect.DOScale(hoverScale, clickDuration));
+
+        // UnityEvent 호출 (버튼처럼)
+        onClick?.Invoke();
     }
 
     private void OnDestroy()
     {
-        buttonText.rectTransform.DOKill();
+        rect.DOKill();
     }
 }
