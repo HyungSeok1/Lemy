@@ -12,8 +12,10 @@ using UnityEngine.Windows.Speech;
 /// </summary>
 public class PlayerHealth : MonoBehaviour, ISaveable<HealthData>
 {
-    [SerializeField] public float maxHealth = 100;
+    [SerializeField] public float maxHealth;
     [SerializeField] private DamageReaction damageReaction;
+
+    [SerializeField] float hitStopDuration;
 
     public float CurrentHealth { get; private set; }
     public Action<float> OnDamaged;
@@ -30,7 +32,7 @@ public class PlayerHealth : MonoBehaviour, ISaveable<HealthData>
 
     private void OnDisable()
     {
-        if(MainCameraScript.Instance != null)
+        if (MainCameraScript.Instance != null)
             OnDamaged -= MainCameraScript.Instance.ShakeCamera;
     }
 
@@ -49,8 +51,15 @@ public class PlayerHealth : MonoBehaviour, ISaveable<HealthData>
         CurrentHealth = CurrentHealth - totalDamage < 0 ? 0 : CurrentHealth - totalDamage;
         if (CurrentHealth <= 0)
         {
+            // 죽음 + 죽는 연출
             Die();
             return;
+        }
+        else
+        {
+            // 피격 연출
+            HitEffectManager.Instance.DoHitStop(hitStopDuration);
+            // Player.Instance.ShowBonkSprite(hitStopDuration);
         }
 
     }

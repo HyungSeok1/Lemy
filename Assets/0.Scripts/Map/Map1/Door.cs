@@ -25,7 +25,7 @@ public class Door : SaveableMapObject
     {
         base.ActivatedBehaviour();
 
-        doorObject.transform.localPosition += new Vector3(0, 18 / transform.localScale.y, 0);
+        doorObject.transform.localPosition += new Vector3(8.97f, 18 / transform.localScale.y, 0);
         opened = true;
     }
 

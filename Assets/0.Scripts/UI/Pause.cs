@@ -11,7 +11,7 @@ public class Pause : PersistentSingleton<Pause>
     [SerializeField] private GameObject exitGameWarner;
 
 
-    private bool isPaused = false;
+    public bool isPaused = false;
 
     protected override void Awake()
     {

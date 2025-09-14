@@ -82,7 +82,6 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
 
         GameStateManager.Instance.Load(data.playerData.stateData);
         Player.Instance.health.Load(data.playerData.healthData);
-        Player.Instance.playerSkillController.Load(data.playerData.skillData);
         Player.Instance.inventory.Load(data.playerData.inventoryData);
         MoneyManager.Instance.Load(data.playerData.moneyData);
         // TODO: NPC Container도 넣어주기. 지금은 항상 null일 것
@@ -92,6 +91,8 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
         Action inputCallback = () => Player.Instance.playerInputController.EnablePlayerActionMap();
 
         SceneTransitionManager.Instance.StartTransition(data.playerData.stateData, data.playerData.positionData, inputCallback); // 여기서 알아서 씬이동후 포지션 적용
+
+        Player.Instance.playerSkillController.Load(data.playerData.skillData);
     }
 
 
@@ -122,7 +123,6 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
 
         GameStateManager.Instance.Load(data.playerData.stateData);
         Player.Instance.health.Load(data.playerData.healthData);
-        Player.Instance.playerSkillController.Load(data.playerData.skillData);
         Player.Instance.inventory.Load(data.playerData.inventoryData);
         MoneyManager.Instance.Load(data.playerData.moneyData);
         // TODO: NPC Container도 넣어주기. 지금은 항상 null일 것
@@ -132,6 +132,8 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
         Action inputCallback = () => Player.Instance.playerInputController.EnablePlayerActionMap();
 
         SceneTransitionManager.Instance.StartTransition(data.playerData.stateData, data.playerData.positionData, inputCallback); // 여기서 알아서 씬이동후 포지션 적용
+
+        Player.Instance.playerSkillController.Load(data.playerData.skillData);
     }
 
     /// <summary>

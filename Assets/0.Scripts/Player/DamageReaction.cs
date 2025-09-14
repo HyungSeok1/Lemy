@@ -18,14 +18,6 @@ public class DamageReaction : MonoBehaviour
     [SerializeField] GameObject blinkingObj;
     [SerializeField] bool isBlinking = false;
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.K)) // should change to work upon taking damage.
-        {
-            StartCoroutine(SelfBlinking(duration, blinkTime));
-        }
-    }
-
     public void Knockback(Vector2 direction, float force = 3f)
     {
         if (Player.Instance.rb != null && !Player.Instance.isInvincible)

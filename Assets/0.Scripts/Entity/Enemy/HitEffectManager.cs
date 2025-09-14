@@ -1,10 +1,13 @@
+using System.Collections;
 using UnityEngine;
 
-public class HitEffectManager : MonoBehaviour
+/// <summary>
+/// Enemy 및 Player의 피격연출 관리
+/// </summary>
+public class HitEffectManager : PersistentSingleton<HitEffectManager>
 {
     [SerializeField] private float distance;
 
-    [Header("히트 이펙트")]
     [SerializeField] private GameObject HitEffect1;
     [SerializeField] private GameObject HitEffect2;
     [SerializeField] private GameObject HitEffect3;
@@ -26,7 +29,7 @@ public class HitEffectManager : MonoBehaviour
 
         Vector2 dir = -(new Vector2(playerPos.x, playerPos.y) - new Vector2(enemyPos.x, enemyPos.y)).normalized;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        Quaternion rot = Quaternion.Euler(0, 0, angle -45f);
+        Quaternion rot = Quaternion.Euler(0, 0, angle - 45f);
 
         Vector3 spawnPos = enemyPos + new Vector3(dir.x, dir.y, 0) * distance; ;
 
@@ -43,8 +46,19 @@ public class HitEffectManager : MonoBehaviour
                 Instantiate(HitEffect3, spawnPos, rot);
                 break;
         }
-
     }
 
+    public void DoHitStop(float duration)
+    {
+        StartCoroutine(HitStopCoroutine(duration));
+    }
 
+    private IEnumerator HitStopCoroutine(float duration)
+    {
+        Time.timeScale = 0f;
+        yield return new WaitForSecondsRealtime(duration);
+
+        if (!Pause.Instance.isPaused)
+            Time.timeScale = 1f;
+    }
 }
