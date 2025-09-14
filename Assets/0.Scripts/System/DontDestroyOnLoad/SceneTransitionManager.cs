@@ -157,6 +157,8 @@ public class SceneTransitionManager : PersistentSingleton<SceneTransitionManager
             yield return null;
         }
 
+        Player.Instance.transform.position= Vector3.zero; // MainMenu 씬에 Player가 존재하므로 위치 초기화
+
         GameStateManager.Instance.ChangeGameState(GameStateManager.GameState.MainMenu);
     }
     #endregion

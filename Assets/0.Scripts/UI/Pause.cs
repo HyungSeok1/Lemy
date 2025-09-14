@@ -55,7 +55,9 @@ public class Pause : PersistentSingleton<Pause>
     // 실제 로직들
     public void BackToMenu()
     {
+        Time.timeScale = 1f;
         SceneTransitionManager.Instance.StartLoadMainMenuWithFade();
+        Destroy(UICanvasManager.Instance.gameObject);
     }
 
     public void ExitGame()
