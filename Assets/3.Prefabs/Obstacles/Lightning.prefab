@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 22
+  m_SortingOrder: 80
   m_Sprite: {fileID: 21300000, guid: ed12fee2184de4147b23d52e717c7d00, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeTime: 0.53
   _damage: 20
-  damageTime: 0.3
+  disableColliderAfterSpawnHit: 1
   animator: {fileID: 0}
 --- !u!95 &2958436690428321052
 Animator:
