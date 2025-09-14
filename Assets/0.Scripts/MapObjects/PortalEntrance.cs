@@ -20,6 +20,8 @@ public class PortalEntrance : MonoBehaviour
     {
         if (other.TryGetComponent<Player>(out _))
         {
+            print(gameObject.name + "포탈 진입");
+
             string sceneName = $"Scene{targetChapter}_{targetMap}_{targetNumber}";
             GameStateManager.Instance.UpdateStateData(new StateData(targetChapter, targetMap, targetNumber));
             SceneTransitionManager.Instance.StartPortalTransition(sceneName, entranceID);

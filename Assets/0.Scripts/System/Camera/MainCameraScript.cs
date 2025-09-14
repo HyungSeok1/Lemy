@@ -21,16 +21,12 @@ public class MainCameraScript : PersistentSingleton<MainCameraScript>
 
     private void Start()
     {
-        Player.Instance.health.OnDamaged += ShakeCamera;
-
-        mainCinemachineCamera.Follow = Player.Instance.transform;
-
         CameraSwitcher.SwitchCamera(mainCinemachineCamera);
 
         multiChannelPerlin.FrequencyGain = 0;
     }
 
-    private void ShakeCamera(float _)
+    public void ShakeCamera(float _)
     {
         // TODO: 추후에 시네머신카메라가 도중 교체될 가능성이 있다면, 방어 코드 작성 필요
 
