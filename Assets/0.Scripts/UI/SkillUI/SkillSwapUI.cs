@@ -36,12 +36,14 @@ public class SkillSwapUI : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Alpha1) && !skillSwapUIOpened) // GetKeyDown 방식이 괜찮을지...
         {
+            Player.Instance.playerInputController.EnableUIActionMap();
             skillSwapUIOpened = true;
             canvasGroup.alpha = 1f;
             StartCoroutine(InitializeSkillUI());
         }
         else if(Input.GetKeyDown(KeyCode.Alpha1) && skillSwapUIOpened)
         {
+            Player.Instance.playerInputController.EnablePlayerActionMap();
             skillSwapUIOpened = false;
             canvasGroup.alpha = 0f;
            StartCoroutine(DestroySkillUI());
