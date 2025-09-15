@@ -1960,7 +1960,7 @@ GameObject:
   - component: {fileID: 7576820312792642671}
   - component: {fileID: 1620611346348487807}
   - component: {fileID: 4162334199373595901}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

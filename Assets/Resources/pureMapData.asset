@@ -19,7 +19,7 @@ MonoBehaviour:
       number: 1
       entityGuideList:
       - position: {x: -10, y: -0.8, z: 0}
-        prefab: {fileID: 6823866740245720468, guid: b56423eccfffebd4ebcc3c005b4997bb, type: 3}
+        prefab: {fileID: 3, guid: 429b971314d5f44d9ae47e60d89d49c6, type: 3}
         spawnFlag: 1
       challengeZoneList: []
       saveableMapObjectList: []
