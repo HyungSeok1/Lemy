@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1804883590830429699}
   - component: {fileID: 8812798355340074752}
   - component: {fileID: 1100150924043561141}
+  - component: {fileID: 7509572620684071968}
   m_Layer: 0
   m_Name: Tracker
   m_TagString: Enemy
@@ -194,6 +195,28 @@ CapsuleCollider2D:
   m_Offset: {x: 0.16709098, y: -0.14215183}
   m_Size: {x: 2.395824, y: 2.8657014}
   m_Direction: 0
+--- !u!195 &7509572620684071968
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407549624345173800}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 1.365
+  m_Speed: 5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 3.15
+  m_BaseOffset: 1.575
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1578557620230116516
 GameObject:
   m_ObjectHideFlags: 0

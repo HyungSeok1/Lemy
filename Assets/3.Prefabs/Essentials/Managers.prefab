@@ -1341,6 +1341,7 @@ MonoBehaviour:
   questInfos:
   - {fileID: 11400000, guid: ea2eea956b764a94992d1cd6e6fc4655, type: 2}
   - {fileID: 11400000, guid: a921f0a66bf491648b452fd3718df6f0, type: 2}
+  - {fileID: 11400000, guid: 08778c27d1ca15549bad67e319375e0b, type: 2}
   activeQuests: []
 --- !u!1 &8841312052880650584
 GameObject:
