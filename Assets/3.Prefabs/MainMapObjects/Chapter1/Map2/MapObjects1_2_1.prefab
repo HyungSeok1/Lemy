@@ -18247,6 +18247,7 @@ GameObject:
   - component: {fileID: 4500571708495632172}
   - component: {fileID: 2085194623621926411}
   - component: {fileID: 5447181003031093099}
+  - component: {fileID: 354872611869678021}
   m_Layer: 0
   m_Name: CameraZone (1)
   m_TagString: Untagged
@@ -18360,6 +18361,19 @@ MonoBehaviour:
   zoomedSize: 35
   zoomDuration: 2
   maxSpeed: 30
+--- !u!114 &354872611869678021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6208574419207974949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cc153238617d5b44ba31a6aba51d6b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgmFileName: yeonok_bgm
 --- !u!1 &6264387389803831530
 GameObject:
   m_ObjectHideFlags: 0
