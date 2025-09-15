@@ -119,6 +119,8 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
     /// <param name="slot"></param>
     public void LoadNewGame(int slot)
     {
+        SoundManager.Instance.StopBGM(); // 동현아 미안 여기 음악멈추는 코드좀 넣을게
+
         Player.Instance.GetComponent<SpriteRenderer>().enabled = true; // 임시로 비활성화했던것, 다시 활성화
 
         currentSlot = slot;
