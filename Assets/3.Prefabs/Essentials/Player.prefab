@@ -83,6 +83,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   detectionRadius: 6
+  accelerationRate: 10
+  maxSpeed: 0
 --- !u!1 &1750678551323148830
 GameObject:
   m_ObjectHideFlags: 0
