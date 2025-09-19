@@ -19,11 +19,7 @@ public class DashSkill : MonoBehaviour, ISkill
 
     public void ExecuteSkill()
     {
-        //애니메이션 실행 
         if (!CanExecute) return;
-        Player.Instance.animator.SetTrigger("isDash");
-        float angle = Mathf.Atan2(Player.Instance.movement.dir.y, Player.Instance.movement.dir.x) * Mathf.Rad2Deg;
-        Instantiate(Player.Instance.DashEffect, transform.position, Quaternion.Euler(0f, 0f, angle + 30f));
 
         remainingCooldown = data.cooldown;
         Dash();
@@ -50,6 +46,22 @@ public class DashSkill : MonoBehaviour, ISkill
         // 속도 초기화 & 가속
         Player.Instance.movement.skillVelocity = dir * data.dashPower;
         SoundManager.Instance.PlaySFX("dash1", 0.5f);
+
+        //애니메이션 실행 
+        Player.Instance.animator.SetTrigger("isDash");
+
+        //이펙트 생성
+        float angleRad = Mathf.Atan2(dir.y, dir.x);
+        float angleDeg = angleRad * Mathf.Rad2Deg;
+        Quaternion rotation = Quaternion.Euler(0, 0, angleDeg + 30f + 180f);
+
+        GameObject dash = Instantiate(
+            Player.Instance.DashEffect,
+            transform.position,
+            rotation
+        );
+
+        dash.transform.localScale *= 2f; // 크기를 2배로
     }
 
     public float GetNormalizedRemainingCooldown()
