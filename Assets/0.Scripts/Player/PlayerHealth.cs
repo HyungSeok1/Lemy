@@ -46,6 +46,7 @@ public class PlayerHealth : MonoBehaviour, ISaveable<HealthData>
         damageReaction.Knockback(direction, force);
         damageReaction.StartBlinking();
 
+
         float totalDamage = (damage - Player.Instance.stats.flatDEF) * Player.Instance.stats.percentDEF;
 
         CurrentHealth = CurrentHealth - totalDamage < 0 ? 0 : CurrentHealth - totalDamage;

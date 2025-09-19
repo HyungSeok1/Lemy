@@ -50,13 +50,15 @@ public class DamageReaction : MonoBehaviour
             while (t <= duration)
             {
                 isVisible = !isVisible;
-                renderer.color = isVisible ? Color.clear : new Color(1, 1, 1, 0.3f);
-
+                //renderer.color = isVisible ? Color.clear : new Color(1, 1, 1, 0.3f);
+                player.animator.SetBool("isHit",true);
                 yield return new WaitForSeconds(blinkTime);
                 t += blinkTime;
             }
 
-            renderer.color = Color.white;
+            player.animator.SetBool("isHit", false);
+            //renderer.sprite = 
+            //renderer.color = Color.white;
 
             isBlinking = false;
             if (TryGetComponent(out player)) { player.isInvincible = false; }
