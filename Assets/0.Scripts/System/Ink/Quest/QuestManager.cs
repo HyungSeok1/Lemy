@@ -85,6 +85,7 @@ public class QuestManager : PersistentSingleton<QuestManager>
             return;
         }
 
+        PopupUI.Instance.ShowQuestPopup(quest.info.displayName); 
         Debug.Log("Start: " + id);
         ChangeQuestState(quest.info.id, QuestState.IN_PROGRESS);
         InstantiateQuestPrefab(quest.info.id);

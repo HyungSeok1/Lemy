@@ -33,7 +33,12 @@ public class DroppedItem : MonoBehaviour
         }
         else // 일반 아이템인 경우
         {
-            Player.Instance.inventory.AddItem(ItemData, 1);
+            //Player.Instance.inventory.AddItem(ItemData, 1);
+            Sprite itemIcon = GetComponent<SpriteRenderer>().sprite;
+            if (PopupUI.Instance != null)
+            {
+                PopupUI.Instance.ShowItemPopup(ItemData.itemName, itemIcon);
+            }
             Debug.Log("Item Picked up: " + ItemData.itemName);
         }
 
