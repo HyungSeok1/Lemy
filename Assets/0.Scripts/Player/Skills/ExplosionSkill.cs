@@ -72,6 +72,16 @@ public class ExplosionSkill : MonoBehaviour, ISkill
         GameObject explosionEffect = Instantiate(data.explosionEffectPrefab, explosionPosition, Quaternion.identity);
         explosionEffect.GetComponent<ExplosionEffect>().data = data;
         print("Explosion 사용됨.");
+
+        // 폭발 파티클도 생성
+        Quaternion rotation = Quaternion.Euler(90f, 0f, 0f);
+        GameObject explosionParticle = Instantiate(data.explosionParticlePrefab, explosionPosition, rotation);
+        explosionParticle.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        var particleSystem = explosionParticle.GetComponent<ParticleSystem>();
+        if (particleSystem != null)
+        {
+            Destroy(explosionParticle, particleSystem.main.duration + particleSystem.main.startLifetime.constantMax);
+        }
     }
 
     public float GetNormalizedRemainingCooldown()

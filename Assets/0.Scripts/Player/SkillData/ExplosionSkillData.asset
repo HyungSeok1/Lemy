@@ -21,4 +21,5 @@ MonoBehaviour:
   knockbackForce: 3
   rangePrefab: {fileID: 2109304125453788693, guid: 91e67009ef0120549a9241b7a1591f61, type: 3}
   explosionEffectPrefab: {fileID: 8449579834856199887, guid: 0955c3d7bbfc2d54e87112efe150dbe9, type: 3}
+  explosionParticlePrefab: {fileID: 3568186301058949274, guid: ca7fe845aa153db45a319f37f27708ca, type: 3}
   animationTriggerName: 
